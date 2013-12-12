@@ -177,6 +177,8 @@ public class AnswerFragment extends BaseFragment<AnswerPresenter, AnswerPresente
                 if (mGlowpad != null) {
                     mGlowpad.startPing();
                 }
+                dismissCannedResponsePopup();
+                getPresenter().onDismissDialog();
             }
         });
         mCannedResponsePopup = builder.create();
@@ -257,6 +259,13 @@ public class AnswerFragment extends BaseFragment<AnswerPresenter, AnswerPresente
                         new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
+                        dismissCustomMessagePopup();
+                        getPresenter().onDismissDialog();
+                    }
+                })
+                .setOnCancelListener(new DialogInterface.OnCancelListener() {
+                    @Override
+                    public void onCancel(DialogInterface dialogInterface) {
                         dismissCustomMessagePopup();
                         getPresenter().onDismissDialog();
                     }
