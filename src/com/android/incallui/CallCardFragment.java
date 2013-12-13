@@ -603,7 +603,7 @@ public class CallCardFragment extends BaseFragment<CallCardPresenter, CallCardPr
         }
         switch (callState) {
             case Call.State.INCOMING:
-                //break; // TODO: Uncomment this once SurfaceTexuture issue is fixed.
+                break;
 
             case Call.State.DIALING:
             case Call.State.REDIALING:
