@@ -243,4 +243,16 @@ public class CallCommandClient {
         }
     }
 
+    public void confirmAddBlacklist(Call call) {
+        Log.i(this, "Confirming the adding of " + call.getNumber() + "to the blacklist");
+        if (mCommandService == null) {
+            Log.e(this, "Cannot Blacklist call; CallCommandService == null");
+            return;
+        }
+        try {
+            mCommandService.confirmAddBlacklist(call);
+        } catch (RemoteException e) {
+            Log.e(this, "Error Blacklisting call.", e);
+        }
+    }
 }
