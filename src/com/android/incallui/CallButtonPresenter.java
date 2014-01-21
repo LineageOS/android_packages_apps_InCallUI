@@ -204,6 +204,13 @@ public class CallButtonPresenter extends Presenter<CallButtonPresenter.CallButto
         CallCommandClient.getInstance().swap();
     }
 
+    public void blacklistClicked() {
+        if (mCall == null) {
+            return;
+        }
+        CallCommandClient.getInstance().confirmAddBlacklist(mCall);
+    }
+
     public void showDialpadClicked(boolean checked) {
         Log.v(this, "Show dialpad " + String.valueOf(checked));
         getUi().displayDialpad(checked);
