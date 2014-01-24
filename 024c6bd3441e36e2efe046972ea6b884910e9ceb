@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3a57f1b5_9ee64de7",
+        "filename": "res/values-ca/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2014-01-24T12:58:12Z",
+      "side": 1,
+      "message": "Please change \u0026lt; to \u003c and \u0026gt; to \u003e",
+      "revId": "024c6bd3441e36e2efe046972ea6b884910e9ceb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
