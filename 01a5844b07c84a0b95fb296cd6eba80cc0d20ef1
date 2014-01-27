@@ -33,6 +33,24 @@
       "revId": "01a5844b07c84a0b95fb296cd6eba80cc0d20ef1",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a54edaf_4c8913ca",
+        "filename": "src/com/android/incallui/CallButtonFragment.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 215,
+      "author": {
+        "id": 8188
+      },
+      "writtenOn": "2014-01-27T22:15:55Z",
+      "side": 1,
+      "message": "No, it\u0027s much better to change visibility only when needed (when visibility differs)",
+      "parentUuid": "1a54edaf_ccc66316",
+      "revId": "01a5844b07c84a0b95fb296cd6eba80cc0d20ef1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
