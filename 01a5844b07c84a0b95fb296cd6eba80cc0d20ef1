@@ -16,6 +16,23 @@
       "revId": "01a5844b07c84a0b95fb296cd6eba80cc0d20ef1",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a54edaf_ccc66316",
+        "filename": "src/com/android/incallui/CallButtonFragment.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 215,
+      "author": {
+        "id": 6259
+      },
+      "writtenOn": "2014-01-27T17:44:42Z",
+      "side": 1,
+      "message": "well just write\n\nview.setVisibility(isVisible ? View.VISIBLE : View.INVISIBLE);",
+      "revId": "01a5844b07c84a0b95fb296cd6eba80cc0d20ef1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
