@@ -87,6 +87,24 @@
       "revId": "01a5844b07c84a0b95fb296cd6eba80cc0d20ef1",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a54edaf_5772fc7d",
+        "filename": "src/com/android/incallui/CallButtonFragment.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 215,
+      "author": {
+        "id": 8188
+      },
+      "writtenOn": "2014-01-28T09:27:37Z",
+      "side": 1,
+      "message": "I suppose you missed second \"}\" - please count } carefully and you will see that I\u0027m setting visible only when View is not visible AND isVisible",
+      "parentUuid": "1a54edaf_3752e0de",
+      "revId": "01a5844b07c84a0b95fb296cd6eba80cc0d20ef1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
