@@ -51,6 +51,24 @@
       "revId": "01a5844b07c84a0b95fb296cd6eba80cc0d20ef1",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a54edaf_3752e0de",
+        "filename": "src/com/android/incallui/CallButtonFragment.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 215,
+      "author": {
+        "id": 6259
+      },
+      "writtenOn": "2014-01-28T09:18:20Z",
+      "side": 1,
+      "message": "?? this line is doing exactly the same like your new if else condition lol",
+      "parentUuid": "1a54edaf_4c8913ca",
+      "revId": "01a5844b07c84a0b95fb296cd6eba80cc0d20ef1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
