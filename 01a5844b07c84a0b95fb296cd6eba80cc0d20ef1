@@ -105,6 +105,24 @@
       "revId": "01a5844b07c84a0b95fb296cd6eba80cc0d20ef1",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a54edaf_176c849b",
+        "filename": "src/com/android/incallui/CallButtonFragment.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 215,
+      "author": {
+        "id": 6259
+      },
+      "writtenOn": "2014-01-28T09:30:42Z",
+      "side": 1,
+      "message": "lmao true lol\n\nsorry just woke up....you are right hehe",
+      "parentUuid": "1a54edaf_5772fc7d",
+      "revId": "01a5844b07c84a0b95fb296cd6eba80cc0d20ef1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
