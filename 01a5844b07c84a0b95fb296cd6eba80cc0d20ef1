@@ -69,6 +69,24 @@
       "revId": "01a5844b07c84a0b95fb296cd6eba80cc0d20ef1",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a54edaf_975714ca",
+        "filename": "src/com/android/incallui/CallButtonFragment.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 215,
+      "author": {
+        "id": 6259
+      },
+      "writtenOn": "2014-01-28T09:25:10Z",
+      "side": 1,
+      "message": "aside that what you mentioned is not worked out well here\n\nif you really want to change the view only when it is different then the current visibilty\n\nyou need to change the first if condition as well to check if it is different to the visibilty you want to get",
+      "parentUuid": "1a54edaf_3752e0de",
+      "revId": "01a5844b07c84a0b95fb296cd6eba80cc0d20ef1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
