@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "fade3982_851a2416",
+        "filename": "res/values/colors.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-01-31T00:45:26Z",
+      "side": 1,
+      "message": "I respectfully disagree. There\u0027s plenty of Holo blue still in our UI, I don\u0027t see a need to remove it at all costs.",
+      "parentUuid": "fade3982_e52a102c",
+      "revId": "dce6d253851956a0541babb877fe3102c7995330",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "fade3982_45f93cc8",
         "filename": "res/values/colors.xml",
         "patchSetId": 4
@@ -83,6 +101,24 @@
       "side": 1,
       "message": "No, it\u0027s better to change visibility only when needed - I mean you don\u0027t need to run setVisibility when already visible.\nPlease count \"}\" before else ;)",
       "parentUuid": "fade3982_c5042cc8",
+      "revId": "dce6d253851956a0541babb877fe3102c7995330",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fade3982_251d1810",
+        "filename": "src/com/android/incallui/CallButtonFragment.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 216,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-01-31T00:45:26Z",
+      "side": 1,
+      "message": "I saw the }, but it\u0027s a pointless optimization, as setVisibility is a no-op if the visibility flag doesn\u0027t change. Check for yourself ;)\n\nhttps://github.com/CyanogenMod/android_frameworks_base/blob/cm-11.0/core/java/android/view/View.java#L6042\n\nhttps://github.com/CyanogenMod/android_frameworks_base/blob/cm-11.0/core/java/android/view/View.java#L8867",
+      "parentUuid": "fade3982_c52b8c32",
       "revId": "dce6d253851956a0541babb877fe3102c7995330",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
