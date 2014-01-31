@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fade3982_050f34e2",
+        "filename": "res/values/colors.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-01-31T00:25:14Z",
+      "side": 1,
+      "message": "#00000000 is not semitransparent blueish grey. Making it fully transparent also isn\u0027t acceptable IMHO, for the same reason as for the call banner. What about using #7033b5e5?",
+      "revId": "dce6d253851956a0541babb877fe3102c7995330",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fade3982_45f93cc8",
+        "filename": "res/values/colors.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-01-31T00:25:14Z",
+      "side": 1,
+      "message": "#00000000 is not semitransparent black. I\u0027d suggest #40000000 to make the \u0027respond by SMS\u0027 button of the GlowPadView a little more visible without hiding the lower part of the contact picture.",
+      "revId": "dce6d253851956a0541babb877fe3102c7995330",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fade3982_c5042cc8",
+        "filename": "src/com/android/incallui/CallButtonFragment.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 216,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-01-31T00:25:14Z",
+      "side": 1,
+      "message": "The whole if-else can be replaced by\n\nview.setVisibility(isVisible ? View.VISIBLE : View.INVISIBLE);",
+      "revId": "dce6d253851956a0541babb877fe3102c7995330",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
