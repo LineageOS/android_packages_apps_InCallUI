@@ -55,6 +55,24 @@
     },
     {
       "key": {
+        "uuid": "fade3982_a5d76822",
+        "filename": "res/values/colors.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 8188
+      },
+      "writtenOn": "2014-01-31T00:56:26Z",
+      "side": 1,
+      "message": "OK",
+      "parentUuid": "fade3982_851a2416",
+      "revId": "dce6d253851956a0541babb877fe3102c7995330",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "fade3982_45f93cc8",
         "filename": "res/values/colors.xml",
         "patchSetId": 4
@@ -119,6 +137,24 @@
       "side": 1,
       "message": "I saw the }, but it\u0027s a pointless optimization, as setVisibility is a no-op if the visibility flag doesn\u0027t change. Check for yourself ;)\n\nhttps://github.com/CyanogenMod/android_frameworks_base/blob/cm-11.0/core/java/android/view/View.java#L6042\n\nhttps://github.com/CyanogenMod/android_frameworks_base/blob/cm-11.0/core/java/android/view/View.java#L8867",
       "parentUuid": "fade3982_c52b8c32",
+      "revId": "dce6d253851956a0541babb877fe3102c7995330",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fade3982_c5d26c34",
+        "filename": "src/com/android/incallui/CallButtonFragment.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 216,
+      "author": {
+        "id": 8188
+      },
+      "writtenOn": "2014-01-31T00:56:26Z",
+      "side": 1,
+      "message": "I see - OK.\nI just extended already presented code - with the same logic.\nSo original code can be also imrpoved by removing if state. (I\u0027ll keep this in mind for future)",
+      "parentUuid": "fade3982_251d1810",
       "revId": "dce6d253851956a0541babb877fe3102c7995330",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
