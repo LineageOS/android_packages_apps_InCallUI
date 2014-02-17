@@ -18,6 +18,7 @@ package com.android.incallui;
 
 import android.os.RemoteException;
 
+import com.android.internal.telephony.MSimConstants;
 
 import com.android.services.telephony.common.AudioMode;
 import com.android.services.telephony.common.ICallCommandService;
@@ -230,6 +231,60 @@ public class CallCommandClient {
         }
     }
 
+    public void hangupWithReason(int callId, String userUri, boolean mpty,
+            int failCause, String errorInfo) {
+        if (mCommandService == null) {
+            Log.e(this, "Cannot hangupWithReason(); CallCommandService == null");
+            return;
+        }
+        try {
+            Log.v(this, "hangupWithReason() ");
+            mCommandService.hangupWithReason(callId, userUri, mpty,
+                    failCause, errorInfo);
+        } catch (RemoteException e) {
+            Log.e(this, "Error on hangupWithReason().", e);
+        }
+    }
+
+    public void answerCallWithCallType(int callId,int callType){
+        if (mCommandService == null) {
+            Log.e(this, "Cannot acceptCall(); CallCommandService == null");
+            return;
+        }
+        try {
+            Log.v(this, "acceptCall() " );
+            mCommandService.answerCallWithCallType(callId,callType);
+        } catch (RemoteException e) {
+            Log.e(this, "Error on acceptCall().", e);
+        }
+    }
+
+    public void modifyCallInitiate(int callId, int callType) {
+        if (mCommandService == null) {
+            Log.e(this, "Cannot modifyCall(); CallCommandService == null");
+            return;
+        }
+        try {
+            Log.v(this, "modifyCall(), callId=" + callId + " callType=" + callType);
+            mCommandService.modifyCallInitiate(callId, callType);
+        } catch (RemoteException e) {
+            Log.e(this, "Error on modifyCall().");
+        }
+    }
+
+    public void modifyCallConfirm(boolean responseType, int callId) {
+        if (mCommandService == null) {
+            Log.e(this, "Cannot modifyCallConfirm(); CallCommandService == null" + responseType);
+            return;
+        }
+        try {
+            Log.v(this, "modifyCallConfirm() ");
+            mCommandService.modifyCallConfirm(responseType, callId);
+        } catch (RemoteException e) {
+            Log.e(this, "Error on modifyCallConfirm().");
+        }
+    }
+
     public void setSystemBarNavigationEnabled(boolean enable) {
         if (mCommandService == null) {
             Log.e(this, "Cannot setSystemBarNavigationEnabled(); CallCommandService == null");
@@ -253,5 +308,34 @@ public class CallCommandClient {
         } catch (RemoteException e) {
             Log.e(this, "Error on blacklistAndHangup().", e);
         }
+    }
+
+    public void setActiveSubscription(int subscriptionId) {
+        Log.i(this, "set active sub = " + subscriptionId);
+        if (mCommandService == null) {
+            Log.e(this, "Cannot set active Sub; CallCommandService == null");
+            return;
+        }
+        try {
+            mCommandService.setActiveSubscription(subscriptionId);
+        } catch (RemoteException e) {
+            Log.e(this, "Error setActiveSub.", e);
+        }
+    }
+
+    public int getActiveSubscription() {
+        int subscriptionId = MSimConstants.INVALID_SUBSCRIPTION;
+
+        if (mCommandService == null) {
+            Log.e(this, "Cannot get active sub; CallCommandService == null");
+            return subscriptionId;
+        }
+        try {
+            subscriptionId = mCommandService.getActiveSubscription();
+        } catch (RemoteException e) {
+            Log.e(this, "Error getActiveSub.", e);
+        }
+        Log.i(this, "get active sub " + subscriptionId);
+        return subscriptionId;
     }
 }

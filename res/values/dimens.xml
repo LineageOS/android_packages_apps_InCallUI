@@ -61,6 +61,9 @@
          the prox sensor kick in.) -->
     <dimen name="button_cluster_side_padding">20dp</dimen>
 
+    <!-- Dimensions for DSDA switch tab -->
+    <dimen name="dsda_sub_icon_marginTop">14dp</dimen>
+    <dimen name="dsda_sub_text_marginTop">12dp</dimen>
 
     <!-- Dimensions for OTA Call Card -->
     <dimen name="otaactivate_layout_marginTop">10dp</dimen>
@@ -116,4 +119,6 @@
     <dimen name="glowpadview_margin_bottom">-113dip</dimen>
     <dimen name="glowpadview_margin_right">0dip</dimen>
 
+    <!-- Dimensions for Video Call Panel -->
+    <dimen name="indicator_bar_width">38dp</dimen>
 </resources>
