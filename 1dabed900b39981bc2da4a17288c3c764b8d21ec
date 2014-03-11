@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bae84128_ec64a94a",
+        "filename": "res/values-nl/cm_caf.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 7221
+      },
+      "writtenOn": "2014-03-11T00:50:15Z",
+      "side": 1,
+      "message": "Typo: \u0027link\u0027 -\u003e \u0027links\u0027",
+      "revId": "1dabed900b39981bc2da4a17288c3c764b8d21ec",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bae84128_0c60ed34",
+        "filename": "res/values-nl/cm_caf.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 7221
+      },
+      "writtenOn": "2014-03-11T00:50:15Z",
+      "side": 1,
+      "message": "Typo: \u0027rechtst\u0027 -\u003e \u0027rechts\u0027",
+      "revId": "1dabed900b39981bc2da4a17288c3c764b8d21ec",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
