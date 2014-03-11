@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "bae84128_079ba6ca",
+        "filename": "res/values-nl/cm_caf.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2014-03-11T10:27:37Z",
+      "side": 1,
+      "message": "pff stomme copy/paste fouten :)",
+      "parentUuid": "bae84128_ec994921",
+      "revId": "1dabed900b39981bc2da4a17288c3c764b8d21ec",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "bae84128_0c60ed34",
         "filename": "res/values-nl/cm_caf.xml",
         "patchSetId": 4
@@ -66,6 +84,24 @@
       "side": 1,
       "message": "+1",
       "parentUuid": "bae84128_0c60ed34",
+      "revId": "1dabed900b39981bc2da4a17288c3c764b8d21ec",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bae84128_e79fa2b2",
+        "filename": "res/values-nl/cm_caf.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2014-03-11T10:27:37Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "bae84128_4c9f9503",
       "revId": "1dabed900b39981bc2da4a17288c3c764b8d21ec",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
