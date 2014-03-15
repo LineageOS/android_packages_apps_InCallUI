@@ -374,7 +374,7 @@ public class CallCardPresenter extends Presenter<CallCardPresenter.CallCardUi>
 
         final boolean isGenericConf = isGenericConference(mPrimary);
         final boolean isForwarded = isForwarded(mPrimary);
-        final boolean isVideo = CallUtils.isVideoCall(mPrimary);
+        final boolean isVideo = mPrimary != null && CallUtils.isVideoCall(mPrimary);
         if (entry != null) {
             final String name = getNameForCall(entry);
             final String number = getNumberForCall(entry);
