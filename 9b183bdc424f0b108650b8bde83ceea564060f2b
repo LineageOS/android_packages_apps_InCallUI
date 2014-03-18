@@ -16,6 +16,24 @@
       "revId": "9b183bdc424f0b108650b8bde83ceea564060f2b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bae84128_deaa2019",
+        "filename": "src/com/android/incallui/ContactInfoCache.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 177,
+      "author": {
+        "id": 7003
+      },
+      "writtenOn": "2014-03-18T06:58:57Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "bae84128_9e3ff824",
+      "revId": "9b183bdc424f0b108650b8bde83ceea564060f2b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
