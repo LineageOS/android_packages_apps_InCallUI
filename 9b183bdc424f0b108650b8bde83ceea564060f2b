@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bae84128_9e3ff824",
+        "filename": "src/com/android/incallui/ContactInfoCache.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 177,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-03-18T03:45:21Z",
+      "side": 1,
+      "message": "100 chars",
+      "revId": "9b183bdc424f0b108650b8bde83ceea564060f2b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
