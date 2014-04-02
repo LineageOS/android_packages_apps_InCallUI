@@ -16,10 +16,10 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="incall_call_type_label_forwarded">Aangestuurde oproep</string>
-  <string name="card_title_dialing_waiting">Skakel (wag\u2026)</string>
-  <string name="card_title_waiting_call">Gewagde oproep</string>
-  <string name="onscreenBlacklistText">Swartlys</string>
-  <string name="blacklist_dialog_title">Voeg by swartlys</string>
-  <string name="blacklist_dialog_message">Toekomstige oproepe van <xliff:g id="number">%s</xliff:g> sal geblokkeer word</string>
+  <string name="incall_call_type_label_forwarded">Presmerovaný hovor</string>
+  <string name="card_title_dialing_waiting">Vytáčanie (čakanie\u2026)</string>
+  <string name="card_title_waiting_call">Čakajúci hovor</string>
+  <string name="onscreenBlacklistText">Čierna listina</string>
+  <string name="blacklist_dialog_title">Pridať na čiernu listinu</string>
+  <string name="blacklist_dialog_message">Budúce hovory z &lt;xliff:g id=\"number\"&gt;%s&lt;/xliff:g&gt; budú blokované</string>
 </resources>
