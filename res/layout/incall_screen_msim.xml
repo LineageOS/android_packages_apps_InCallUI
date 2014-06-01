@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (c) 2013 The Linux Foundation. All rights reserved.
-     Not a Contribution.
-
-     Copyright (C) 2007 The Android Open Source Project
-
+<!-- Copyright (C) 2007 The Android Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -18,24 +14,23 @@
      limitations under the License.
 -->
 
-<!-- In-call Phone UI; see InCallActivity.java. -->
+<!-- In-call Phone UI; see MsimInCallActivity.java. -->
 <FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/black"
     android:id="@+id/main">
 
-    <LinearLayout
+    <FrameLayout
         android:id="@+id/in_call_and_button_container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
         <RelativeLayout
              android:id="@+id/in_call_card_container"
              android:layout_width="match_parent"
-             android:layout_height="0dp"
-             android:layout_weight="1">
+             android:layout_height="match_parent">
 
             <fragment
                 android:name="com.android.incallui.CallCardFragment"
@@ -56,11 +51,13 @@
         <fragment android:name="com.android.incallui.CallButtonFragment"
                   android:id="@+id/callButtonFragment"
                   android:layout_width="match_parent"
-                  android:layout_height="wrap_content"/>
+                  android:layout_height="wrap_content"
+                  android:gravity="top"
+                  android:layout_gravity="bottom|center_horizontal"/>
 
-    </LinearLayout>
+    </FrameLayout>
 
-    <fragment android:name="com.android.incallui.MSimAnswerFragment"
+    <fragment android:name="com.android.incallui.MsimAnswerFragment"
               android:id="@+id/answerFragment"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"

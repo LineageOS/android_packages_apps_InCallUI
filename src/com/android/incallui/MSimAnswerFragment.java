@@ -22,13 +22,17 @@ package com.android.incallui;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
+import android.content.res.Configuration;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
 import android.view.WindowManager;
+import android.view.ViewGroup.MarginLayoutParams;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -102,6 +106,33 @@ public class MSimAnswerFragment extends BaseFragment<MSimAnswerPresenter,
 
     @Override
     public void showAnswerUi(boolean show) {
+        final Resources res = getResources();
+        boolean useTranslucentDecor = res.getBoolean(
+                com.android.internal.R.bool.config_enableTranslucentDecor);
+        Window window = getActivity().getWindow();
+        View primaryCard = window.getDecorView().findViewById(R.id.primary_call_banner);
+        if (useTranslucentDecor && primaryCard != null) {
+            // Adjust the top margin of the view to fit the statusbar in portrait orientation
+            Configuration configuration = res.getConfiguration();
+            if (configuration.orientation == Configuration.ORIENTATION_PORTRAIT) {
+                MarginLayoutParams params = ((MarginLayoutParams) primaryCard.getLayoutParams());
+                if (show) {
+                    params.topMargin = getResources().getDimensionPixelSize(
+                            com.android.internal.R.dimen.status_bar_height);
+                } else {
+                    params.topMargin = 0;
+                }
+            }
+
+            // And now set the window flags for translucent mode
+            if (show) {
+                window.addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS
+                        | WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
+            } else {
+                window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS
+                        | WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
+            }
+        }
         getView().setVisibility(show ? View.VISIBLE : View.GONE);
 
         Log.d(this, "Show answer UI: " + show);

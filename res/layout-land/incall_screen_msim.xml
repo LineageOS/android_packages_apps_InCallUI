@@ -14,7 +14,7 @@
      limitations under the License.
 -->
 
-<!-- In-call Phone UI; see InCallActivity.java. -->
+<!-- In-call Phone UI; see MsimInCallActivity.java. -->
 <FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -57,7 +57,7 @@
 
     </FrameLayout>
 
-    <fragment android:name="com.android.incallui.AnswerFragment"
+    <fragment android:name="com.android.incallui.MsimAnswerFragment"
               android:id="@+id/answerFragment"
               android:layout_width="wrap_content"
               android:layout_height="match_parent"
