@@ -15,66 +15,78 @@
 -->
 
 <!-- In-call Phone UI; see InCallActivity.java. -->
-<FrameLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/incall_button_background"
+    android:background="@android:color/black"
+    android:orientation="vertical"
     android:id="@+id/main">
 
-    <LinearLayout
-        android:id="@+id/in_call_and_button_container"
+    <View android:id="@+id/fullscreen_spacer"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="@*android:dimen/status_bar_height"
+        android:visibility="gone"/>
 
-        <RelativeLayout
-             android:id="@+id/in_call_card_container"
-             android:layout_width="match_parent"
-             android:layout_height="0dp"
-             android:layout_weight="1">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-            <fragment
-                android:name="com.android.incallui.CallCardFragment"
-                android:id="@+id/callCardFragment"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentStart="true" />
-            <fragment
-                android:name="com.android.incallui.DialpadFragment"
-                android:id="@+id/dialpadFragment"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentStart="true" />
-        </RelativeLayout>
+        <FrameLayout
+            android:id="@+id/in_call_and_button_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-        <fragment android:name="com.android.incallui.CallButtonFragment"
-                  android:id="@+id/callButtonFragment"
+            <RelativeLayout
+                 android:id="@+id/in_call_card_container"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent">
+
+                <fragment
+                    android:name="com.android.incallui.CallCardFragment"
+                    android:id="@+id/callCardFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
+                <fragment
+                    android:name="com.android.incallui.DialpadFragment"
+                    android:id="@+id/dialpadFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+
+            <fragment android:name="com.android.incallui.CallButtonFragment"
+                      android:id="@+id/callButtonFragment"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:gravity="top"
+                      android:layout_gravity="bottom|center_horizontal"/>
+
+        </FrameLayout>
+
+        <fragment android:name="com.android.incallui.AnswerFragment"
+                  android:id="@+id/answerFragment"
                   android:layout_width="match_parent"
-                  android:layout_height="wrap_content"/>
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentBottom="true"
+                  android:layout_centerHorizontal="true"
+                  android:gravity="top"
+                  android:layout_gravity="bottom|center_horizontal"
+                  android:layout_marginBottom="@dimen/glowpadview_margin_bottom"
+                  android:visibility="gone" />
 
-    </LinearLayout>
+        <fragment android:name="com.android.incallui.ConferenceManagerFragment"
+                  android:id="@+id/conferenceManagerFragment"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_alignParentTop="true"
+                  android:layout_alignParentStart="true"
+                  android:layout_alignParentBottom="true"
+                  android:layout_alignParentEnd="true" />
 
-    <fragment android:name="com.android.incallui.AnswerFragment"
-              android:id="@+id/answerFragment"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:layout_alignParentBottom="true"
-              android:layout_centerHorizontal="true"
-              android:gravity="top"
-              android:layout_gravity="bottom|center_horizontal"
-              android:layout_marginBottom="@dimen/glowpadview_margin_bottom"
-              android:visibility="gone" />
+    </FrameLayout>
 
-    <fragment android:name="com.android.incallui.ConferenceManagerFragment"
-              android:id="@+id/conferenceManagerFragment"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:layout_alignParentTop="true"
-              android:layout_alignParentStart="true"
-              android:layout_alignParentBottom="true"
-              android:layout_alignParentEnd="true" />
-
-</FrameLayout>
+</LinearLayout>
