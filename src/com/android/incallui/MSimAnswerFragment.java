@@ -28,6 +28,7 @@ import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
 import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -102,6 +103,20 @@ public class MSimAnswerFragment extends BaseFragment<MSimAnswerPresenter,
 
     @Override
     public void showAnswerUi(boolean show) {
+        boolean useTranslucentDecor = getResources().getBoolean(
+                com.android.internal.R.bool.config_enableTranslucentDecor);
+        if (useTranslucentDecor) {
+            Window window = getActivity().getWindow();
+            View spacer = window.getDecorView().findViewById(R.id.fullscreen_spacer);
+            if (spacer != null) {
+                spacer.setVisibility(show ? View.VISIBLE : View.GONE);
+            }
+            if (show) {
+                window.addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
+            } else {
+                window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
+            }
+        }
         getView().setVisibility(show ? View.VISIBLE : View.GONE);
 
         Log.d(this, "Show answer UI: " + show);
