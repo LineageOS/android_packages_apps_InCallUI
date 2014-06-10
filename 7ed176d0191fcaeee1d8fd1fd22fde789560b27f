@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da0c15f0_941d1912",
+        "filename": "res/layout/incall_screen_msim.xml",
+        "patchSetId": 7
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 3134
+      },
+      "writtenOn": "2014-06-10T00:29:03Z",
+      "side": 1,
+      "message": "Danny, if you\u0027ll submit a new patch for the dialer, please restore the caf credits i deleted by error.",
+      "revId": "7ed176d0191fcaeee1d8fd1fd22fde789560b27f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
