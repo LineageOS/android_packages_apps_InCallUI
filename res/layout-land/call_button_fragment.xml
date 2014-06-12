@@ -87,7 +87,7 @@
         <!-- Separator between 4th (or 5th) button and right padding -->
         <View style="@style/VerticalSeparator" />
 
-        <Button android:id="@+id/modifyCallButton"
+        <ImageButton android:id="@+id/modifyCallButton"
                     style="@style/InCallButton"
                     android:background="@drawable/btn_compound_vt"
                     android:contentDescription="@string/onscreenModifyCallText"
