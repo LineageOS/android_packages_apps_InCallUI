@@ -55,6 +55,8 @@ public class InCallActivity extends Activity {
 
     private static final int INVALID_RES_ID = -1;
 
+    private static final boolean USE_FULLSCREEN_CALLER_PHOTO = true;
+
     protected CallButtonFragment mCallButtonFragment;
     protected CallCardFragment mCallCardFragment;
     private AnswerFragment mAnswerFragment;
@@ -101,6 +103,10 @@ public class InCallActivity extends Activity {
         setContentView(R.layout.incall_screen);
 
         initializeInCall();
+
+        mCallButtonFragment.setHideMode(USE_FULLSCREEN_CALLER_PHOTO ? View.GONE : View.INVISIBLE);
+        mAnswerFragment.setUseTranslucentNavigationBar(USE_FULLSCREEN_CALLER_PHOTO);
+
         Log.d(this, "onCreate(): exit");
     }
 
@@ -409,7 +415,7 @@ public class InCallActivity extends Activity {
         if (mCallButtonFragment == null) {
             mCallButtonFragment = (CallButtonFragment) getFragmentManager()
                     .findFragmentById(R.id.callButtonFragment);
-            mCallButtonFragment.getView().setVisibility(View.GONE);
+            mCallButtonFragment.setEnabled(false, false);
         }
 
         if (mCallCardFragment == null) {
