@@ -65,6 +65,7 @@ public class CallHandlerService extends Service {
     private InCallPresenter mInCallPresenter;
     private AudioModeProvider mAudioModeProvider;
     private boolean mServiceStarted = false;
+    private int pendingEvent;
 
     private final String LOG_TAG = "CallHandlerService";
 
@@ -96,7 +97,6 @@ public class CallHandlerService extends Service {
         // itself down when it's ready. Start the destruction sequence.
         mMainHandler.sendMessage(mMainHandler.obtainMessage(ON_DESTROY));
     }
-
 
     @Override
     public IBinder onBind(Intent intent) {
@@ -130,9 +130,11 @@ public class CallHandlerService extends Service {
         public void onDisconnect(Call call) {
             try {
                 Log.i(TAG, "onDisconnected: " + call);
+                pendingEvent ++;
                 mMainHandler.sendMessage(mMainHandler.obtainMessage(ON_DISCONNECT_CALL, call));
             } catch (Exception e) {
                 Log.e(TAG, "Error processing onDisconnect() call.", e);
+                pendingEvent --;
             }
         }
 
@@ -153,9 +155,11 @@ public class CallHandlerService extends Service {
         public void onUpdate(List<Call> calls) {
             try {
                 Log.i(TAG, "onUpdate: " + calls);
+                pendingEvent ++;
                 mMainHandler.sendMessage(mMainHandler.obtainMessage(ON_UPDATE_MULTI_CALL, calls));
             } catch (Exception e) {
                 Log.e(TAG, "Error processing onUpdate() call.", e);
+                pendingEvent --;
             }
         }
 
@@ -310,6 +314,7 @@ public class CallHandlerService extends Service {
             case ON_UPDATE_MULTI_CALL:
                 Log.i(TAG, "ON_UPDATE_MULTI_CALL: " + msg.obj);
                 mCallList.onUpdate((List<Call>) msg.obj);
+                pendingEvent --;
                 break;
             case ON_UPDATE_CALL_WITH_TEXT_RESPONSES:
                 AbstractMap.SimpleEntry<Call, List<String>> entry
@@ -320,6 +325,7 @@ public class CallHandlerService extends Service {
             case ON_DISCONNECT_CALL:
                 Log.i(TAG, "ON_DISCONNECT_CALL: " + msg.obj);
                 mCallList.onDisconnect((Call) msg.obj);
+                pendingEvent --;
                 break;
             case ON_POST_CHAR_WAIT:
                 mInCallPresenter.onPostDialCharWait(msg.arg1, (String) msg.obj);
@@ -350,7 +356,15 @@ public class CallHandlerService extends Service {
                 doStart((ICallCommandService) msg.obj);
                 break;
             case ON_DESTROY:
-                doStop();
+                // unbind may be called by processUpdate/processDisconnect in
+                // CallHandlerServiceProxy, so need to ensure the calls not be cleared
+                // before the request finished
+                Log.i(TAG, "ON_DESTROY, pendingEvent " + pendingEvent);
+                if (pendingEvent <= 0) {
+                    doStop();
+                } else {
+                    mMainHandler.sendMessage(mMainHandler.obtainMessage(ON_DESTROY));
+                }
                 break;
             case ON_UNSOL_CALLMODIFY:
                 Call call = (Call) msg.obj;
