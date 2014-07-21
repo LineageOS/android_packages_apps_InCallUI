@@ -415,7 +415,7 @@ public class InCallPresenter implements CallList.Listener {
     /**
      * Given the call list, return the state in which the in-call screen should be.
      */
-    public static InCallState getPotentialStateFromCallList(CallList callList) {
+    public InCallState getPotentialStateFromCallList(CallList callList) {
 
         InCallState newState = InCallState.NO_CALLS;
 
@@ -427,10 +427,11 @@ public class InCallPresenter implements CallList.Listener {
         } else if (callList.getOutgoingCall() != null) {
             newState = InCallState.OUTGOING;
         } else if (callList.getActiveCall() != null ||
-                callList.getBackgroundCall() != null ||
-                callList.getDisconnectedCall() != null ||
-                callList.getDisconnectingCall() != null) {
+                callList.getBackgroundCall() != null) {
             newState = InCallState.INCALL;
+        } else if (callList.getDisconnectedCall() != null ||
+                callList.getDisconnectingCall() != null) {
+            newState = mInCallState;
         }
 
         return newState;
