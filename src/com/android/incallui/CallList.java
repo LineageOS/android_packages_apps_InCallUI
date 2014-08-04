@@ -30,6 +30,7 @@ import com.android.services.telephony.common.Call;
 import com.android.services.telephony.common.Call.DisconnectCause;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Set;
@@ -623,6 +624,10 @@ public class CallList {
             }
         }
         return retval;
+    }
+
+    public Collection<Call> getCalls() {
+        return mCallMap.values();
     }
 
     public void addActiveSubChangeListener(ActiveSubChangeListener listener) {

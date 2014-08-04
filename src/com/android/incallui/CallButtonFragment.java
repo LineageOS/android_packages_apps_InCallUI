@@ -35,8 +35,10 @@ import android.widget.PopupMenu.OnDismissListener;
 import android.widget.PopupMenu.OnMenuItemClickListener;
 import android.widget.ToggleButton;
 
+import com.android.callrecorder.CallRecorder;
 import com.android.internal.telephony.util.BlacklistUtils;
 import com.android.services.telephony.common.AudioMode;
+import com.android.services.telephony.common.Call;
 
 /**
  * Fragment for call control buttons
@@ -56,6 +58,7 @@ public class CallButtonFragment
     private ImageButton mBlacklistButton;
     private ImageButton mAddParticipantButton;
     private ImageButton mModifyCallButton;
+    private CallRecordingButton mRecordButton;
 
     private PopupMenu mAudioModePopup;
     private boolean mAudioModePopupVisible;
@@ -165,6 +168,13 @@ public class CallButtonFragment
 
         mModifyCallButton = (ImageButton) parent.findViewById(R.id.modifyCallButton);
         mModifyCallButton.setOnClickListener(this);
+
+        mRecordButton = (CallRecordingButton)parent.findViewById(R.id.recordButton);
+        if (CallRecorder.isEnabled()) {
+            mRecordButton.setVisibility(View.VISIBLE);
+            mRecordButton.setEnabled(false);
+            mRecordButton.setOnClickListener(mRecordButton);
+        }
 
         return parent;
     }

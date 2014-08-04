@@ -27,6 +27,9 @@
     <!-- Text for the onscreen "Blacklist" button -->
     <string name="onscreenBlacklistText">Blacklist</string>
 
+    <!-- Text for in call recording action -->
+    <string name="onscreenRecordText">Start/Stop Recording</string>
+
     <!-- Blacklist confirmation dialog -->
     <string name="blacklist_dialog_title">Add to blacklist</string>
     <string name="blacklist_dialog_message">Future calls from <xliff:g id="number">%s</xliff:g> will be blocked</string>
@@ -34,4 +37,6 @@
     <!-- CallCardFragement operator names -->
     <string name="sub_no_sim">No SIM</string>
     <string name="multi_sim_entry_format" translatable="false"><xliff:g id="operator">%1$s</xliff:g>-<xliff:g id="index">%2$d</xliff:g></string>
+
+    <string name="call_recording_failed_message">Failed to start call recording</string>
 </resources>

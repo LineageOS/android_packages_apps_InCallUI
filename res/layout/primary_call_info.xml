@@ -43,7 +43,7 @@
 
     <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical"
             android:background="@color/incall_call_banner_background"
             android:fitsSystemWindows="true">
@@ -198,6 +198,23 @@
                       android:background="@android:color/transparent"
                       android:singleLine="true"
                       android:ellipsize="end"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/call_recording_timer_container"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal|center_vertical">
+
+
+            <TextView android:id="@+id/callRecordingTimer"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textStyle="bold"
+                      android:textColor="@color/recording_progress_text_color"
+                      android:textSize="@dimen/recording_progress_text_size"
+                      android:visibility="gone"/>
+
         </LinearLayout>
 
         <!-- Layout to replace the InCallContactPhoto with the video call panel
