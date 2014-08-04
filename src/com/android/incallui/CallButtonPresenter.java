@@ -26,7 +26,6 @@ import com.android.incallui.InCallPresenter.InCallStateListener;
 import com.android.incallui.InCallPresenter.IncomingCallListener;
 import com.android.services.telephony.common.AudioMode;
 import com.android.services.telephony.common.Call;
-import com.android.services.telephony.common.CallDetails;
 import com.android.services.telephony.common.Call.Capabilities;
 
 import android.app.AlertDialog;
@@ -369,6 +368,7 @@ public class CallButtonPresenter extends Presenter<CallButtonPresenter.CallButto
             mShowManageConference = (call.isConferenceCall() && !isGenericConference);
 
             updateExtraButtonRow();
+            ui.enableRecording(CallList.getInstance().getActiveCall() != null);
         }
     }
 
@@ -414,6 +414,7 @@ public class CallButtonPresenter extends Presenter<CallButtonPresenter.CallButto
         void showAddCall(boolean show);
         void enableAddCall(boolean enabled);
         void enableAddParticipant(boolean show);
+        void enableRecording(boolean enabled);
         void displayDialpad(boolean on);
         boolean isDialpadVisible();
         void setAudio(int mode);
