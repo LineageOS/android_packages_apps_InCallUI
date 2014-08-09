@@ -2,6 +2,40 @@
   "comments": [
     {
       "key": {
+        "uuid": "9a061dce_55b09bf4",
+        "filename": "res/layout/primary_call_info.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-08-09T07:03:07Z",
+      "side": 1,
+      "message": "This causes the semi transparent background to span the whole caller photo, which looks ugly. The background property should probably be pulled out of this one and put one level below.",
+      "revId": "db7a665a10345ec3445b692dd5597aabc8965e14",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a061dce_b595b741",
+        "filename": "res/layout/primary_call_info.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 208,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-08-09T07:03:07Z",
+      "side": 1,
+      "message": "Useless newline here. Also the wrapping container is AFAICT unneeded, setting the TextView to match_parent (or height 0/weight 1) and center gravity should be sufficient.",
+      "revId": "db7a665a10345ec3445b692dd5597aabc8965e14",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9a061dce_d21de1be",
         "filename": "src/com/android/callrecorder/CallRecorder.java",
         "patchSetId": 4
