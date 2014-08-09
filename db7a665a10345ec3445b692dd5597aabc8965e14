@@ -16,6 +16,24 @@
       "revId": "db7a665a10345ec3445b692dd5597aabc8965e14",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a061dce_f5e72f3e",
+        "filename": "src/com/android/callrecorder/CallRecorder.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 1448
+      },
+      "writtenOn": "2014-08-09T04:28:39Z",
+      "side": 1,
+      "message": "Yeah, that is probably a better way. I think we should also keep the property as a simple way to enable it for debug/testing purposes.",
+      "parentUuid": "9a061dce_d21de1be",
+      "revId": "db7a665a10345ec3445b692dd5597aabc8965e14",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
