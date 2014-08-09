@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a061dce_7535df44",
+        "filename": "res/values/cm_strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2014-08-09T09:13:48Z",
+      "side": 1,
+      "message": "Wouldn\u0027t it be better if Start and Stop are two different strings, depending on recording state?",
+      "revId": "453d62251fdee6f3982252b47ebddbf0dc621728",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
