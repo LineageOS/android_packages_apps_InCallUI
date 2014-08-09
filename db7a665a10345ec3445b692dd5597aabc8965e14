@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "9a061dce_352b67ed",
+        "filename": "res/layout/primary_call_info.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 10293
+      },
+      "writtenOn": "2014-08-09T09:13:40Z",
+      "side": 1,
+      "message": "moved the background into an inner container with wrap_content",
+      "parentUuid": "9a061dce_55b09bf4",
+      "revId": "db7a665a10345ec3445b692dd5597aabc8965e14",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9a061dce_b595b741",
         "filename": "res/layout/primary_call_info.xml",
         "patchSetId": 4
@@ -30,6 +48,24 @@
       "writtenOn": "2014-08-09T07:03:07Z",
       "side": 1,
       "message": "Useless newline here. Also the wrapping container is AFAICT unneeded, setting the TextView to match_parent (or height 0/weight 1) and center gravity should be sufficient.",
+      "revId": "db7a665a10345ec3445b692dd5597aabc8965e14",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a061dce_1530e355",
+        "filename": "res/layout/primary_call_info.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 208,
+      "author": {
+        "id": 10293
+      },
+      "writtenOn": "2014-08-09T09:13:40Z",
+      "side": 1,
+      "message": "got rid of container layout",
+      "parentUuid": "9a061dce_b595b741",
       "revId": "db7a665a10345ec3445b692dd5597aabc8965e14",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
