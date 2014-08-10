@@ -671,8 +671,7 @@ public class InCallActivity extends Activity {
         Log.d(this, "maybeShowErrorDialogOnDisconnect: Call=" + call);
 
         if (!isFinishing() && call != null) {
-            final int resId = getResIdForDisconnectCause(call.getDisconnectCause(),
-                    call.getSuppServNotification());
+            final int resId = getResIdForDisconnectCause(call);
             if (resId != INVALID_RES_ID) {
                 showErrorDialog(resId);
             }
@@ -775,26 +774,14 @@ public class InCallActivity extends Activity {
         mDialog.show();
     }
 
-    private int getResIdForDisconnectCause(Call.DisconnectCause cause,
-            Call.SsNotification notification) {
+    private int getResIdForDisconnectCause(Call call) {
+        Call.DisconnectCause cause = call.getDisconnectCause();
         int resId = INVALID_RES_ID;
 
-        if (cause == Call.DisconnectCause.INCOMING_MISSED) {
-            // If the network sends SVC Notification then this dialog will be displayed
-            // in case of B when the incoming call at B is not answered and gets forwarded
-            // to C
-            if (notification != null && notification.notificationType == 1 &&
-                    notification.code ==
-                    Call.SsNotification.MT_CODE_ADDITIONAL_CALL_FORWARDED) {
-                resId = R.string.callUnanswered_forwarded;
-            }
-        } else if (cause == Call.DisconnectCause.CALL_BARRED) {
+        if (cause == Call.DisconnectCause.CALL_BARRED) {
             // When call is disconnected with this code then it can either be barring from
             // MO side or MT side.
-            // In MT case, if network sends SVC Notification then this dialog will be
-            // displayed when A is calling B & incoming is barred on B.
-            if (notification != null && notification.notificationType == 0 &&
-                    notification.code == Call.SsNotification.MO_CODE_INCOMING_CALLS_BARRED) {
+            if (call.isRemoteIncomingCallBarringEnabled()) {
                 resId = R.string.callFailed_incoming_cb_enabled;
             } else {
                 resId = R.string.callFailed_cb_enabled;
@@ -813,6 +800,8 @@ public class InCallActivity extends Activity {
             resId = R.string.callFailed_dialToSs;
         } else if (cause == Call.DisconnectCause.DIAL_MODIFIED_TO_DIAL) {
             resId = R.string.callFailed_dialToDial;
+        } else if (call.wasAdditionalCallForwarded()) {
+            resId = R.string.callUnanswered_forwarded;
         }
 
         return resId;
