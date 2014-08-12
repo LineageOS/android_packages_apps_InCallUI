@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a061dce_617361b2",
+        "filename": "src/com/android/incallui/CallButtonFragment.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 10293
+      },
+      "writtenOn": "2014-08-12T10:00:40Z",
+      "side": 1,
+      "message": "I don\u0027t think getActivity will return a valid result here.  Since this is called from the constructor, onAttach has not been called yet.",
+      "revId": "4e1b56684069b0b7d536ed8d7d434f74f07387d5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
