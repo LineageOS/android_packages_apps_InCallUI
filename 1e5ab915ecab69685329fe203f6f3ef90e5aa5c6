@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7a1b2928_20822301",
+        "filename": "src/com/android/incallui/InCallActivity.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 152,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-08-20T20:02:43Z",
+      "side": 0,
+      "message": "Why did you remove this?",
+      "revId": "1e5ab915ecab69685329fe203f6f3ef90e5aa5c6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}

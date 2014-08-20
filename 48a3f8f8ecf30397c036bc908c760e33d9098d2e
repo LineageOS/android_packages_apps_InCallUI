@@ -1,0 +1,89 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7a1b2928_e0878b10",
+        "filename": "src/com/android/incallui/InCallActivity.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-08-20T20:02:43Z",
+      "side": 1,
+      "message": "Please put those below to the other android.* imports. (Yes, the import order doesn\u0027t follow the guidelines here)",
+      "revId": "48a3f8f8ecf30397c036bc908c760e33d9098d2e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a1b2928_c08c0f38",
+        "filename": "src/com/android/incallui/InCallActivity.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 101,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-08-20T20:02:43Z",
+      "side": 1,
+      "message": "if (",
+      "revId": "48a3f8f8ecf30397c036bc908c760e33d9098d2e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a1b2928_607c1b21",
+        "filename": "src/com/android/incallui/InCallActivity.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 178,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-08-20T20:02:43Z",
+      "side": 1,
+      "message": "I\u0027d prefer this to happen only for smart cover enabled devices, IOW devices where mCoverWindowCoords is valid.",
+      "revId": "48a3f8f8ecf30397c036bc908c760e33d9098d2e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a1b2928_00872710",
+        "filename": "src/com/android/incallui/InCallActivity.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 485,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-08-20T20:02:43Z",
+      "side": 1,
+      "message": "if (\n\nAnd this check should probably be put in onCreate()",
+      "revId": "48a3f8f8ecf30397c036bc908c760e33d9098d2e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a1b2928_40791f2f",
+        "filename": "src/com/android/incallui/InCallActivity.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 492,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-08-20T20:02:43Z",
+      "side": 1,
+      "message": "Those lines - AFAICT - can be combined into one.",
+      "revId": "48a3f8f8ecf30397c036bc908c760e33d9098d2e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
