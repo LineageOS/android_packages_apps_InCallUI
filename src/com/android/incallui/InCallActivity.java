@@ -107,11 +107,6 @@ public class InCallActivity extends Activity {
         }
     };
 
-    // This enum maps to Phone.SuppService defined in telephony
-    private enum SuppService {
-        UNKNOWN, SWITCH, SEPARATE, TRANSFER, CONFERENCE, REJECT, HANGUP;
-    }
-
     @Override
     protected void onCreate(Bundle icicle) {
         Log.d(this, "onCreate()...  this = " + this);
