@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7a1b2928_f92bbd31",
+        "filename": "src/com/android/incallui/CallList.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 117,
+      "author": {
+        "id": 10293
+      },
+      "writtenOn": "2014-08-29T05:22:00Z",
+      "side": 1,
+      "message": "can delete this if statement if we are going to always setActiveSubscription",
+      "revId": "45f999ffdbd426b5d49ddd3b140bd3c791458771",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
