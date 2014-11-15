@@ -386,16 +386,17 @@ public final class Call {
 
     public long getSubId() {
         PhoneAccountHandle ph = getAccountHandle();
-        if (ph != null) {
-            if (ph.getId() != null && !ph.getId().toLowerCase().contains("sip")
-                    && !ph.getId().equals("E")) {
-                return Long.parseLong(getAccountHandle().getId());
-            } else {
-                return SubscriptionManager.getDefaultVoiceSubId();
-            }
-        } else {
+        if (ph == null) {
             return SubscriptionManager.INVALID_SUB_ID;
         }
+        if (ph.getId() != null) {
+            try {
+                return Long.parseLong(getAccountHandle().getId());
+            } catch (NumberFormatException e) {
+                // fall through
+            }
+        }
+        return SubscriptionManager.getDefaultVoiceSubId();
     }
 
     public VideoCall getVideoCall() {
