@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "dab17558_94d7ea22",
+        "filename": "src/com/android/incallui/ConferenceManagerPresenter.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 93,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2014-11-20T10:34:54Z",
+      "side": 1,
+      "message": "Code is pretty self-explanatory without this comment. Up to you if you want to remove it though.",
+      "revId": "70be315247d92cc8f30d0e9e7a984a0e52cd233a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
