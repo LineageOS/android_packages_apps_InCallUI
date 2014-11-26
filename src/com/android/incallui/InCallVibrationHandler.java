@@ -74,7 +74,7 @@ public class InCallVibrationHandler extends Handler implements
 					if (mPrefs.getBoolean(KEY_VIBRATE_45SECS, false)) {
 						start45SecondVibration(durationMillis);
 					}
-				} else if (mPrefs.getBoolean(KEY_VIBRATE_OUTGOING, false) && durationMillis < 200) {
+				} else if (mPrefs.getBoolean(KEY_VIBRATE_OUTGOING, false)) {
 						vibrate(50, 100, 50);
 				}
             }
