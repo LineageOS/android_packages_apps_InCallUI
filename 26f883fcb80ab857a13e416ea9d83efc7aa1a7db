@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bab6814e_f0ec7591",
+        "filename": "src/com/android/incallui/InCallVibrationHandler.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-11-26T22:59:37Z",
+      "side": 1,
+      "message": "This won\u0027t be called if mActiveCall !\u003d null -\u003e bug",
+      "revId": "26f883fcb80ab857a13e416ea9d83efc7aa1a7db",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
