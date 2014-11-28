@@ -63,7 +63,7 @@ public class InCallVibrationHandler extends Handler implements
 
         if (newState == InCallState.INCALL) {
             mActiveCall = callList.getActiveCall();
-            if (oldState == InCallState.PENDING_OUTGOING || oldState == InCallState.OUTGOING) {
+            if (mActiveCall != null && (oldState == InCallState.PENDING_OUTGOING || oldState == InCallState.OUTGOING)) {
                 long durationMillis = System.currentTimeMillis() - mActiveCall.getConnectTimeMillis();
                 Log.d(this, "duration is " + durationMillis);
 
