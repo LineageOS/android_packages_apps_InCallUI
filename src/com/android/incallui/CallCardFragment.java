@@ -648,10 +648,7 @@ public class CallCardFragment extends BaseFragment<CallCardPresenter, CallCardPr
                 }
             }
         } else {
-            Animation callStateLabelAnimation = mCallStateLabel.getAnimation();
-            if (callStateLabelAnimation != null) {
-                callStateLabelAnimation.cancel();
-            }
+            mCallStateLabel.clearAnimation();
             mCallStateLabel.setText(null);
             mCallStateLabel.setAlpha(0);
             mCallStateLabel.setVisibility(View.GONE);
