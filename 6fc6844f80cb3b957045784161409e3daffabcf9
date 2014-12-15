@@ -1,0 +1,89 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7aa08908_435e6446",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 580,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-12-15T02:31:49Z",
+      "side": 1,
+      "message": "Call resumed",
+      "revId": "6fc6844f80cb3b957045784161409e3daffabcf9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7aa08908_235b5856",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 582,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-12-15T02:31:49Z",
+      "side": 1,
+      "message": "Call audio suspended",
+      "revId": "6fc6844f80cb3b957045784161409e3daffabcf9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7aa08908_83584c58",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 584,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-12-15T02:31:49Z",
+      "side": 1,
+      "message": "Call video suspended",
+      "revId": "6fc6844f80cb3b957045784161409e3daffabcf9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7aa08908_6355601c",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 586,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-12-15T02:31:49Z",
+      "side": 1,
+      "message": "WTF is this, and how is the user supposed to know?",
+      "revId": "6fc6844f80cb3b957045784161409e3daffabcf9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7aa08908_e348308a",
+        "filename": "src/com/android/incallui/VideoCallFragment.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 620,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-12-15T02:31:49Z",
+      "side": 1,
+      "message": "int substateToastResId \u003d 0;\n\nswitch (callSubstate) {\n    case Connection.CALL_SUBSTATE_NONE:\n        substateToastResId \u003d R.string.call_substate_call_resumed;\n        break;\n[...]\n}\n\nif (substateToastResId !\u003d 0) {\n    Toast.makeText(context, getString(substateToastResId), Toast.LENGTH_SHORT).show();\n}\n\n\nSrsly, why are they overcomplicating everything? :-(",
+      "revId": "6fc6844f80cb3b957045784161409e3daffabcf9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
