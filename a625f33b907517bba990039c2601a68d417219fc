@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7aa08908_b503ff0c",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 307,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-12-15T02:45:42Z",
+      "side": 1,
+      "message": "Maybe \u0027TTY mode needs to be disabled to use video calls\u0027?",
+      "revId": "a625f33b907517bba990039c2601a68d417219fc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
