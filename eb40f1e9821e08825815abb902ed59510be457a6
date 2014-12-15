@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7aa08908_23099832",
+        "filename": "src/com/android/incallui/VideoCallFragment.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 736,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-12-15T02:44:07Z",
+      "side": 1,
+      "message": "No. Just no. We don\u0027t throw debug information into the UI.",
+      "revId": "eb40f1e9821e08825815abb902ed59510be457a6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
