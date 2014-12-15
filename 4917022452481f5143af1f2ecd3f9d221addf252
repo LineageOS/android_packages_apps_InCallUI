@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7aa08908_f50d8738",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 121,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-12-15T02:46:41Z",
+      "side": 1,
+      "message": "Video call (paused)",
+      "revId": "4917022452481f5143af1f2ecd3f9d221addf252",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
