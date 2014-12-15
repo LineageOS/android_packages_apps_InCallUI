@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7aa08908_033bbcec",
+        "filename": "src/com/android/incallui/StatusBarNotifier.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 318,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-12-15T02:34:14Z",
+      "side": 1,
+      "message": "This kinda duplicates lines 281 to 285 in a different way. Not sure which one is better, but in any case this code should be present only once.",
+      "revId": "f6c312b5afcc781ad0a16da0666c3399599c0695",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
