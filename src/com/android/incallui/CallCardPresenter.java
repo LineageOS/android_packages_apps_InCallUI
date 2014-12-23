@@ -511,7 +511,8 @@ public class CallCardPresenter extends Presenter<CallCardPresenter.CallCardUi>
                     null /* label */,
                     getConferencePhoto(mPrimary),
                     false /* isSipCall */,
-                    isForwarded);
+                    isForwarded,
+                    null, null, null, null);
         } else if (mPrimaryContactInfo != null) {
             Log.d(TAG, "Update primary display info for " + mPrimaryContactInfo);
 
@@ -525,10 +526,14 @@ public class CallCardPresenter extends Presenter<CallCardPresenter.CallCardUi>
                     mPrimaryContactInfo.label,
                     mPrimaryContactInfo.photo,
                     mPrimaryContactInfo.isSipCall,
-                    isForwarded);
+                    isForwarded,
+                    mPrimaryContactInfo.nickName,
+                    mPrimaryContactInfo.organization,
+                    mPrimaryContactInfo.position,
+                    mPrimaryContactInfo.city);
         } else {
             // Clear the primary display info.
-            ui.setPrimary(null, null, false, null, null, false, false);
+            ui.setPrimary(null, null, false, null, null, false, false, null, null, null, null));
         }
     }
 
@@ -820,7 +825,8 @@ public class CallCardPresenter extends Presenter<CallCardPresenter.CallCardUi>
         void setVisible(boolean on);
         void setCallCardVisible(boolean visible);
         void setPrimary(String number, String name, boolean nameIsNumber, String label,
-                Drawable photo, boolean isSipCall, boolean isForwarded);
+                Drawable photo, boolean isSipCall, boolean isForwarded,
+                String nickName, String organization, String position, String city);
         void setSecondary(boolean show, String name, boolean nameIsNumber, String label,
                 String providerLabel, Drawable providerIcon, boolean isConference);
         void setCallState(int state, int videoState, int sessionModificationState,
