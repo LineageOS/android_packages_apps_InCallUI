@@ -17,6 +17,8 @@
 package com.android.incallui;
 
 import android.content.Context;
+import android.content.SharedPreferences;
+import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
@@ -26,6 +28,7 @@ import android.provider.ContactsContract.Contacts;
 import android.provider.ContactsContract.CommonDataKinds.Phone;
 import android.telecom.TelecomManager;
 import android.text.TextUtils;
+import android.preference.PreferenceManager;
 
 import com.android.contacts.common.util.PhoneNumberHelper;
 import com.android.incallui.service.PhoneNumberService;
@@ -39,6 +42,9 @@ import com.google.common.base.Preconditions;
 import java.util.HashMap;
 import java.util.Set;
 
+import android.provider.ContactsContract;
+import android.provider.ContactsContract.CommonDataKinds;
+
 /**
  * Class responsible for querying Contact Information for Call objects. Can perform asynchronous
  * requests to the Contact Provider for information as well as respond synchronously for any data
@@ -49,11 +55,13 @@ public class ContactInfoCache implements ContactsAsyncHelper.OnImageLoadComplete
 
     private static final String TAG = ContactInfoCache.class.getSimpleName();
     private static final int TOKEN_UPDATE_PHOTO_FOR_CALL_STATE = 0;
+    private static final String KEY_DETAILED_INFO = "detailed_incall_info";
 
     private final Context mContext;
     private final PhoneNumberService mPhoneNumberService;
     private final HashMap<String, ContactCacheEntry> mInfoMap = Maps.newHashMap();
     private final HashMap<String, Set<ContactInfoCacheCallback>> mCallBacks = Maps.newHashMap();
+    private static SharedPreferences mPrefs;
 
     private static ContactInfoCache sCache = null;
 
@@ -67,6 +75,7 @@ public class ContactInfoCache implements ContactsAsyncHelper.OnImageLoadComplete
     private ContactInfoCache(Context context) {
         mContext = context;
         mPhoneNumberService = ServiceFactory.newPhoneNumberService(context);
+        mPrefs = PreferenceManager.getDefaultSharedPreferences(context);
     }
 
     public ContactCacheEntry getInfo(String callId) {
@@ -456,6 +465,10 @@ public class ContactInfoCache implements ContactsAsyncHelper.OnImageLoadComplete
         cce.location = displayLocation;
         cce.label = label;
         cce.isSipCall = isSipCall;
+
+        if (isIncoming && mPrefs.getBoolean(KEY_DETAILED_INFO, false)) {
+            getDetailedInfo(info.contactIdOrZero, cce, context);
+        }
     }
 
     /**
@@ -504,12 +517,53 @@ public class ContactInfoCache implements ContactsAsyncHelper.OnImageLoadComplete
         public void onImageLoadComplete(String callId, ContactCacheEntry entry);
     }
 
+    private static void getDetailedInfo(final long contactId, ContactCacheEntry cce, Context context) {
+        final String[] projection = new String[] {
+                ContactsContract.Data.MIMETYPE,
+                CommonDataKinds.Nickname.NAME,
+                CommonDataKinds.Organization.COMPANY,
+                CommonDataKinds.Organization.TITLE,
+                CommonDataKinds.StructuredPostal.CITY
+        };
+        final String where = ContactsContract.Data.CONTACT_ID + " = " + contactId;
+        Cursor cursor = context.getContentResolver().query(
+                ContactsContract.Data.CONTENT_URI, projection, where, null, null);
+        String nickName = null, organization = null, position = null, city = null;
+        if (cursor != null) {
+            for (boolean valid = cursor.moveToFirst(); valid; valid = cursor.moveToNext()) {
+                final String mimeType = cursor.getString(0);
+                organization = cursor.getString(cursor.getColumnIndex(CommonDataKinds.Organization.COMPANY));
+                position = cursor.getString(cursor.getColumnIndex(CommonDataKinds.Organization.TITLE));
+                nickName = cursor.getString(cursor.getColumnIndex(CommonDataKinds.Nickname.NAME));
+                city = cursor.getString(cursor.getColumnIndex(CommonDataKinds.StructuredPostal.CITY));
+
+                if (TextUtils.equals(mimeType, CommonDataKinds.Organization.CONTENT_ITEM_TYPE) && organization != null) {
+                    cce.organization = organization;
+                }
+                if (TextUtils.equals(mimeType, CommonDataKinds.Organization.CONTENT_ITEM_TYPE) && position != null) {
+                    cce.position = position;
+                }
+                if (TextUtils.equals(mimeType, CommonDataKinds.Nickname.CONTENT_ITEM_TYPE) && nickName != null) {
+                    cce.nickName = nickName;
+                }
+                if (TextUtils.equals(mimeType, CommonDataKinds.StructuredPostal.CONTENT_ITEM_TYPE) && city != null) {
+                    cce.city = city;
+                }
+            }
+            cursor.close();
+        }
+    }
+
     public static class ContactCacheEntry {
         public String name;
         public String number;
         public String location;
         public String label;
         public Drawable photo;
+        public String nickName;
+        public String organization;
+        public String position;
+        public String city;
         public boolean isSipCall;
         /** This will be used for the "view" notification. */
         public Uri contactUri;

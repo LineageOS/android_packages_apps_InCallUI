@@ -111,6 +111,11 @@ public class CallCardFragment extends BaseFragment<CallCardPresenter, CallCardPr
     private int mVBToastPosition;
     private TextView mRecordingTimeLabel;
     private TextView mRecordingIcon;
+    private View mDetailedCallInfo;
+    private TextView mNickName;
+    private TextView mOrganization;
+    private TextView mPosition;
+    private TextView mCity;
 
     // Secondary caller info
     private View mSecondaryCallInfo;
@@ -302,6 +307,12 @@ public class CallCardFragment extends BaseFragment<CallCardPresenter, CallCardPr
         }
         mRecordingTimeLabel = (TextView) view.findViewById(R.id.recordingTime);
         mRecordingIcon = (TextView) view.findViewById(R.id.recordingIcon);
+
+        mDetailedCallInfo = view.findViewById(R.id.detailedCallInfo);
+        mNickName = (TextView) view.findViewById(R.id.nickName);
+        mPosition = (TextView) view.findViewById(R.id.position);
+        mOrganization = (TextView) view.findViewById(R.id.organization);
+        mCity = (TextView) view.findViewById(R.id.city);
     }
 
     @Override
@@ -493,7 +504,8 @@ public class CallCardFragment extends BaseFragment<CallCardPresenter, CallCardPr
 
     @Override
     public void setPrimary(String number, String name, boolean nameIsNumber, String label,
-            Drawable photo, boolean isSipCall, boolean isForwarded) {
+            Drawable photo, boolean isSipCall, boolean isForwarded,
+            String nickName, String organization, String position, String city) {
         Log.d(this, "Setting primary call");
 
         // set the name field.
@@ -513,6 +525,8 @@ public class CallCardFragment extends BaseFragment<CallCardPresenter, CallCardPr
         showCallTypeLabel(isSipCall, isForwarded);
 
         setDrawableToImageView(mPhoto, photo);
+
+        setDetailedInfo(nickName, organization, position, city);
     }
 
     @Override
@@ -728,6 +742,7 @@ public class CallCardFragment extends BaseFragment<CallCardPresenter, CallCardPr
                 } else if (isWaitingForRemoteSide) {
                     callStateLabel = context.getString(R.string.card_title_waiting_call);
                 }
+                mDetailedCallInfo.setVisibility(View.GONE);
                 break;
             case Call.State.ONHOLD:
                 callStateLabel = context.getString(R.string.card_title_on_hold);
@@ -1321,5 +1336,39 @@ public class CallCardFragment extends BaseFragment<CallCardPresenter, CallCardPr
             }
             return true;
         }
+    }
+
+    private void setDetailedInfo(String nickName, String organization, String position, String city) {
+        boolean show = false;
+        if (!TextUtils.isEmpty(nickName)) {
+            show = true;
+            mNickName.setText(nickName);
+            mNickName.setVisibility(View.VISIBLE);
+        } else {
+            mNickName.setVisibility(View.GONE);
+        }
+        if (!TextUtils.isEmpty(organization)) {
+            show = true;
+            mOrganization.setText(organization);
+            mOrganization.setVisibility(View.VISIBLE);
+        } else {
+            mOrganization.setVisibility(View.GONE);
+        }
+        if (!TextUtils.isEmpty(position)) {
+            show = true;
+            mPosition.setText(position);
+            mPosition.setVisibility(View.VISIBLE);
+        } else {
+            mPosition.setVisibility(View.GONE);
+        }
+        if (!TextUtils.isEmpty(city)) {
+            show = true;
+            mCity.setText(city);
+            mCity.setVisibility(View.VISIBLE);
+        } else {
+            mCity.setVisibility(View.GONE);
+        }
+
+        mDetailedCallInfo.setVisibility(show ? View.VISIBLE : View.GONE);
     }
 }
