@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7aa08908_e65e6244",
+        "filename": "res/layout/call_card_content.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 148,
+      "author": {
+        "id": 3330
+      },
+      "writtenOn": "2014-12-28T05:15:55Z",
+      "side": 1,
+      "message": "There have to be some overlay during incoming call that makes contacts info text not 100% white - its over all contact photo, but I didn\u0027t investigate what is that.",
+      "revId": "de6b06fcfc408df3517fec189b2a4d47618b4034",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
