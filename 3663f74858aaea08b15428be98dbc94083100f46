@@ -53,6 +53,24 @@
     },
     {
       "key": {
+        "uuid": "7aa08908_fc6272d7",
+        "filename": "src/com/android/incallui/ContactInfoCache.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 469,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-12-29T23:41:17Z",
+      "side": 1,
+      "message": "Or maybe even move the check to CallCardFragment, as that one makes various other policy decisions regarding showing views a well.",
+      "parentUuid": "7aa08908_fc4b9257",
+      "revId": "3663f74858aaea08b15428be98dbc94083100f46",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7aa08908_9c3eceb6",
         "filename": "src/com/android/incallui/ContactInfoCache.java",
         "patchSetId": 3
@@ -64,6 +82,24 @@
       "writtenOn": "2014-12-29T23:03:02Z",
       "side": 1,
       "message": "100 chars, and I\u0027d put context first.",
+      "revId": "3663f74858aaea08b15428be98dbc94083100f46",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7aa08908_bc68eabb",
+        "filename": "src/com/android/incallui/ContactInfoCache.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 520,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-12-29T23:41:17Z",
+      "side": 1,
+      "message": "And name the method fillDetailedInfo :)",
+      "parentUuid": "7aa08908_9c3eceb6",
       "revId": "3663f74858aaea08b15428be98dbc94083100f46",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
