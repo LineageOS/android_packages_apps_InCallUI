@@ -1,0 +1,106 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7aa08908_1c52de13",
+        "filename": "src/com/android/incallui/CallCardFragment.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 1341,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-12-29T23:03:02Z",
+      "side": 1,
+      "message": "100 chars",
+      "revId": "3663f74858aaea08b15428be98dbc94083100f46",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7aa08908_7c57a202",
+        "filename": "src/com/android/incallui/CallCardFragment.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 1349,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-12-29T23:03:02Z",
+      "side": 1,
+      "message": "Might be worth factoring this out into a \u0027boolean populateTextView(TextView view, String text)\u0027 method.",
+      "revId": "3663f74858aaea08b15428be98dbc94083100f46",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7aa08908_fc4b9257",
+        "filename": "src/com/android/incallui/ContactInfoCache.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 469,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-12-29T23:03:02Z",
+      "side": 1,
+      "message": "I don\u0027t like the pref to work as indirectly as that. I rather suggest checking it in CallCardPresenter, because that\u0027s the pat responsible for presentation.",
+      "revId": "3663f74858aaea08b15428be98dbc94083100f46",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7aa08908_9c3eceb6",
+        "filename": "src/com/android/incallui/ContactInfoCache.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 520,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-12-29T23:03:02Z",
+      "side": 1,
+      "message": "100 chars, and I\u0027d put context first.",
+      "revId": "3663f74858aaea08b15428be98dbc94083100f46",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7aa08908_5c5c6625",
+        "filename": "src/com/android/incallui/ContactInfoCache.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 538,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-12-29T23:03:02Z",
+      "side": 1,
+      "message": "The column indices should be fetched outside of the loop.",
+      "revId": "3663f74858aaea08b15428be98dbc94083100f46",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7aa08908_bc410a3c",
+        "filename": "src/com/android/incallui/ContactInfoCache.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 540,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-12-29T23:03:02Z",
+      "side": 1,
+      "message": "100 chars here and below.",
+      "revId": "3663f74858aaea08b15428be98dbc94083100f46",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
