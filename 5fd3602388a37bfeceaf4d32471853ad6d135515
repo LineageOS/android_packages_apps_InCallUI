@@ -16,6 +16,24 @@
       "revId": "5fd3602388a37bfeceaf4d32471853ad6d135515",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7aa08908_cde7fe10",
+        "filename": "src/com/android/incallui/ContactInfoCache.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 524,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-12-31T08:39:33Z",
+      "side": 1,
+      "message": "Yes, it is, and yes, this can be seen as a waste of resources. Considering how often this code runs (once per incoming call) and how expensive the query is (hardly measurable, if at all), my POV is that checking the pref here is premature optimization.",
+      "parentUuid": "7aa08908_2da042f4",
+      "revId": "5fd3602388a37bfeceaf4d32471853ad6d135515",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
