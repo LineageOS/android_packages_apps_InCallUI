@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7aa08908_2da042f4",
+        "filename": "src/com/android/incallui/ContactInfoCache.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 524,
+      "author": {
+        "id": 3330
+      },
+      "writtenOn": "2014-12-31T05:54:47Z",
+      "side": 1,
+      "message": "So this part of code will be executed even if user turn this feature off? Thats waste of resources for me.",
+      "revId": "5fd3602388a37bfeceaf4d32471853ad6d135515",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
