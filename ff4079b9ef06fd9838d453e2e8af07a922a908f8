@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7aa08908_7bdcabe4",
+        "filename": "src/com/android/incallui/CallCardFragment.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 1347,
+      "author": {
+        "id": 3330
+      },
+      "writtenOn": "2015-01-10T00:09:57Z",
+      "side": 1,
+      "message": "This works only after reboot when I change setting.",
+      "revId": "ff4079b9ef06fd9838d453e2e8af07a922a908f8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
