@@ -16,6 +16,24 @@
       "revId": "ff4079b9ef06fd9838d453e2e8af07a922a908f8",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7aa08908_2df786f6",
+        "filename": "src/com/android/incallui/CallCardFragment.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 1347,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2015-01-10T03:03:29Z",
+      "side": 1,
+      "message": "I think I know what the problem is: the settings are made in the com.android.dialer process, but read in the com.android.incallui process. As documented in [1], multi-process usage isn\u0027t supported by default. This means we have to open the prefs manually:\n\nString prefName \u003d getActivity().getPackageName() + \"_preferences\";\nSharedPreferences prefs \u003d getActivity().getSharedPreferences(prefName, Context.MODE_MULTI_PROCESS);\n\n[1] http://developer.android.com/reference/android/content/Context.html#MODE_MULTI_PROCESS",
+      "parentUuid": "7aa08908_7bdcabe4",
+      "revId": "ff4079b9ef06fd9838d453e2e8af07a922a908f8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
