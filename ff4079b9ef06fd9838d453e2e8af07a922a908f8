@@ -34,6 +34,24 @@
       "revId": "ff4079b9ef06fd9838d453e2e8af07a922a908f8",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7aa08908_ad51b6da",
+        "filename": "src/com/android/incallui/CallCardFragment.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 1347,
+      "author": {
+        "id": 3330
+      },
+      "writtenOn": "2015-01-10T03:22:29Z",
+      "side": 1,
+      "message": "OMG, that\u0027s kind of \"university\" in programming for me :D, but I will try it :).\nThanks!",
+      "parentUuid": "7aa08908_2df786f6",
+      "revId": "ff4079b9ef06fd9838d453e2e8af07a922a908f8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
