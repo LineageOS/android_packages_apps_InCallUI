@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fad55976_d0ecd491",
+        "filename": "res/layout-land/call_card_content.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 9528
+      },
+      "writtenOn": "2015-01-21T17:47:08Z",
+      "side": 1,
+      "message": "Indentation looks a little odd, just 4 spaces tab under the opening tag should be enough?",
+      "revId": "b001eb401412923021720ca1c6222d1a17450ed8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
