@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fad55976_9978c791",
+        "filename": "res/values/cm_strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2015-01-22T15:10:28Z",
+      "side": 1,
+      "message": "Any better wording for these?",
+      "revId": "23014420b30bbea54c320d7685f2df0222dd0efa",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fad55976_b9730bb4",
+        "filename": "res/values/cm_strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 88,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2015-01-22T15:10:28Z",
+      "side": 1,
+      "message": "This needs to be improved",
+      "revId": "23014420b30bbea54c320d7685f2df0222dd0efa",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
