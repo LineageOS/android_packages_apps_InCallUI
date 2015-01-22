@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "fad55976_d9afdf92",
+        "filename": "res/values/cm_strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 848
+      },
+      "writtenOn": "2015-01-22T17:23:14Z",
+      "side": 1,
+      "message": "\u0027Call is connected, but audio is suspended\u0027 - best I got",
+      "revId": "23014420b30bbea54c320d7685f2df0222dd0efa",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "fad55976_9978c791",
         "filename": "res/values/cm_strings.xml",
         "patchSetId": 4
@@ -19,6 +36,24 @@
     },
     {
       "key": {
+        "uuid": "fad55976_39955b40",
+        "filename": "res/values/cm_strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 848
+      },
+      "writtenOn": "2015-01-22T17:23:14Z",
+      "side": 1,
+      "message": "Same as above",
+      "parentUuid": "fad55976_9978c791",
+      "revId": "23014420b30bbea54c320d7685f2df0222dd0efa",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "fad55976_b9730bb4",
         "filename": "res/values/cm_strings.xml",
         "patchSetId": 4
@@ -30,6 +65,24 @@
       "writtenOn": "2015-01-22T15:10:28Z",
       "side": 1,
       "message": "This needs to be improved",
+      "revId": "23014420b30bbea54c320d7685f2df0222dd0efa",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fad55976_799fd35f",
+        "filename": "res/values/cm_strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 88,
+      "author": {
+        "id": 848
+      },
+      "writtenOn": "2015-01-22T17:23:14Z",
+      "side": 1,
+      "message": "AVP \u003d\u003d Audio Video Profile. \n\nMaybe - \"Retrying Audio Video Profile\"?",
+      "parentUuid": "fad55976_b9730bb4",
       "revId": "23014420b30bbea54c320d7685f2df0222dd0efa",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
