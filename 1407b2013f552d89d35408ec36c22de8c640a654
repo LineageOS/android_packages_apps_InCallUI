@@ -69,6 +69,23 @@
       "revId": "1407b2013f552d89d35408ec36c22de8c640a654",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fad55976_591acf6f",
+        "filename": "res/values/cm_strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 88,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2015-01-22T14:49:25Z",
+      "side": 1,
+      "message": "What about this?\n\nAlso, above and below strings don\u0027t look so good to me",
+      "revId": "1407b2013f552d89d35408ec36c22de8c640a654",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
