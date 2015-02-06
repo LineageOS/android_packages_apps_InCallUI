@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bacf61ea_23440173",
+        "filename": "res/layout-land/call_card_content.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 10293
+      },
+      "writtenOn": "2015-02-06T16:02:30Z",
+      "side": 1,
+      "message": "replace tab with spaces",
+      "revId": "4f7487fe9349719417e081cd909e28b51256a0cd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
