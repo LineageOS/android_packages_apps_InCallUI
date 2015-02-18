@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bacf61ea_7387ce0f",
+        "filename": "src/com/android/incallui/CallRecorder.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 157,
+      "author": {
+        "id": 940
+      },
+      "writtenOn": "2015-02-18T13:04:08Z",
+      "side": 1,
+      "message": "Check if mService is null to be consistent with other remove calls",
+      "revId": "cbab37197dfd7b647e0fd8aff37850527fad14db",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
