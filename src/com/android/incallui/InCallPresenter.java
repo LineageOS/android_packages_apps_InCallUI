@@ -964,14 +964,6 @@ public class InCallPresenter implements CallList.Listener, InCallPhoneListener {
 
         // TODO: Consider a proper state machine implementation
 
-        // If the state isn't changing or if we're transitioning from pending outgoing to actual
-        // outgoing, we have already done any starting/stopping of activities in a previous pass
-        // ...so lets cut out early
-        boolean alreadyOutgoing = mInCallState == InCallState.PENDING_OUTGOING &&
-                newState == InCallState.OUTGOING;
-        boolean isAnyOtherSubActive = InCallState.INCOMING == newState &&
-                mCallList.isAnyOtherSubActive(mCallList.getActiveSubscription());
-
         //If the call is auto answered bring up the InCallActivity
         boolean isAutoAnswer = false;
         isAutoAnswer = (mInCallState == InCallState.INCOMING) &&
@@ -980,8 +972,9 @@ public class InCallPresenter implements CallList.Listener, InCallPhoneListener {
 
         Log.d(this, "startOrFinishUi: " + isAutoAnswer);
 
-        if ((newState == mInCallState && !(mInCallActivity == null && isAnyOtherSubActive))
-                || alreadyOutgoing) {
+        // If the state isn't changing we have already done any starting/stopping of activities in
+        // a previous pass...so lets cut out early
+        if (newState == mInCallState) {
             return newState;
         }
 
