@@ -1180,8 +1180,16 @@ public class CallCardFragment extends BaseFragment<CallCardPresenter, CallCardPr
         }
     }
 
-    private void updateVBButton() {
-        if (isVBAvailable()
+    /**
+     * Update the vb button to be disabled, enabled or invisible, based on the config hide
+     * override or hardware support.
+     * @return True if the button was set to invisible, false if it will be shown.
+     */
+    private boolean updateVBButton() {
+        if (getResources().getBoolean(R.bool.config_disable_audio_boost)) {
+            mVBButton.setVisibility(View.INVISIBLE);
+            return true;
+        } else if (isVBAvailable()
                 && mAudioManager.getParameters(VOLUME_BOOST).contains("=on")) {
 
                 mVBButton.setBackgroundResource(R.drawable.vb_active);
@@ -1192,6 +1200,8 @@ public class CallCardFragment extends BaseFragment<CallCardPresenter, CallCardPr
         } else {
             mVBButton.setBackgroundResource(R.drawable.vb_disable);
         }
+
+        return false;
     }
 
     private void showVBNotify() {
@@ -1257,9 +1267,9 @@ public class CallCardFragment extends BaseFragment<CallCardPresenter, CallCardPr
     }
 
     private void updateVBbyCall(int state) {
-        updateVBButton();
+        boolean vbIsHidden = updateVBButton();
 
-        if (Call.State.ACTIVE == state) {
+        if (Call.State.ACTIVE == state && !vbIsHidden) {
             mVBButton.setVisibility(View.VISIBLE);
         } else if (Call.State.DISCONNECTED == state) {
             if (!CallList.getInstance().hasAnyLiveCall()
