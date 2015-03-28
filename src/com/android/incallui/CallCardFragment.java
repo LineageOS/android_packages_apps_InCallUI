@@ -1180,8 +1180,14 @@ public class CallCardFragment extends BaseFragment<CallCardPresenter, CallCardPr
         }
     }
 
+    private boolean isVBHiddenByOverride() {
+        return getResources().getBoolean(R.bool.config_disable_audio_boost);
+    }
+
     private void updateVBButton() {
-        if (isVBAvailable()
+        if (isVBHiddenByOverride()) {
+            mVBButton.setVisibility(View.INVISIBLE);
+        } else if (isVBAvailable()
                 && mAudioManager.getParameters(VOLUME_BOOST).contains("=on")) {
 
                 mVBButton.setBackgroundResource(R.drawable.vb_active);
@@ -1258,8 +1264,9 @@ public class CallCardFragment extends BaseFragment<CallCardPresenter, CallCardPr
 
     private void updateVBbyCall(int state) {
         updateVBButton();
+        boolean vbIsHidden = isVBHiddenByOverride();
 
-        if (Call.State.ACTIVE == state) {
+        if (Call.State.ACTIVE == state && !vbIsHidden) {
             mVBButton.setVisibility(View.VISIBLE);
         } else if (Call.State.DISCONNECTED == state) {
             if (!CallList.getInstance().hasAnyLiveCall()
