@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5ac665da_cbb9ae30",
+        "filename": "src/com/android/incallui/CallCardFragment.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 1160,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-03-31T08:37:58Z",
+      "side": 1,
+      "message": "It looks like it this function could have an isVBHiddenByOverride check as well, although not all instances of setting button visibility seem to go through this function.",
+      "revId": "c8022abbab92891c3ab43466d9fac1d52626d6d3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5ac665da_6bacfaed",
+        "filename": "src/com/android/incallui/CallCardFragment.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 1269,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-03-31T08:37:58Z",
+      "side": 1,
+      "message": "Can just do !isVBHiddenByOverride() here instead.",
+      "revId": "c8022abbab92891c3ab43466d9fac1d52626d6d3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
