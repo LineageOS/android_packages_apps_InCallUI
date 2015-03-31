@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5ac665da_cb624ed8",
+        "filename": "src/com/android/incallui/CallCardFragment.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 1191,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-03-31T08:28:35Z",
+      "side": 1,
+      "message": "This logic is so screwy to me. Can we have a separate function that determines whether this occurs instead of having updateVBButton return some kind of boolean?",
+      "revId": "251193550da0f63facdca2099b5067039797364c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
