@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "5ac665da_eb862a64",
+        "filename": "src/com/android/incallui/CallCardFragment.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 1160,
+      "author": {
+        "id": 9621
+      },
+      "writtenOn": "2015-03-31T08:42:51Z",
+      "side": 1,
+      "message": "Yeah I started by modifying this method and was surprised to find that this didn\u0027t get me the desired behavior... because the visibility is explicitly set elsewhere. So, I just decided to leave this method alone.",
+      "parentUuid": "5ac665da_cbb9ae30",
+      "revId": "c8022abbab92891c3ab43466d9fac1d52626d6d3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5ac665da_6bacfaed",
         "filename": "src/com/android/incallui/CallCardFragment.java",
         "patchSetId": 4
@@ -47,6 +65,24 @@
       "writtenOn": "2015-03-31T08:41:20Z",
       "side": 1,
       "message": "Yeah that would make it a little more readable \"if not is vb hidden by override\"",
+      "parentUuid": "5ac665da_6bacfaed",
+      "revId": "c8022abbab92891c3ab43466d9fac1d52626d6d3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5ac665da_8b969692",
+        "filename": "src/com/android/incallui/CallCardFragment.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 1269,
+      "author": {
+        "id": 9621
+      },
+      "writtenOn": "2015-03-31T08:42:51Z",
+      "side": 1,
+      "message": "Done",
       "parentUuid": "5ac665da_6bacfaed",
       "revId": "c8022abbab92891c3ab43466d9fac1d52626d6d3",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
