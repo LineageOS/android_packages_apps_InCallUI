@@ -418,6 +418,7 @@ public class CallButtonPresenter extends Presenter<CallButtonPresenter.CallButto
         // Show all voice-call-related buttons.
         ui.showAudioButton(true);
         ui.showDialpadButton(true);
+        ui.enableMute(true);
 
         Log.v(this, "Show hold ", call.can(android.telecom.Call.Details.CAPABILITY_SUPPORT_HOLD));
         Log.v(this, "Enable hold", call.can(android.telecom.Call.Details.CAPABILITY_HOLD));
