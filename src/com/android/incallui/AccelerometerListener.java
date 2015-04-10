@@ -16,7 +16,10 @@
 
 package com.android.incallui;
 
+import java.lang.reflect.Method;
+
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
@@ -24,6 +27,14 @@ import android.hardware.SensorManager;
 import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
+import android.telephony.TelephonyManager;
+import com.android.internal.telephony.ITelephony;
+import android.provider.Settings;
+
+import com.android.dialer.settings.GeneralSettingsFragment;
+import com.android.incallui.InCallPresenter;
+
+import android.telephony.TelephonyManager;
 
 /**
  * This class is used to listen to the accelerometer to monitor the
@@ -37,6 +48,7 @@ public final class AccelerometerListener {
 
     private SensorManager mSensorManager;
     private Sensor mSensor;
+    private ITelephony mTelephonyService;
 
     // mOrientation is the orientation value most recently reported to the client.
     private int mOrientation;
@@ -59,14 +71,38 @@ public final class AccelerometerListener {
     private static final int HORIZONTAL_DEBOUNCE = 500;
     private static final double VERTICAL_ANGLE = 50.0;
 
+    // Our accelerometers are not quite accurate.
+    private static final int FACE_UP_GRAVITY_THRESHOLD = 7;
+    private static final int FACE_DOWN_GRAVITY_THRESHOLD = -7;
+    private static final int TILT_THRESHOLD = 3;
+    private static final int SENSOR_SAMPLES = 3;
+    private static final int MIN_ACCEPT_COUNT = SENSOR_SAMPLES - 1;
+
+    private boolean mStopped;
+    private boolean mWasFaceUp;
+    private boolean[] mSamples = new boolean[SENSOR_SAMPLES];
+    private int mSampleIndex;
+    private Context mContext;
+    private InCallPresenter mInCallPresenter;
+
     public interface OrientationListener {
         public void orientationChanged(int orientation);
+    }
+
+    private interface ResettableSensorEventListener extends SensorEventListener {
+        public void reset();
     }
 
     public AccelerometerListener(Context context, OrientationListener listener) {
         mListener = listener;
         mSensorManager = (SensorManager)context.getSystemService(Context.SENSOR_SERVICE);
         mSensor = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+    }
+
+    public AccelerometerListener(Context context){
+        mSensorManager = (SensorManager)context.getSystemService(Context.SENSOR_SERVICE);
+        mContext = context;
+        mTelephonyService = getTeleService();
     }
 
     public void enable(boolean enable) {
@@ -83,6 +119,44 @@ public final class AccelerometerListener {
             }
         }
     }
+
+    public void enableSensor(boolean enable) {
+        if (DEBUG)
+            Log.d(TAG, "enableSensor(" + enable + ")");
+        if (enable) {
+            mFlipListener.reset();
+            mSensorManager.registerListener(mFlipListener,
+            mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER),
+            SensorManager.SENSOR_DELAY_NORMAL);
+        } else
+            mSensorManager.unregisterListener(mFlipListener);
+    }
+
+    public boolean isSmartMuteEnabled() {
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getActivity(this));
+        return prefs.getBoolean(GeneralSettingsFragment.BUTTON_SMART_MUTE_KEY, false);
+    }
+
+
+    private ITelephony getTeleService() {
+        TelephonyManager tm = (TelephonyManager) mContext.getSystemService(Context.TELEPHONY_SERVICE);
+        try {
+            // Java reflection to gain access to TelephonyManager's
+            // ITelephony getter
+            Log.v(TAG, "Get getTeleService...");
+            Class c = Class.forName(tm.getClass().getName());
+            Method m = c.getDeclaredMethod("getITelephony");
+            m.setAccessible(true);
+            return (ITelephony) m.invoke(tm);
+        } catch (Exception e) {
+            e.printStackTrace();
+            Log.e(TAG,
+                    "FATAL ERROR: could not connect to telephony subsystem");
+            Log.e(TAG, "Exception object: " + e);
+            return null;
+        }
+    }
+
 
     private void setOrientation(int orientation) {
         synchronized (this) {
@@ -139,6 +213,93 @@ public final class AccelerometerListener {
             // ignore
         }
     };
+
+
+    private final ResettableSensorEventListener mFlipListener = new ResettableSensorEventListener(){
+        private static final String TAG = "FlipListener";
+        // Our accelerometers are not quite accurate.
+        private static final int FACE_UP_GRAVITY_THRESHOLD = 7;
+        private static final int FACE_DOWN_GRAVITY_THRESHOLD = -7;
+        private static final int TILT_THRESHOLD = 3;
+        private static final int SENSOR_SAMPLES = 3;
+        private static final int MIN_ACCEPT_COUNT = SENSOR_SAMPLES - 1;
+
+        private boolean mStopped;
+        private boolean mWasFaceUp;
+        private boolean[] mSamples = new boolean[SENSOR_SAMPLES];
+        private int mSampleIndex;
+
+        @Override
+        public void onAccuracyChanged(Sensor sensor, int acc) {
+        }
+
+        @Override
+        public void reset() {
+            Log.d(TAG, "FlipListener Reset()");
+            mWasFaceUp = false;
+            mStopped = false;
+            for (int i = 0; i < SENSOR_SAMPLES; i++) {
+                mSamples[i] = false;
+            }
+        }
+
+        private boolean filterSamples() {
+            int trues = 0;
+            for (boolean sample : mSamples) {
+                if(sample) {
+                    ++trues;
+                }
+            }
+            return trues >= MIN_ACCEPT_COUNT;
+        }
+
+        @Override
+        public void onSensorChanged(SensorEvent event) {
+            // Add a sample overwriting the oldest one. Several samples
+            // are used to avoid the erroneous values the sensor sometimes
+            // returns.
+            float z = event.values[2];
+
+            if (mStopped) {
+                return;
+            }
+
+            if (!mWasFaceUp) {
+                // Check if its face up enough.
+                mSamples[mSampleIndex] = z > FACE_UP_GRAVITY_THRESHOLD;
+
+                // face up
+                if (filterSamples()) {
+                    Log.d(TAG, "onSensorChanged() - Face Up");
+                    mWasFaceUp = true;
+                    for (int i = 0; i < SENSOR_SAMPLES; i++) {
+                        mSamples[i] = false;
+                    }
+                }
+            } else {
+                // Check if its face down enough.
+                mSamples[mSampleIndex] = z < FACE_DOWN_GRAVITY_THRESHOLD;
+
+                // face down
+                if (filterSamples()) {
+                    Log.d(TAG, "onSensorChanged() - Face Down");
+                    mStopped = true;
+                    if(isSmartMuteEnabled){
+                        if(mTelephonyService != null){
+                            try{
+                                mTelephonyService.silenceRinger();
+                                } catch(android.os.RemoteException e){
+                                    Log.d(TAG, e.toString());
+                                }
+                        }
+                    }
+                }
+            }
+
+            mSampleIndex = ((mSampleIndex + 1) % SENSOR_SAMPLES);
+        }
+    };
+
 
     Handler mHandler = new Handler() {
         public void handleMessage(Message msg) {

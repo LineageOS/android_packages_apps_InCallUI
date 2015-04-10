@@ -21,6 +21,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.ActivityNotFoundException;
 import android.content.pm.ActivityInfo;
+import android.content.SharedPreferences;
 import android.graphics.Point;
 import android.net.Uri;
 import android.os.Bundle;
@@ -44,6 +45,9 @@ import com.google.common.base.Preconditions;
 import com.android.contacts.common.interactions.TouchPointManager;
 import com.android.contacts.common.util.MaterialColorMapUtils.MaterialPalette;
 import com.android.incalluibind.ObjectFactory;
+import com.android.dialer.settings.GeneralSettingsFragment;
+import com.android.contacts.common.util.PickupGestureDetector;
+
 
 import java.util.Collections;
 import java.util.List;
@@ -98,9 +102,11 @@ public class InCallPresenter implements CallList.Listener, InCallPhoneListener {
     private InCallActivity mInCallActivity;
     private InCallState mInCallState = InCallState.NO_CALLS;
     private ProximitySensor mProximitySensor;
+    private AccelerometerListener mAccelerometerListener;
     private boolean mServiceConnected = false;
     private boolean mAccountSelectionCancelled = false;
     private InCallCameraManager mInCallCameraManager = null;
+    public PickupGestureDetector mPickupDetector;
 
     private final Phone.Listener mPhoneListener = new Phone.Listener() {
         @Override
@@ -163,7 +169,7 @@ public class InCallPresenter implements CallList.Listener, InCallPhoneListener {
 
     /**
      * When configuration changes Android kills the current activity and starts a new one.
-     * The flag is used to check if full clean up is necessary (activity is stopped and new 
+     * The flag is used to check if full clean up is necessary (activity is stopped and new
      * activity won't be started), or if a new activity will be started right after the current one
      * is destroyed, and therefore no need in release all resources.
      */
@@ -249,6 +255,8 @@ public class InCallPresenter implements CallList.Listener, InCallPhoneListener {
 
         mProximitySensor = new ProximitySensor(context, mAudioModeProvider);
         addListener(mProximitySensor);
+
+        mAccelerometerListener = new AccelerometerListener(context);
 
         mCallList = callList;
 
@@ -344,6 +352,12 @@ public class InCallPresenter implements CallList.Listener, InCallPhoneListener {
         updateActivity(null);
     }
 
+    private boolean isSmartAnswerEnabled() {
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getActivity(this));
+        return prefs.getBoolean(GeneralSettingsFragment.BUTTON_SMART_ANSWER_KEY, false);
+    }
+
+
     /**
      * Updates the current instance of {@link InCallActivity} with the provided one. If a
      * {@code null} activity is provided, it means that the activity was finished and we should
@@ -435,6 +449,10 @@ public class InCallPresenter implements CallList.Listener, InCallPhoneListener {
         newState = startOrFinishUi(newState);
         Log.d(this, "onCallListChange newState changed to " + newState);
 
+        if(mAccelerometerListener != null){
+            mAccelerometerListener.enableSensor(false);
+        }
+
         // Set the new state before announcing it to the world
         Log.i(this, "Phone switching state: " + oldState + " -> " + newState);
         mInCallState = newState;
@@ -475,6 +493,21 @@ public class InCallPresenter implements CallList.Listener, InCallPhoneListener {
         if (CallList.getInstance().isDsdaEnabled() && (mInCallActivity != null)) {
             mInCallActivity.updateDsdaTab();
         }
+        if(mAccelerometerListener != null){
+                mAccelerometerListener.enableSensor(true);
+        }
+
+        mPickupDetector = new PickupGestureDetector(getActivity(), this);
+        if (isSmartAnswerEnabled)
+            mPickupDetector.enable();
+    }
+
+    @Override
+    public void onPickup() {
+        mPickupDetector.disable();
+        final DialtactsActivity activity = answerIncomingCall(context, VideoProfile.VideoState.AUDIO_ONLY);
+        startActivity(intent);
+        hideAndClearDialpad(false);
     }
 
     @Override
@@ -738,6 +771,7 @@ public class InCallPresenter implements CallList.Listener, InCallPhoneListener {
         return mIsChangingConfigurations;
     }
 
+
     /*package*/
     void updateIsChangingConfigurations() {
         mIsChangingConfigurations = false;
@@ -847,6 +881,7 @@ public class InCallPresenter implements CallList.Listener, InCallPhoneListener {
         // "Swap calls", or can be a no-op, depending on the current state
         // of the Phone.
 
+        mPickupDetector.disable();
         /**
          * INCOMING CALL
          */
@@ -858,6 +893,8 @@ public class InCallPresenter implements CallList.Listener, InCallPhoneListener {
         if (incomingCall != null) {
             TelecomAdapter.getInstance().answerCall(
                     incomingCall.getId(), VideoProfile.VideoState.AUDIO_ONLY);
+            if(mAccelerometerListener != null)
+                mAccelerometerListener.enableSensor(false);
             return true;
         }
 
@@ -1219,6 +1256,7 @@ public class InCallPresenter implements CallList.Listener, InCallPhoneListener {
 
             mContext = null;
             mInCallActivity = null;
+            mAccelerometerListener = null;
 
             mListeners.clear();
             mIncomingCallListeners.clear();
