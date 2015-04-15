@@ -71,6 +71,8 @@
     <string name="menu_start_record">Record call</string>
     <string name="menu_stop_record">Stop recording</string>
     <string name="recording_time_text">Recording</string>
+    <string name="recording_warning_title">Enable call recording?</string>
+    <string name="recording_warning_text">It is your sole responsibility as the end-user to be fully aware and obey the state, region and federal laws that apply to the use of call recording functionality and distribution of those recordings</string>
 
     <!-- Set Subscription screen: label sub 1 -->
     <string name="sub_1">SIM 1</string>
