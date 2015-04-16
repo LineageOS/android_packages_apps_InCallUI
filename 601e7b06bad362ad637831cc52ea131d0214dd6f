@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1ac06dbe_c3a9b6e1",
+        "filename": "res/values/cm_strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2015-04-16T19:27:07Z",
+      "side": 1,
+      "message": "The \u0027Notice:\u0027 prefix seems a little redundant to me given the title.",
+      "revId": "601e7b06bad362ad637831cc52ea131d0214dd6f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1ac06dbe_23afeae4",
+        "filename": "src/com/android/incallui/CallButtonPresenter.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2015-04-16T19:27:07Z",
+      "side": 1,
+      "message": "Why make this public?",
+      "revId": "601e7b06bad362ad637831cc52ea131d0214dd6f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1ac06dbe_43b6663e",
+        "filename": "src/com/android/incallui/CallButtonPresenter.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 343,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2015-04-16T19:27:07Z",
+      "side": 1,
+      "message": "Put the result of InCallApp.getPrefs(context) into a final variable; it then can be reused below.",
+      "revId": "601e7b06bad362ad637831cc52ea131d0214dd6f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1ac06dbe_63b9e22e",
+        "filename": "src/com/android/incallui/CallButtonPresenter.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 362,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2015-04-16T19:27:07Z",
+      "side": 1,
+      "message": "You could also just call callRecordClicked(true) here.",
+      "revId": "601e7b06bad362ad637831cc52ea131d0214dd6f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
