@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3ac371cc_abbefbfc",
+        "filename": "src/com/android/incallui/CallButtonFragment.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 613,
+      "author": {
+        "id": 9045
+      },
+      "writtenOn": "2015-04-16T06:08:55Z",
+      "side": 1,
+      "message": "fixed this inverted variable with the latest patch set",
+      "revId": "ca952a8ad33aef210addea87f35725087bd028b1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
