@@ -98,6 +98,7 @@ public class InCallPresenter implements CallList.Listener, InCallPhoneListener {
     private InCallActivity mInCallActivity;
     private InCallState mInCallState = InCallState.NO_CALLS;
     private ProximitySensor mProximitySensor;
+    private AccelerometerListener mAccelerometerListener;
     private boolean mServiceConnected = false;
     private boolean mAccountSelectionCancelled = false;
     private InCallCameraManager mInCallCameraManager = null;
@@ -163,7 +164,7 @@ public class InCallPresenter implements CallList.Listener, InCallPhoneListener {
 
     /**
      * When configuration changes Android kills the current activity and starts a new one.
-     * The flag is used to check if full clean up is necessary (activity is stopped and new 
+     * The flag is used to check if full clean up is necessary (activity is stopped and new
      * activity won't be started), or if a new activity will be started right after the current one
      * is destroyed, and therefore no need in release all resources.
      */
@@ -249,6 +250,8 @@ public class InCallPresenter implements CallList.Listener, InCallPhoneListener {
 
         mProximitySensor = new ProximitySensor(context, mAudioModeProvider);
         addListener(mProximitySensor);
+
+        mAccelerometerListener = new AccelerometerListener(context);
 
         mCallList = callList;
 
@@ -435,6 +438,10 @@ public class InCallPresenter implements CallList.Listener, InCallPhoneListener {
         newState = startOrFinishUi(newState);
         Log.d(this, "onCallListChange newState changed to " + newState);
 
+        if (!newState.isIncoming() && mAccelerometerListener != null){
+            mAccelerometerListener.enableSensor(false);
+        }
+
         // Set the new state before announcing it to the world
         Log.i(this, "Phone switching state: " + oldState + " -> " + newState);
         mInCallState = newState;
@@ -467,6 +474,10 @@ public class InCallPresenter implements CallList.Listener, InCallPhoneListener {
 
         Log.i(this, "Phone switching state: " + oldState + " -> " + newState);
         mInCallState = newState;
+
+        if (newState.isIncoming() && mAccelerometerListener != null){
+            mAccelerometerListener.enableSensor(true);
+        }
 
         for (IncomingCallListener listener : mIncomingCallListeners) {
             listener.onIncomingCall(oldState, mInCallState, call);
@@ -858,6 +869,8 @@ public class InCallPresenter implements CallList.Listener, InCallPhoneListener {
         if (incomingCall != null) {
             TelecomAdapter.getInstance().answerCall(
                     incomingCall.getId(), VideoProfile.VideoState.AUDIO_ONLY);
+            if(mAccelerometerListener != null)
+                mAccelerometerListener.enableSensor(false);
             return true;
         }
 
@@ -1199,6 +1212,8 @@ public class InCallPresenter implements CallList.Listener, InCallPhoneListener {
                 mProximitySensor.tearDown();
             }
             mProximitySensor = null;
+
+            mAccelerometerListener = null;
 
             mAudioModeProvider = null;
 
