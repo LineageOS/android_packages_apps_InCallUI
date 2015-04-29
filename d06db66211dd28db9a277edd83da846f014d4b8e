@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da7fb54a_4f3f6c25",
+        "filename": "src/com/android/incallui/ProximitySensor.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 8461
+      },
+      "writtenOn": "2015-04-29T04:39:00Z",
+      "side": 1,
+      "message": "Why two switch settings? Isn\u0027t one enough?",
+      "revId": "d06db66211dd28db9a277edd83da846f014d4b8e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
