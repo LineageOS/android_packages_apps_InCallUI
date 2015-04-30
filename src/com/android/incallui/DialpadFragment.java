@@ -478,7 +478,7 @@ public class DialpadFragment extends BaseFragment<DialpadPresenter, DialpadPrese
     }
 
     public void updateColors() {
-        int textColor = InCallPresenter.getInstance().getThemeColors().mPrimaryColor;
+        int textColor = InCallPresenter.getInstance().getColor(R.color.dialpad_key_number_color);
 
         if (mCurrentTextColor == textColor) {
             return;
