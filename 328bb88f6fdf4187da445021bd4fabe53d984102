@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a89bdaa_ce9f0bb3",
+        "filename": "src/com/android/incallui/AccelerometerListener.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 144,
+      "author": {
+        "id": 9813
+      },
+      "writtenOn": "2015-05-07T10:42:01Z",
+      "side": 1,
+      "message": "This needs to be revised, no reflection please.",
+      "revId": "328bb88f6fdf4187da445021bd4fabe53d984102",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
