@@ -27,6 +27,7 @@
   <string name="call_recording_file_location">已保存通话录音至  <xliff:g id="filename">%s</xliff:g></string>
   <string name="blacklist_dialog_title">添加到呼叫黑名单</string>
   <string name="blacklist_dialog_message">今后将阻止 <xliff:g id="number">%s</xliff:g> 的来电</string>
+  <string name="menu_add_to_blacklist">添加到呼叫黑名单</string>
   <string name="card_title_video_call_paused">视频通话（暂停）</string>
   <string name="onscreenAddParticipant">添加参与者</string>
   <string name="modify_call_option_title">选择通话类型</string>

@@ -40,6 +40,9 @@
     <string name="blacklist_dialog_title">Add to blocked caller list</string>
     <string name="blacklist_dialog_message">Future calls from <xliff:g id="number">%s</xliff:g> will be blocked</string>
 
+    <!-- In-call screen overflow menu add to Blacklist -->
+    <string name="menu_add_to_blacklist">Add to blocked caller list</string>
+
     <!-- In-call screen: status label when in a paused video call. -->
     <string name="card_title_video_call_paused">Video call (paused)</string>
     <!-- Text for the onscreen "Add Participant" button -->
