@@ -22,7 +22,8 @@
     android:layout_height="wrap_content"
     android:background="@color/incall_banner_secondary_background_color"
     android:focusable="true"
-    android:contentDescription="@string/onscreenManageConferenceText">
+    android:contentDescription="@string/onscreenManageConferenceText"
+    android:visibility="gone">
 
     <Space android:layout_width="match_parent"
         android:layout_height="1dp"

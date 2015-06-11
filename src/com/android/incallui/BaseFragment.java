@@ -18,6 +18,7 @@ package com.android.incallui;
 
 import android.app.Fragment;
 import android.os.Bundle;
+import android.os.Handler;
 
 /**
  * Parent for all fragments that use Presenters and Ui design.
@@ -29,6 +30,12 @@ public abstract class BaseFragment<T extends Presenter<U>, U extends Ui> extends
     abstract T createPresenter();
 
     abstract U getUi();
+
+    /**
+     * delay to refresh the call info, this avoids too many events in main thread, otherwise they
+     * may block incallactivity.
+     */
+    private static final long DELAY_REFRESH_UI = 500;
 
     protected BaseFragment() {
         mPresenter = createPresenter();
@@ -46,7 +53,12 @@ public abstract class BaseFragment<T extends Presenter<U>, U extends Ui> extends
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        mPresenter.onUiReady(getUi());
+        new Handler().postDelayed(new Runnable(){
+            @Override
+            public void run() {
+                mPresenter.onUiReady(getUi());
+            }
+        }, DELAY_REFRESH_UI);
     }
 
     @Override
