@@ -774,6 +774,19 @@ public class InCallActivity extends Activity {
             return;
         }
 
+        // Gross hack! Successive InCallActivity intent triggers on a MSIM devices will trigger
+        // multiple SelectPhoneAccount prompts. This can cause a scenario where the account
+        // selection dialog is actually placed behind the callee's activity in the task stack.
+        // Here we depend on Telecomm's disconnect callback to handle our tear down for us if we're
+        // not in the foreground and we've broken out of InCallActivity's lifecycle.
+        if (!isForegroundActivity() &&
+                InCallPresenter.getInstance().getCallList().getWaitingForAccountCall() != null) {
+            Log.d(this, "Received disconnect from Telecomm, not in foreground ignore " +
+                    "account selection");
+            InCallPresenter.getInstance().cancelAccountSelection();
+            finish();
+        }
+
         DisconnectCause disconnectCause = call.getDisconnectCause();
         int code = disconnectCause.getCode();
 
