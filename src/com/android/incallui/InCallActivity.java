@@ -86,6 +86,7 @@ public class InCallActivity extends Activity {
     private CallCardFragment mCallCardFragment;
     private AnswerFragment mAnswerFragment;
     private DialpadFragment mDialpadFragment;
+    private SelectPhoneAccountDialogFragment mSelectPhoneFragment;
     private ConferenceManagerFragment mConferenceManagerFragment;
     private FragmentManager mChildFragmentManager;
     private SuppServFailureNotificationReceiver mReceiver;
@@ -278,6 +279,11 @@ public class InCallActivity extends Activity {
 
         if (mDialpadFragment != null ) {
             mDialpadFragment.onDialerKeyUp(null);
+        }
+
+        if (mSelectPhoneFragment != null) {
+            mSelectPhoneFragment.dismiss();
+            mSelectPhoneFragment = null;
         }
 
         InCallPresenter.getInstance().onUiShowing(false);
@@ -612,7 +618,8 @@ public class InCallActivity extends Activity {
                     }
                 };
 
-                SelectPhoneAccountDialogFragment.showAccountDialog(getFragmentManager(),
+                mSelectPhoneFragment =
+                        SelectPhoneAccountDialogFragment.showAccountDialog(getFragmentManager(),
                         R.string.select_phone_account_for_calls, true, phoneAccountHandles,
                         listener);
             } else {
