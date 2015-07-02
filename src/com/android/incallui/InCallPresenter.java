@@ -633,6 +633,17 @@ public class InCallPresenter implements CallList.Listener,
     }
 
     public void handleAccountSelection(PhoneAccountHandle accountHandle, boolean setDefault) {
+        // By the time we receive this intent, we could be shut down and call list
+        // could be null.  Bail in those cases.
+        if (mCallList == null) {
+            if (mStatusBarNotifier == null) {
+                // The In Call UI has crashed but the notification still stayed up. We should not
+                // come to this stage.
+                StatusBarNotifier.clearInCallNotification(context);
+            }
+            return;
+        }
+
         Call call = mCallList.getWaitingForAccountCall();
         if (call != null) {
             String callId = call.getId();
@@ -641,6 +652,17 @@ public class InCallPresenter implements CallList.Listener,
     }
 
     public void cancelAccountSelection() {
+        // By the time we receive this intent, we could be shut down and call list
+        // could be null.  Bail in those cases.
+        if (mCallList == null) {
+            if (mStatusBarNotifier == null) {
+                // The In Call UI has crashed but the notification still stayed up. We should not
+                // come to this stage.
+                StatusBarNotifier.clearInCallNotification(context);
+            }
+            return;
+        }
+
         mAccountSelectionCancelled = true;
         Call call = mCallList.getWaitingForAccountCall();
         if (call != null) {
