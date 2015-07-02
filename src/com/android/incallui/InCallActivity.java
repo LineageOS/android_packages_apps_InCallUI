@@ -247,8 +247,10 @@ public class InCallActivity extends Activity {
 
         mIsForegroundActivity = true;
 
-        InCallPresenter.getInstance().setThemeColors();
-        InCallPresenter.getInstance().onUiShowing(true);
+        if (InCallPresenter.getInstance().isShowingInCallUi()) {
+            InCallPresenter.getInstance().setThemeColors();
+            InCallPresenter.getInstance().onUiShowing(true);
+        }
 
         if (mShowDialpadRequested) {
             mCallButtonFragment.displayDialpad(true /* show */,
