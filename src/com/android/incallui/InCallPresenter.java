@@ -1363,7 +1363,6 @@ public class InCallPresenter implements CallList.Listener,
                 | Intent.FLAG_ACTIVITY_NO_USER_ACTION | Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
         if (newTask) {
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
         }
 
         intent.setClass(mContext, InCallActivity.class);
