@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7ffa3b31_275b182f",
+        "filename": "src/com/android/incallui/InCallActivity.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 1013,
+      "author": {
+        "id": 10293
+      },
+      "writtenOn": "2015-07-03T04:34:21Z",
+      "side": 1,
+      "message": "when would this ever be false?",
+      "revId": "986e404874988f66af368525d6bb5d8433d4152f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
