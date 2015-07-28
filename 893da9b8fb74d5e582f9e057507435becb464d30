@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bf091321_2c0d4b37",
+        "filename": "src/com/android/incallui/InCallCameraManager.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 157,
+      "author": {
+        "id": 8961
+      },
+      "writtenOn": "2015-07-28T12:36:52Z",
+      "side": 1,
+      "message": "Switch the tabs to spaces",
+      "range": {
+        "startLine": 157,
+        "startChar": 5,
+        "endLine": 157,
+        "endChar": 6
+      },
+      "revId": "893da9b8fb74d5e582f9e057507435becb464d30",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
