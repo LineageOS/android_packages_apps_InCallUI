@@ -152,6 +152,9 @@ public class InCallCameraManager {
                 // Device Id is unknown.
             } catch (CameraAccessException e) {
                 // Camera disabled by device policy.
+            } catch (AssertionError e) {
+                // One or more camera characteristics resulted in assertion error.
+              Log.d(this, "Camera characteristics resulted in assertion error: "+e);
             }
             if (c != null) {
                 int facingCharacteristic = c.get(CameraCharacteristics.LENS_FACING);
