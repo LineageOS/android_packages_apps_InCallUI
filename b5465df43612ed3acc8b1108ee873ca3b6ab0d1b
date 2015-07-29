@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bf091321_420de335",
+        "filename": "src/com/android/incallui/InCallCameraManager.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 155,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-07-29T23:44:43Z",
+      "side": 1,
+      "message": "getCameraCharacteristics will throw only IllegalArgumentException or CameraAccessException. Your exception is originating inside something getCameraCharacteristics is calling. You should be handling this further down.",
+      "revId": "b5465df43612ed3acc8b1108ee873ca3b6ab0d1b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
