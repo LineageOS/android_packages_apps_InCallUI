@@ -16,6 +16,24 @@
       "revId": "b5465df43612ed3acc8b1108ee873ca3b6ab0d1b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bf091321_a275df9a",
+        "filename": "src/com/android/incallui/InCallCameraManager.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 155,
+      "author": {
+        "id": 13789
+      },
+      "writtenOn": "2015-07-30T00:21:17Z",
+      "side": 1,
+      "message": "Actually it does and I tried to fix it further down: http://review.cyanogenmod.org/#/c/104190/1/core/java/android/hardware/camera2/legacy/LegacyMetadataMapper.java but later on, abandoned it since it was only my specific device which had this error. (Couple of other Xperia M also seems to get this exact error after a specific period. Planned obsolescence by manufacturer or manufacturing defect maybe?)\n\nSee the comments on that code review for more info. (In my opinion, other camera apps can crash, but something critical like the dialer shouldn\u0027t and this is why I\u0027m handling it here)",
+      "parentUuid": "bf091321_420de335",
+      "revId": "b5465df43612ed3acc8b1108ee873ca3b6ab0d1b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
