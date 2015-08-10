@@ -270,6 +270,7 @@ public class CallCardFragment extends BaseFragment<CallCardPresenter, CallCardPr
                 R.id.floating_end_call_action_button_container);
         mFloatingActionButton = (ImageButton) view.findViewById(
                 R.id.floating_end_call_action_button);
+        mFloatingActionButton.setEnabled(false);
         mFloatingActionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
