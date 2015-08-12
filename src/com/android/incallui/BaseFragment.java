@@ -19,6 +19,8 @@ package com.android.incallui;
 import android.app.Fragment;
 import android.os.Bundle;
 import android.os.Handler;
+import com.android.incallui.InCallPresenter.InCallState;
+import com.android.incallui.InCallPresenter.InCallStateListener;
 
 /**
  * Parent for all fragments that use Presenters and Ui design.
@@ -53,10 +55,16 @@ public abstract class BaseFragment<T extends Presenter<U>, U extends Ui> extends
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        new Handler().postDelayed(new Runnable(){
+        final InCallState preState = InCallPresenter.getInstance().getInCallState();
+        new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
                 mPresenter.onUiReady(getUi());
+                if (mPresenter instanceof InCallStateListener) {
+                    InCallState state = InCallPresenter.getInstance().getInCallState();
+                    ((InCallStateListener) mPresenter).onStateChange(preState, state,
+                            CallList.getInstance());
+                }
             }
         }, DELAY_REFRESH_UI);
     }
