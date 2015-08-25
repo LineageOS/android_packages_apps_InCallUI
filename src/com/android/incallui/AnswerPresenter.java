@@ -35,6 +35,7 @@ public class AnswerPresenter extends Presenter<AnswerPresenter.AnswerUi>
     private String mCallId[] = new String[CallList.PHONE_COUNT];
     private Call mCall[] = new Call[CallList.PHONE_COUNT];
     private boolean mHasTextMessages = false;
+    private int mIncomingCallPhoneId;
 
     @Override
     public void onUiReady(AnswerUi ui) {
@@ -145,6 +146,7 @@ public class AnswerPresenter extends Presenter<AnswerPresenter.AnswerUi>
     private void processIncomingCall(Call call) {
         int subId = call.getSubId();
         int phoneId = CallList.getInstance().getPhoneId(subId);
+        mIncomingCallPhoneId = phoneId;
         mCallId[phoneId] = call.getId();
         mCall[phoneId] = call;
 
@@ -328,9 +330,9 @@ public class AnswerPresenter extends Presenter<AnswerPresenter.AnswerUi>
     }
 
     public void rejectCallWithMessage(String message) {
-        int phoneId = getActivePhoneId();
-        Log.i(this, "sendTextToDefaultActivity()...phoneId:" + phoneId);
-        TelecomAdapter.getInstance().rejectCall(mCall[phoneId].getId(), true, message);
+        Log.i(this, "sendTextToDefaultActivity()...phoneId:" + mIncomingCallPhoneId);
+        // Reject last incomingCall with message.
+        TelecomAdapter.getInstance().rejectCall(mCall[mIncomingCallPhoneId].getId(), true, message);
 
         onDismissDialog();
     }
