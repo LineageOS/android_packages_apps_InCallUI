@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1f1a1f67_f654be56",
+        "filename": "src/com/android/incallui/AnswerPresenter.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 253,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-09-10T23:14:34Z",
+      "side": 1,
+      "message": "Actually, this might be good to split into a separate commit.",
+      "revId": "262872ee7b83f91ba056c5c81d56d7e1e5708cbf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
