@@ -249,8 +249,10 @@ public class AnswerPresenter extends Presenter<AnswerPresenter.AnswerUi>
             phoneId = CallList.getInstance().getPhoneId(subId);
         } else {
             for (int i = 0; i < mCall.length; i++) {
-                if (mCall[i] != null) {
+                // Need to check call state, an IDLE call can not be answered or declined.
+                if ((mCall[i] != null) && (mCall[i].getState() != Call.State.IDLE)) {
                     phoneId = i;
+                    break;
                 }
             }
         }
