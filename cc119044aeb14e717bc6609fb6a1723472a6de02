@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ff346bd7_862adae4",
+        "filename": "src/com/android/incallui/InCallActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 739,
+      "author": {
+        "id": 3134
+      },
+      "writtenOn": "2015-09-18T22:36:23Z",
+      "side": 1,
+      "message": "Why not use isDialpadVisible() instead? After all you should call to setVisible(false) when dialpadfragmente is visible\n\nAny case, the correct way for named this method is \"isDialpadFragmentNull()\", without the \"m\"",
+      "range": {
+        "startLine": 739,
+        "startChar": 19,
+        "endLine": 739,
+        "endChar": 41
+      },
+      "revId": "cc119044aeb14e717bc6609fb6a1723472a6de02",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
