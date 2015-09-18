@@ -759,6 +759,10 @@ public class InCallPresenter implements CallList.Listener,
         return (isActivityStarted() && mInCallActivity.isForegroundActivity());
     }
 
+    public boolean ismDialpadFragmentNull(){
+        return mInCallActivity.ismDialpadFragmentNull();
+    }
+
     /**
      * Returns true if the activity has been created and is running.
      * Returns true as long as activity is not destroyed or finishing.  This ensures that we return

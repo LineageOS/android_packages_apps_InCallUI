@@ -736,6 +736,10 @@ public class InCallActivity extends Activity {
         return mDialpadFragment != null && mDialpadFragment.isVisible();
     }
 
+    public boolean ismDialpadFragmentNull() {
+        return mDialpadFragment == null;
+    }
+
     /**
      * Hides or shows the conference manager fragment.
      *
