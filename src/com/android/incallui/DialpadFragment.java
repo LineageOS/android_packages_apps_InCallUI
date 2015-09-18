@@ -475,6 +475,10 @@ public class DialpadFragment extends BaseFragment<DialpadPresenter, DialpadPrese
     public void onResume() {
         super.onResume();
         updateColors();
+        boolean mDialpadFragmentNull = InCallPresenter.getInstance().isDialpadFragmentNull();
+        if (mDialpadFragmentNull){
+            setVisible(false);
+        }
     }
 
     public void updateColors() {
