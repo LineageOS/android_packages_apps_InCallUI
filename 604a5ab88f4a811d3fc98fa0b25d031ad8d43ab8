@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "9f91af0f_e5d992f4",
+        "filename": "src/com/android/incallui/ContactInfoCache.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 229,
+      "author": {
+        "id": 13766
+      },
+      "writtenOn": "2015-12-05T20:51:57Z",
+      "side": 1,
+      "message": "Ups I didn\u0027t even notice that was a check right above it. So this shall be gone..",
+      "parentUuid": "9f91af0f_c54b2eae",
+      "revId": "604a5ab88f4a811d3fc98fa0b25d031ad8d43ab8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9f91af0f_65c6e219",
         "filename": "src/com/android/incalluibind/ObjectFactory.java",
         "patchSetId": 1
