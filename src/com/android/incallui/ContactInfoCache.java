@@ -226,9 +226,11 @@ public class ContactInfoCache implements ContactsAsyncHelper.OnImageLoadComplete
             // has a name because we allow overriding cnap data with data from other services.
             if (!callerInfo.contactExists && mPhoneNumberService != null) {
                 Log.d(TAG, "Contact lookup. Local contacts miss, checking remote");
-                final PhoneNumberServiceListener listener = new PhoneNumberServiceListener(callId);
-                mPhoneNumberService.getPhoneNumberInfo(cacheEntry.number, listener, listener,
-                        isIncoming);
+                if (mPhoneNumberService != null) {
+                    final PhoneNumberServiceListener listener = new PhoneNumberServiceListener(callId);
+                    mPhoneNumberService.getPhoneNumberInfo(cacheEntry.number, listener, listener,
+                            isIncoming);
+                }
             } else if (cacheEntry.displayPhotoUri != null) {
                 Log.d(TAG, "Contact lookup. Local contact found, starting image load");
                 // Load the image with a callback to update the image state.
