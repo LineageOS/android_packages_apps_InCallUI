@@ -339,6 +339,8 @@
 
     <!-- "Respond via SMS" option that lets you compose a custom response. [CHAR LIMIT=30] -->
     <string name="respond_via_sms_custom_message">Write your own...</string>
+    <!--AnswerFragment Messages send to-->
+    <string name="respond_via_sms_confirmation_format">Message sent to <xliff:g id="phone_number">%s</xliff:g>.</string>
     <!-- "Custom Message" Cancel alert dialog button -->
     <string name="custom_message_cancel">Cancel</string>
     <!-- "Custom Message" Send alert dialog button -->

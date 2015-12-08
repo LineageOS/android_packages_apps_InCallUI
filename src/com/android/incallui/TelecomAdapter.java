@@ -19,10 +19,18 @@ package com.android.incallui;
 import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.Resources;
+import android.content.ComponentName;
 import android.os.Looper;
 import android.telecom.InCallAdapter;
 import android.telecom.Phone;
 import android.telecom.PhoneAccountHandle;
+import android.telephony.TelephonyManager;
+import android.widget.Toast;
+import android.net.Uri;
+
+import com.android.internal.telephony.PhoneConstants;
+import com.android.internal.telephony.SmsApplication;
 
 import com.google.common.base.Preconditions;
 
@@ -98,6 +106,32 @@ final class TelecomAdapter implements InCallPhoneListener {
         } else {
             Log.e(this, "error rejectCall, mPhone is null");
         }
+    }
+
+    void sendMessageIfCallEnded(Context context, String phoneNumber, String textMessage, int subId) {
+        if (textMessage != null) {
+            final ComponentName component =
+                    SmsApplication.getDefaultRespondViaMessageApplication(context, false);
+            if (component != null) {
+                // Build and send the intent
+                final Uri uri = Uri.fromParts("smsto", phoneNumber, null);
+                final Intent intent = new Intent(TelephonyManager.ACTION_RESPOND_VIA_MESSAGE, uri);
+                intent.putExtra(Intent.EXTRA_TEXT, textMessage);
+                intent.putExtra(PhoneConstants.SUBSCRIPTION_KEY, subId);
+
+                showMessageSentToast(phoneNumber, context);
+                intent.setComponent(component);
+                context.startService(intent);
+                Log.d(this, "sendMessageIfCallEnded message: " + textMessage);
+            }
+        }
+    }
+
+    private void showMessageSentToast(final String phoneNumber, final Context context) {
+        final Resources res = context.getResources();
+        final String formatString = res.getString(R.string.respond_via_sms_confirmation_format);
+        final String confirmationMsg = String.format(formatString, phoneNumber);
+        Toast.makeText(context, confirmationMsg,Toast.LENGTH_LONG).show();
     }
 
     void disconnectCall(String callId) {
