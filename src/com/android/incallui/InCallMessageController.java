@@ -165,8 +165,8 @@ public class InCallMessageController implements InCallSubstateListener, VideoEve
 
         final Resources resources = mContext.getResources();
         final String videoQualityChangedText = call.getId() +
-            resources.getString(R.string.video_quality_changed) +
-            resources.getString(QtiCallUtils.getVideoQualityResourceId(videoQuality));
+                resources.getString(R.string.video_quality_changed,
+                QtiCallUtils.getVideoQualityResourceId(videoQuality));
         QtiCallUtils.displayToast(mContext, videoQualityChangedText);
     }
 
