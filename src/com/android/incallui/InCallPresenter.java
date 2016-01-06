@@ -460,9 +460,8 @@ public class InCallPresenter implements CallList.Listener,
         }
 
         if (isActivityStarted()) {
-            final boolean hasCall = callList.getActiveOrBackgroundCall() != null ||
-                    callList.getOutgoingCall() != null;
-            mInCallActivity.dismissKeyguard(hasCall);
+            boolean dismissKeyguard = oldState != newState && newState == InCallState.INCALL;
+            mInCallActivity.dismissKeyguard(dismissKeyguard);
         }
         if (CallList.getInstance().isDsdaEnabled() && (mInCallActivity != null)) {
             mInCallActivity.updateDsdaTab();
