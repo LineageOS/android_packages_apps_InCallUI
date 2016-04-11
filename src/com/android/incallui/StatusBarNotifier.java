@@ -46,6 +46,7 @@ import com.android.contacts.common.util.BitmapUtil;
 import com.android.incallui.ContactInfoCache.ContactCacheEntry;
 import com.android.incallui.ContactInfoCache.ContactInfoCacheCallback;
 import com.android.incallui.InCallPresenter.InCallState;
+import com.android.internal.telephony.util.BlacklistUtils;
 
 import com.google.common.base.Preconditions;
 
@@ -383,7 +384,9 @@ public class StatusBarNotifier implements InCallPresenter.InCallStateListener,
                 Call.State.isDialing(state)) {
             addHangupAction(builder);
         } else if (state == Call.State.INCOMING || state == Call.State.CALL_WAITING) {
-            addBlockAction(builder);
+            if (BlacklistUtils.isBlacklistEnabled(mContext)) {
+                addBlockAction(builder);
+            }
             addDismissAction(builder);
             if (call.isVideoCall(mContext)) {
                 addVoiceAction(builder);

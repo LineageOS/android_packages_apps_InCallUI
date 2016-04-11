@@ -27,6 +27,8 @@ import android.provider.Settings;
 import com.android.contacts.common.util.BlockContactHelper;
 import com.android.dialer.util.TelecomUtil;
 import com.android.incallui.InCallPresenter.InCallState;
+import com.android.internal.telephony.util.BlacklistUtils;
+
 import com.cyanogen.lookup.phonenumber.provider.LookupProviderImpl;
 import org.codeaurora.ims.qtiims.IQtiImsInterface;
 import org.codeaurora.ims.qtiims.IQtiImsInterfaceListener;
@@ -482,6 +484,10 @@ public class AnswerPresenter extends Presenter<AnswerPresenter.AnswerUi>
             // end the call
             onDecline(getUi().getContext());
         }
+    }
+
+    public boolean isBlockingEnabled() {
+        return BlacklistUtils.isBlacklistEnabled(getUi().getContext());
     }
 
     public void onBlockDialogInitialize() {

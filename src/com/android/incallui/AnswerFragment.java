@@ -33,6 +33,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.android.contacts.common.activity.fragment.BlockContactDialogFragment;
 import com.google.common.base.Preconditions;
@@ -458,6 +459,12 @@ public class AnswerFragment extends BaseFragment<AnswerPresenter, AnswerPresente
 
     @Override
     public void onBlock(Context context) {
+        if (!getPresenter().isBlockingEnabled()) {
+            Toast.makeText(getContext(), R.string.blocking_error_blacklist_disabled,
+                    Toast.LENGTH_LONG).show();
+            return;
+        }
+
         getPresenter().onBlockDialogInitialize();
         BlockContactDialogFragment bcdf = BlockContactDialogFragment.create(
                 BlockContactDialogFragment.BLOCK_MODE,

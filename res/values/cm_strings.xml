@@ -65,4 +65,6 @@
     <!-- [CHAR LIMIT=12] -->
     <string name="notification_action_block">Block</string>
 
+    <string name="blocking_error_blacklist_disabled">Blocking has been disabled. Enable it in Settings to continue using this feature.</string>
+
 </resources>
