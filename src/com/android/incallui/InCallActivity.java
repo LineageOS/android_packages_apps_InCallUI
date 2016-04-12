@@ -39,6 +39,7 @@ import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.os.Trace;
 import android.support.design.widget.Snackbar;
+import android.support.v7.app.AppCompatActivity;
 import android.telecom.DisconnectCause;
 import android.telecom.PhoneAccountHandle;
 import android.text.TextUtils;
@@ -70,7 +71,7 @@ import java.util.Locale;
 /**
  * Main activity that the user interacts with while in a live call.
  */
-public class InCallActivity extends Activity implements FragmentDisplayManager {
+public class InCallActivity extends AppCompatActivity implements FragmentDisplayManager {
 
     public static final String TAG = InCallActivity.class.getSimpleName();
     public static final boolean DEBUG = false;
@@ -169,16 +170,16 @@ public class InCallActivity extends Activity implements FragmentDisplayManager {
         getWindow().addFlags(flags);
         boolean isDsdaEnabled = InCallServiceImpl.isDsdaEnabled();
         if (isDsdaEnabled) {
-            requestWindowFeature(Window.FEATURE_ACTION_BAR);
-            getActionBar().setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
-            getActionBar().setDisplayShowTitleEnabled(false);
-            getActionBar().setDisplayShowHomeEnabled(false);
+            supportRequestWindowFeature(Window.FEATURE_ACTION_BAR);
+            getSupportActionBar().setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
+            getSupportActionBar().setDisplayShowTitleEnabled(false);
+            getSupportActionBar().setDisplayShowHomeEnabled(false);
         } else {
-            requestWindowFeature(Window.FEATURE_ACTION_BAR_OVERLAY);
-            if (getActionBar() != null) {
-                getActionBar().setDisplayHomeAsUpEnabled(true);
-                getActionBar().setDisplayShowTitleEnabled(true);
-                getActionBar().hide();
+            supportRequestWindowFeature(Window.FEATURE_ACTION_BAR_OVERLAY);
+            if (getSupportActionBar() != null) {
+                getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+                getSupportActionBar().setDisplayShowTitleEnabled(true);
+                getSupportActionBar().hide();
             }
         }
 
