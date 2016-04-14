@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7faddb67_c3bbccc1",
+        "filename": "src/com/android/incallui/AnswerFragment.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 464,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2016-04-14T05:00:38Z",
+      "side": 1,
+      "message": "The scenario this code handles should not happen anyway, AFAICT, as we shouldn\u0027t show the block option to the user in the !isBlockingEnabled() case in the first place.\n\nIf that premise is correct, I suggest nuking the toast (and the string) and just returning silently.",
+      "revId": "53e4ec7d908aa6235ce2185ad2f4c2acb650f37c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
