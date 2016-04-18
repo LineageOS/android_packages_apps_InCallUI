@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5faad753_d1b43738",
+        "filename": "src/com/android/incallui/CallButtonFragment.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 468,
+      "author": {
+        "id": 9528
+      },
+      "writtenOn": "2016-04-18T21:59:08Z",
+      "side": 1,
+      "message": "some comments about what this call does would probably be helpful. this method does some non-trivial things",
+      "range": {
+        "startLine": 468,
+        "startChar": 16,
+        "endLine": 468,
+        "endChar": 41
+      },
+      "revId": "e3958c1cf35f83281611d8647f012f5f9a0bd3ff",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_b1b73b3b",
+        "filename": "src/com/android/incallui/CallButtonFragment.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 508,
+      "author": {
+        "id": 9528
+      },
+      "writtenOn": "2016-04-18T21:59:08Z",
+      "side": 1,
+      "message": "use newlines \"\\n\" instead of this",
+      "range": {
+        "startLine": 502,
+        "startChar": 20,
+        "endLine": 508,
+        "endChar": 53
+      },
+      "revId": "e3958c1cf35f83281611d8647f012f5f9a0bd3ff",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
