@@ -283,6 +283,9 @@
     <!-- Text for the onscreen "Video call" button used to change a voice call
          to a video call. [CHAR LIMIT=10] -->
     <string name="onscreenVideoCallText">Video call</string>
+    <!-- text for the onscreen note badge in the call button fragment. When clicked this button will launch the
+        appropriate Note taking application as configured by the user. -->
+    <string name="onscreenNoteText">Take Note</string>
     <!-- Text for the onscreen "Change to voice" button. When clicked, this downgrades a video call
          to a voice call. -->
     <string name="onscreenChangeToVoiceText">Change to voice call</string>

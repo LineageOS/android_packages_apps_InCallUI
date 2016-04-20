@@ -48,6 +48,7 @@
     <color name="dialpad_digits_text_color">#333</color>
 
     <color name="incall_dialpad_background">#ffffff</color>
+
     <color name="incall_dialpad_background_pressed">#ccaaaaaa</color>
 
     <color name="button_background_color">@color/incall_background_color</color>
