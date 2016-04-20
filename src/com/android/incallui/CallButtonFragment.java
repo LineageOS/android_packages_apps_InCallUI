@@ -21,11 +21,15 @@ import static com.android.incallui.CallButtonFragment.Buttons.*;
 import android.annotation.NonNull;
 import android.app.AlertDialog;
 import android.app.PendingIntent;
+import java.util.List;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.pm.PackageManager;
 import android.content.res.ColorStateList;
 import android.content.res.Resources;
+import android.graphics.Color;
+import android.graphics.ColorFilter;
+import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.LayerDrawable;
 import android.graphics.drawable.GradientDrawable;
@@ -56,9 +60,13 @@ import com.android.incallui.incallapi.InCallPluginInfo;
 
 import java.lang.Override;
 import java.util.ArrayList;
-import java.util.List;
 
 import com.android.contacts.common.util.MaterialColorMapUtils.MaterialPalette;
+
+import com.cyanogen.ambient.deeplink.DeepLink;
+import com.cyanogen.ambient.common.api.ResultCallback;
+import com.cyanogen.ambient.deeplink.DeepLink.DeepLinkResultList;
+import com.cyanogen.ambient.deeplink.applicationtype.DeepLinkApplicationType;
 
 /**
  * Fragment for call control buttons
@@ -95,7 +103,8 @@ public class CallButtonFragment
         public static final int BUTTON_MANAGE_VIDEO_CONFERENCE = 10;
         public static final int BUTTON_RECORD_CALL = 11;
         public static final int BUTTON_TRANSFER_CALL = 12;
-        public static final int BUTTON_COUNT = 13;
+        public static final int BUTTON_TAKE_NOTE = 13;
+        public static final int BUTTON_COUNT = 14;
     }
 
     private SparseIntArray mButtonVisibilityMap = new SparseIntArray(BUTTON_COUNT);
@@ -115,6 +124,7 @@ public class CallButtonFragment
     private ImageButton mManageVideoCallConferenceButton;
     private ImageButton mAddParticipantButton;
     private ImageButton mTransferCallButton;
+    private ImageButton mTakeNoteButton;
 
     private PopupMenu mAudioModePopup;
     private boolean mAudioModePopupVisible;
@@ -187,6 +197,7 @@ public class CallButtonFragment
         mManageVideoCallConferenceButton = (ImageButton) parent.findViewById(
                 R.id.manageVideoCallConferenceButton);
         mManageVideoCallConferenceButton.setOnClickListener(this);
+        mTakeNoteButton = (ImageButton) parent.findViewById(R.id.takeNoteButton);
         return parent;
     }
 
@@ -266,6 +277,8 @@ public class CallButtonFragment
             case R.id.transferCall:
                 getPresenter().transferCallClicked();
                 break;
+            case R.id.takeNoteButton:
+                getPresenter().takeNote();
             default:
                 Log.wtf(this, "onClick: unexpected");
                 return;
@@ -401,6 +414,7 @@ public class CallButtonFragment
         mManageVideoCallConferenceButton.setEnabled(isEnabled);
         mAddParticipantButton.setEnabled(isEnabled);
         mTransferCallButton.setEnabled(isEnabled);
+        mTakeNoteButton.setEnabled(isEnabled);
     }
 
     @Override
@@ -444,6 +458,8 @@ public class CallButtonFragment
                 return mCallRecordButton;
             case BUTTON_TRANSFER_CALL:
                 return mTransferCallButton;
+            case BUTTON_TAKE_NOTE:
+                return mTakeNoteButton;
             default:
                 Log.w(this, "Invalid button id");
                 return null;
@@ -961,6 +977,16 @@ public class CallButtonFragment
         final InCallActivity activity = (InCallActivity) getActivity();
         if (activity != null) {
             activity.showInviteSnackbar(inviteIntent, inviteText);
+        }
+    }
+
+    @Override
+    public void setDeepLinkNoteIcon(Drawable d) {
+        if(d == null) {
+            mTakeNoteButton.setVisibility(View.GONE);
+        } else {
+            mTakeNoteButton.setImageDrawable(d);
+            mTakeNoteButton.setOnClickListener(CallButtonFragment.this);
         }
     }
 
