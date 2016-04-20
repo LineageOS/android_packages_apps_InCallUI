@@ -1863,4 +1863,8 @@ public class InCallPresenter implements CallList.Listener,
     public interface InCallUiListener {
         void onUiShowing(boolean showing);
     }
+
+    public com.android.incallui.Call getCurrentCall() {
+        return getCallList().getActiveCall();
+    }
 }
