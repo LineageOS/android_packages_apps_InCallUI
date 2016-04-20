@@ -22,11 +22,11 @@ import android.app.AlertDialog;
 import android.app.PendingIntent;
 import android.content.ComponentName;
 import android.content.Context;
-import android.content.CursorLoader;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
+import android.graphics.PorterDuff;
+import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
@@ -35,13 +35,10 @@ import android.os.ResultReceiver;
 import android.provider.Settings;
 import android.telecom.CallAudioState;
 import android.telecom.InCallService.VideoCall;
-import android.telecom.PhoneAccount;
-import android.telecom.PhoneAccountHandle;
 import android.telecom.VideoProfile;
 import android.text.TextUtils;
 
 import com.android.incallui.AudioModeProvider.AudioModeListener;
-import com.android.incallui.ContactInfoCache;
 import com.android.incallui.ContactInfoCache.ContactCacheEntry;
 import com.android.incallui.ContactInfoCache.ContactInfoCacheCallback;
 import com.android.incallui.incallapi.InCallPluginInfo;
@@ -56,11 +53,18 @@ import com.android.incallui.InCallPresenter.InCallDetailsListener;
 import com.android.phone.common.ambient.AmbientConnection;
 
 import com.android.phone.common.incall.StartInCallCallReceiver;
+
 import com.cyanogen.ambient.common.api.AmbientApiClient;
+import com.cyanogen.ambient.common.api.ResultCallback;
+import com.cyanogen.ambient.deeplink.applicationtype.DeepLinkApplicationType;
+import com.cyanogen.ambient.deeplink.DeepLink;
+import com.cyanogen.ambient.deeplink.DeepLink.DeepLinkResultList;
+import com.cyanogen.ambient.deeplink.linkcontent.CallDeepLinkContent;
+import com.cyanogen.ambient.deeplink.linkcontent.DeepLinkContentType;
 import com.cyanogen.ambient.incall.InCallServices;
 import com.cyanogen.ambient.incall.extension.OriginCodes;
-import com.cyanogen.ambient.incall.extension.StatusCodes;
 import com.cyanogen.ambient.incall.extension.StartCallRequest;
+import com.cyanogen.ambient.incall.extension.StatusCodes;
 
 import cyanogenmod.providers.CMSettings;
 
@@ -82,16 +86,17 @@ public class CallButtonPresenter extends Presenter<CallButtonPresenter.CallButto
     private static final boolean DEBUG = false;
 
     private Call mCall;
+    private DeepLink mNoteDeepLink;
     private boolean mAutomaticallyMuted = false;
     private boolean mPreviousMuteState = false;
-
+    private ContactInfoCache.ContactCacheEntry mPrimaryContactInfo;
     private StartInCallCallReceiver mCallback;
 
     @Override
     public void onReceiveResult(int resultCode, Bundle resultData) {
         if (DEBUG) Log.i(TAG, "Got InCallPlugin result callback code = " + resultCode);
 
-        switch (resultCode)  {
+        switch (resultCode) {
             case StatusCodes.StartCall.HANDOVER_CONNECTED:
                 if (mCall == null) {
                     return;
@@ -170,7 +175,21 @@ public class CallButtonPresenter extends Presenter<CallButtonPresenter.CallButto
         } else {
             mCall = null;
         }
+        if (mCall != null && mPrimaryContactInfo == null) {
+            startContactInfoSearch(mCall, true, newState == InCallState.INCOMING);
+            getPreferredLinks();
+        }
         updateUi(newState, mCall);
+    }
+
+    /**
+     * Starts a query for more contact data for the save primary and secondary calls.
+     */
+    private void startContactInfoSearch(final Call call, final boolean isPrimary,
+            boolean isIncoming) {
+        final ContactInfoCache cache = ContactInfoCache.getInstance(getUi().getContext());
+
+        cache.findInfo(call, isIncoming, this);
     }
 
     /**
@@ -621,6 +640,10 @@ public class CallButtonPresenter extends Presenter<CallButtonPresenter.CallButto
                         (contactInCallPlugins != null && !contactInCallPlugins.isEmpty())) &&
                 (callState == Call.State.ACTIVE || callState == Call.State.ONHOLD)
                 && isDeviceProvisionedInSettingsDb(ui.getContext());
+        final boolean showNote =
+                DeepLinkIntegrationManager.getInstance().ambientIsAvailable(getUi().getContext()) &&
+                (callState == Call.State.ACTIVE || callState == Call.State.ONHOLD) &&
+                isDeviceProvisionedInSettingsDb(ui.getContext());
 
         final boolean showMute = call.can(android.telecom.Call.Details.CAPABILITY_MUTE);
         final boolean showAddParticipant = call.can(
@@ -635,6 +658,7 @@ public class CallButtonPresenter extends Presenter<CallButtonPresenter.CallButto
         ui.showButton(BUTTON_AUDIO, true);
         ui.showButton(BUTTON_SWAP, showSwap);
         ui.showButton(BUTTON_HOLD, showHold);
+        ui.showButton(BUTTON_TAKE_NOTE, showNote);
         ui.setHold(isCallOnHold);
         ui.showButton(BUTTON_MUTE, showMute);
         ui.showButton(BUTTON_ADD_CALL, showAddCall);
@@ -681,6 +705,7 @@ public class CallButtonPresenter extends Presenter<CallButtonPresenter.CallButto
     @Override
     public void onContactInfoComplete(String callId, ContactInfoCache.ContactCacheEntry entry) {
         if (DEBUG) Log.i(this, "onContactInfoComplete");
+        mPrimaryContactInfo = entry;
         contactUpdated();
     }
 
@@ -723,7 +748,7 @@ public class CallButtonPresenter extends Presenter<CallButtonPresenter.CallButto
         void modifyChangeToVideoButton();
         void displayVideoCallOptions();
         void showInviteSnackbar(PendingIntent inviteIntent, String inviteText);
-
+        void setDeepLinkNoteIcon(Drawable d);
         /**
          * Once showButton() has been called on each of the individual buttons in the UI, call
          * this to configure the overflow menu appropriately.
@@ -746,4 +771,55 @@ public class CallButtonPresenter extends Presenter<CallButtonPresenter.CallButto
 
         onStateChange(null, state, CallList.getInstance());
     }
+
+    public void takeNote() {
+        if (mCall != null && mNoteDeepLink != null) {
+            Context ctx = getUi().getContext();
+
+            android.telecom.Call.Details details = mCall.getTelecommCall().getDetails();
+            CallDeepLinkContent content = new CallDeepLinkContent(mNoteDeepLink);
+            content.setName(mPrimaryContactInfo.name == null ?
+                    ctx.getString(R.string.deeplink_unknown_caller) : mPrimaryContactInfo.name);
+            content.setNumber(mCall.getNumber());
+            content.setUri(DeepLinkIntegrationManager.generateCallUri(mCall.getNumber(),
+                    details.getCreateTimeMillis()));
+            DeepLinkIntegrationManager.getInstance().sendContentSentEvent(ctx, mNoteDeepLink,
+                    new ComponentName(ctx, CallButtonPresenter.class));
+            ctx.startActivity(content.build());
+
+        }
+    }
+
+    public void getPreferredLinks() {
+        if (mCall != null) {
+            Uri callUri = DeepLinkIntegrationManager.generateCallUri(mCall.getNumber(),
+                    mCall.getCreateTimeMillis());
+            DeepLinkIntegrationManager.getInstance().getPreferredLinksFor(mDeepNoteDeepLinkCallback,
+                    DeepLinkContentType.CALL, callUri);
+        }
+    }
+
+    private ResultCallback<DeepLinkResultList> mDeepNoteDeepLinkCallback =
+            new ResultCallback<DeepLinkResultList>() {
+        @Override
+        public void onResult(DeepLinkResultList deepLinkResult) {
+            List<DeepLink> links = deepLinkResult.getResults();
+            Drawable toDraw = null;
+            if (links != null) {
+                for (DeepLink result : links) {
+                    if (result.getApplicationType() == DeepLinkApplicationType.NOTE) {
+                        mNoteDeepLink = result;
+                        toDraw = result.getDrawableIcon(getUi().getContext()).mutate();
+                        toDraw.setColorFilter(
+                                getUi().getContext().getColor(R.color.button_default_color),
+                                PorterDuff.Mode.SRC_IN);
+                        break;
+                    }
+                }
+            }
+            getUi().setDeepLinkNoteIcon(toDraw);
+
+        }
+    };
+
 }
