@@ -51,6 +51,8 @@ public class AnswerFragment extends BaseFragment<AnswerPresenter, AnswerPresente
     public static final int TARGET_SET_FOR_VIDEO_WITHOUT_SMS = 2;
     public static final int TARGET_SET_FOR_VIDEO_WITH_SMS = 3;
     public static final int TARGET_SET_FOR_VIDEO_ACCEPT_REJECT_REQUEST = 4;
+    public static final int TARGET_SET_FOR_AUDIO_WITH_SMS_NO_POPUP = 5;
+    public static final int TARGET_SET_FOR_AUDIO_WITHOUT_SMS_NO_POPUP = 6;
 
     public static final int TARGET_SET_FOR_QTI_VIDEO_WITHOUT_SMS = 1000;
     public static final int TARGET_SET_FOR_QTI_VIDEO_WITH_SMS = 1001;
@@ -144,6 +146,7 @@ public class AnswerFragment extends BaseFragment<AnswerPresenter, AnswerPresente
         final int targetDescriptionsResourceId;
         final int directionDescriptionsResourceId;
         final int handleDrawableResourceId;
+        int targetDisplayTextResourceId = R.array.incoming_call_widget_default_target_display_text;
         mGlowpad.setVideoState(videoState);
 
         switch (targetSet) {
@@ -154,6 +157,8 @@ public class AnswerFragment extends BaseFragment<AnswerPresenter, AnswerPresente
                 directionDescriptionsResourceId =
                         R.array.incoming_call_widget_audio_with_sms_direction_descriptions;
                 handleDrawableResourceId = R.drawable.ic_incall_audio_handle;
+                targetDisplayTextResourceId = R.array
+                        .incoming_call_widget_audio_with_sms_display_text;
                 break;
             case TARGET_SET_FOR_VIDEO_WITHOUT_SMS:
                 targetResourceId = R.array.incoming_call_widget_video_without_sms_targets;
@@ -248,6 +253,28 @@ public class AnswerFragment extends BaseFragment<AnswerPresenter, AnswerPresente
                         .qti_incoming_call_widget_audio_without_sms_direction_descriptions;
                 handleDrawableResourceId = R.drawable.ic_incall_audio_handle;
                 break;
+            case TARGET_SET_FOR_AUDIO_WITH_SMS_NO_POPUP:
+                targetResourceId = R.array.incoming_call_widget_audio_with_sms_no_popup_targets;
+                targetDescriptionsResourceId =
+                        R.array.incoming_call_widget_audio_with_sms_no_popup_target_descriptions;
+                directionDescriptionsResourceId =
+                        R.array
+                               .incoming_call_widget_audio_with_sms_no_popup_direction_descriptions;
+                handleDrawableResourceId = R.drawable.ic_incall_audio_handle;
+                targetDisplayTextResourceId = R.array
+                        .incoming_call_widget_audio_with_sms_no_popup_display_text;
+                break;
+            case TARGET_SET_FOR_AUDIO_WITHOUT_SMS_NO_POPUP:
+                targetResourceId = R.array.incoming_call_widget_audio_without_sms_no_popup_targets;
+                targetDescriptionsResourceId =
+                        R.array.incoming_call_widget_audio_without_sms_no_popup_target_descriptions;
+                directionDescriptionsResourceId =
+                        R.array
+                        .incoming_call_widget_audio_without_sms_no_popup_direction_descriptions;
+                handleDrawableResourceId = R.drawable.ic_incall_audio_handle;
+                targetDisplayTextResourceId = R.array
+                        .incoming_call_widget_audio_without_sms_no_popup_display_text;
+                break;
             case TARGET_SET_FOR_AUDIO_WITHOUT_SMS:
             default:
                 targetResourceId = R.array.incoming_call_widget_audio_without_sms_targets;
@@ -256,6 +283,8 @@ public class AnswerFragment extends BaseFragment<AnswerPresenter, AnswerPresente
                 directionDescriptionsResourceId =
                         R.array.incoming_call_widget_audio_without_sms_direction_descriptions;
                 handleDrawableResourceId = R.drawable.ic_incall_audio_handle;
+                targetDisplayTextResourceId = R.array
+                        .incoming_call_widget_audio_without_sms_display_text;
                 break;
         }
 
@@ -264,6 +293,7 @@ public class AnswerFragment extends BaseFragment<AnswerPresenter, AnswerPresente
             mGlowpad.setTargetDescriptionsResourceId(targetDescriptionsResourceId);
             mGlowpad.setDirectionDescriptionsResourceId(directionDescriptionsResourceId);
             mGlowpad.setHandleDrawable(handleDrawableResourceId);
+            mGlowpad.setTargetDisplayTextResourceId(targetDisplayTextResourceId);
             mGlowpad.reset(false);
         }
     }
@@ -429,9 +459,9 @@ public class AnswerFragment extends BaseFragment<AnswerPresenter, AnswerPresente
     }
 
     @Override
-    public void onAnswer(int videoState, Context context) {
+    public void onAnswer(int videoState, Context context, int callWaitingResponseType) {
         Log.d(this, "onAnswer videoState=" + videoState + " context=" + context);
-        getPresenter().onAnswer(videoState, context);
+        getPresenter().onAnswer(videoState, context, callWaitingResponseType);
     }
 
     @Override

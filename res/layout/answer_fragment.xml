@@ -29,6 +29,7 @@
 
         dc:targetDrawables="@array/incoming_call_widget_audio_with_sms_targets"
         dc:targetDescriptions="@array/incoming_call_widget_audio_with_sms_target_descriptions"
+        dc:targetDisplayText="@array/incoming_call_widget_audio_with_sms_display_text"
         dc:directionDescriptions="@array/incoming_call_widget_audio_with_sms_direction_descriptions"
         dc:handleDrawable="@drawable/ic_incall_audio_handle"
         dc:outerRingDrawable="@drawable/ic_lockscreen_outerring"

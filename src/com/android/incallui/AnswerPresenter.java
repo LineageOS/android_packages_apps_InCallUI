@@ -438,7 +438,7 @@ public class AnswerPresenter extends Presenter<AnswerPresenter.AnswerUi>
         return phoneId;
     }
 
-    public void onAnswer(int videoState, Context context) {
+    public void onAnswer(int videoState, Context context, int callWaitingResponseType) {
         int phoneId = getActivePhoneId();
         Log.i(this, "onAnswer  mCallId:" + mCallId + "phoneId:" + phoneId);
         if (mCallId == null || phoneId == -1) {
@@ -451,7 +451,8 @@ public class AnswerPresenter extends Presenter<AnswerPresenter.AnswerUi>
             InCallPresenter.getInstance().acceptUpgradeRequest(videoState, context);
         } else {
             Log.d(this, "onAnswer (answerCall) mCallId=" + mCallId + " videoState=" + videoState);
-            TelecomAdapter.getInstance().answerCall(mCall[phoneId].getId(), videoState);
+            TelecomAdapter.getInstance().answerCall(mCall[phoneId].getId(), videoState,
+                    callWaitingResponseType);
         }
     }
 
@@ -526,6 +527,9 @@ public class AnswerPresenter extends Presenter<AnswerPresenter.AnswerUi>
                 call.can(android.telecom.Call.Details.CAPABILITY_RESPOND_VIA_TEXT)
                 && mHasTextMessages;
 
+        Call activeCall = CallList.getInstance().getActiveCall();
+        boolean isCallWaiting = activeCall != null && activeCall != call;
+
         // Only present the user with the option to answer as a video call if the incoming call is
         // a bi-directional video call.
         if (call.isVideoCall(getUi().getContext())) {
@@ -550,10 +554,19 @@ public class AnswerPresenter extends Presenter<AnswerPresenter.AnswerUi>
             }
         } else {
             if (withSms) {
-                getUi().showTargets(AnswerFragment.TARGET_SET_FOR_AUDIO_WITH_SMS);
-                getUi().configureMessageDialog(textMsgs);
+                if (isCallWaiting) {
+                    getUi().showTargets(AnswerFragment.TARGET_SET_FOR_AUDIO_WITH_SMS_NO_POPUP);
+                    getUi().configureMessageDialog(textMsgs);
+                } else {
+                    getUi().showTargets(AnswerFragment.TARGET_SET_FOR_AUDIO_WITH_SMS);
+                    getUi().configureMessageDialog(textMsgs);
+                }
             } else {
-                getUi().showTargets(AnswerFragment.TARGET_SET_FOR_AUDIO_WITHOUT_SMS);
+                if (isCallWaiting) {
+                    getUi().showTargets(AnswerFragment.TARGET_SET_FOR_AUDIO_WITHOUT_SMS_NO_POPUP);
+                } else {
+                    getUi().showTargets(AnswerFragment.TARGET_SET_FOR_AUDIO_WITHOUT_SMS);
+                }
             }
         }
     }
