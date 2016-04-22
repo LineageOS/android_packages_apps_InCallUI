@@ -20,6 +20,7 @@ import android.content.Context;
 import android.os.Handler;
 import android.os.Message;
 import android.telecom.VideoProfile;
+import android.telecom.TelecomManager;
 import android.util.AttributeSet;
 import android.view.View;
 
@@ -113,7 +114,8 @@ public class GlowPadWrapper extends GlowPadView implements GlowPadView.OnTrigger
         final int resId = getResourceIdForTarget(target);
         switch (resId) {
             case R.drawable.ic_lockscreen_answer:
-                mAnswerListener.onAnswer(VideoProfile.STATE_AUDIO_ONLY, getContext());
+                mAnswerListener.onAnswer(VideoProfile.STATE_AUDIO_ONLY, getContext(),
+                        TelecomManager.CALL_WAITING_RESPONSE_SHOW_POPUP);
                 mTargetTriggered = true;
                 break;
             case R.drawable.ic_lockscreen_decline:
@@ -126,7 +128,8 @@ public class GlowPadWrapper extends GlowPadView implements GlowPadView.OnTrigger
                 break;
             case R.drawable.ic_videocam:
             case R.drawable.ic_lockscreen_answer_video:
-                mAnswerListener.onAnswer(mVideoState, getContext());
+                mAnswerListener.onAnswer(mVideoState, getContext(),
+                        TelecomManager.CALL_WAITING_RESPONSE_SHOW_POPUP);
                 mTargetTriggered = true;
                 break;
             case R.drawable.ic_lockscreen_decline_video:
@@ -134,15 +137,27 @@ public class GlowPadWrapper extends GlowPadView implements GlowPadView.OnTrigger
                 mTargetTriggered = true;
                 break;
             case R.drawable.qti_ic_lockscreen_answer_tx_video:
-                mAnswerListener.onAnswer(VideoProfile.STATE_TX_ENABLED, getContext());
+                mAnswerListener.onAnswer(VideoProfile.STATE_TX_ENABLED, getContext(),
+                        TelecomManager.CALL_WAITING_RESPONSE_SHOW_POPUP);
                 mTargetTriggered = true;
                 break;
             case R.drawable.qti_ic_lockscreen_answer_rx_video:
-                mAnswerListener.onAnswer(VideoProfile.STATE_RX_ENABLED, getContext());
+                mAnswerListener.onAnswer(VideoProfile.STATE_RX_ENABLED, getContext(),
+                        TelecomManager.CALL_WAITING_RESPONSE_SHOW_POPUP);
                 mTargetTriggered = true;
                 break;
             case R.drawable.qti_ic_lockscreen_deflect:
                 mAnswerListener.onDeflect(getContext());
+                mTargetTriggered = true;
+                break;
+            case R.drawable.ic_lockscreen_answer_hold_current:
+                mAnswerListener.onAnswer(VideoProfile.STATE_AUDIO_ONLY, getContext(),
+                        TelecomManager.CALL_WAITING_RESPONSE_NO_POPUP_HOLD_CALL);
+                mTargetTriggered = true;
+                break;
+            case R.drawable.ic_lockscreen_answer_end_current:
+                mAnswerListener.onAnswer(VideoProfile.STATE_AUDIO_ONLY, getContext(),
+                        TelecomManager.CALL_WAITING_RESPONSE_NO_POPUP_END_CALL);
                 mTargetTriggered = true;
                 break;
             default:
@@ -175,7 +190,7 @@ public class GlowPadWrapper extends GlowPadView implements GlowPadView.OnTrigger
     }
 
     public interface AnswerListener {
-        void onAnswer(int videoState, Context context);
+        void onAnswer(int videoState, Context context, int callWaitingResponseType);
         void onDecline(Context context);
         void onDeclineUpgradeRequest(Context context);
         void onText();
