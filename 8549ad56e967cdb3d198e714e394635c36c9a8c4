@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5faad753_390a4926",
+        "filename": "src/com/android/incallui/CallButtonPresenter.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 586,
+      "author": {
+        "id": 9813
+      },
+      "writtenOn": "2016-04-22T17:44:57Z",
+      "side": 1,
+      "message": "should probably check our flag AND the default aosp flag.",
+      "range": {
+        "startLine": 583,
+        "startChar": 0,
+        "endLine": 586,
+        "endChar": 5
+      },
+      "revId": "8549ad56e967cdb3d198e714e394635c36c9a8c4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
