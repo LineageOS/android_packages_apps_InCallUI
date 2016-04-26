@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "5faad753_bf61343c",
+        "filename": "res/layout/call_button_fragment.xml",
+        "patchSetId": 7
+      },
+      "lineNbr": 116,
+      "author": {
+        "id": 14345
+      },
+      "writtenOn": "2016-04-26T02:47:52Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5faad753_9f9d585b",
+      "range": {
+        "startLine": 116,
+        "startChar": 39,
+        "endLine": 116,
+        "endChar": 41
+      },
+      "revId": "6d744fa255ff83471a3ff7321a158a6e0094060d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5faad753_3fa2249c",
         "filename": "res/values/colors.xml",
         "patchSetId": 7
@@ -36,6 +60,24 @@
       "writtenOn": "2016-04-26T01:44:56Z",
       "side": 1,
       "message": "extra space",
+      "revId": "6d744fa255ff83471a3ff7321a158a6e0094060d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_1f73a817",
+        "filename": "res/values/colors.xml",
+        "patchSetId": 7
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 14345
+      },
+      "writtenOn": "2016-04-26T02:47:52Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5faad753_3fa2249c",
       "revId": "6d744fa255ff83471a3ff7321a158a6e0094060d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
