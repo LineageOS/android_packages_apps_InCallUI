@@ -1,0 +1,174 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5faad753_520fd72d",
+        "filename": "res/values/config.xml",
+        "patchSetId": 8
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2016-04-26T04:47:41Z",
+      "side": 1,
+      "message": "I\u0027m not sure this is a good idea. Small screens won\u0027t fit 6 buttons.",
+      "revId": "9f7ed5db78d7d698f650a7f75c36561397529036",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_f21b6370",
+        "filename": "src/com/android/incallui/CallButtonFragment.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2016-04-26T04:47:41Z",
+      "side": 1,
+      "message": "To line 63",
+      "revId": "9f7ed5db78d7d698f650a7f75c36561397529036",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_12195f78",
+        "filename": "src/com/android/incallui/CallButtonFragment.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 985,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2016-04-26T04:47:41Z",
+      "side": 1,
+      "message": "if (",
+      "revId": "9f7ed5db78d7d698f650a7f75c36561397529036",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_b2272bb7",
+        "filename": "src/com/android/incallui/CallButtonPresenter.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2016-04-26T04:47:41Z",
+      "side": 1,
+      "message": "One space too much here.",
+      "revId": "9f7ed5db78d7d698f650a7f75c36561397529036",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_7221b39f",
+        "filename": "src/com/android/incallui/CallButtonPresenter.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 746,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2016-04-26T04:47:41Z",
+      "side": 1,
+      "message": "Should use a string resource here.",
+      "revId": "9f7ed5db78d7d698f650a7f75c36561397529036",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_9226afb7",
+        "filename": "src/com/android/incallui/CallButtonPresenter.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 754,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2016-04-26T04:47:41Z",
+      "side": 1,
+      "message": "getPreferredLinks",
+      "revId": "9f7ed5db78d7d698f650a7f75c36561397529036",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_323b3bd2",
+        "filename": "src/com/android/incallui/CallButtonPresenter.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 771,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2016-04-26T04:47:41Z",
+      "side": 1,
+      "message": "100 chars (wrap after \u003d)",
+      "revId": "9f7ed5db78d7d698f650a7f75c36561397529036",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_523837d2",
+        "filename": "src/com/android/incallui/CallButtonPresenter.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 776,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2016-04-26T04:47:41Z",
+      "side": 1,
+      "message": "if (",
+      "revId": "9f7ed5db78d7d698f650a7f75c36561397529036",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_f234c3e0",
+        "filename": "src/com/android/incallui/CallButtonPresenter.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 781,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2016-04-26T04:47:41Z",
+      "side": 1,
+      "message": "Use a color resource here.",
+      "revId": "9f7ed5db78d7d698f650a7f75c36561397529036",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_1232bff2",
+        "filename": "src/com/android/incallui/DeepLinkIntegrationManager.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2016-04-26T04:47:41Z",
+      "side": 1,
+      "message": "Should import Bundle.",
+      "revId": "9f7ed5db78d7d698f650a7f75c36561397529036",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
