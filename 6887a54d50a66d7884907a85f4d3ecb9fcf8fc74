@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "5faad753_2c48b7ca",
+        "filename": "src/com/android/incallui/CallButtonFragment.java",
+        "patchSetId": 12
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 14345
+      },
+      "writtenOn": "2016-04-27T22:52:25Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5faad753_e1470bbc",
+      "range": {
+        "startLine": 24,
+        "startChar": 0,
+        "endLine": 24,
+        "endChar": 22
+      },
+      "revId": "6887a54d50a66d7884907a85f4d3ecb9fcf8fc74",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5faad753_8112d7b0",
         "filename": "src/com/android/incallui/CallButtonPresenter.java",
         "patchSetId": 12
@@ -36,6 +60,30 @@
       "writtenOn": "2016-04-27T20:10:15Z",
       "side": 1,
       "message": "put these with all the other cyanogen.ambient imports",
+      "range": {
+        "startLine": 63,
+        "startChar": 0,
+        "endLine": 68,
+        "endChar": 78
+      },
+      "revId": "6887a54d50a66d7884907a85f4d3ecb9fcf8fc74",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_4c45f3b2",
+        "filename": "src/com/android/incallui/CallButtonPresenter.java",
+        "patchSetId": 12
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 14345
+      },
+      "writtenOn": "2016-04-27T22:52:25Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5faad753_8112d7b0",
       "range": {
         "startLine": 63,
         "startChar": 0,
@@ -71,6 +119,30 @@
     },
     {
       "key": {
+        "uuid": "5faad753_ec137fb7",
+        "filename": "src/com/android/incallui/CallButtonPresenter.java",
+        "patchSetId": 12
+      },
+      "lineNbr": 88,
+      "author": {
+        "id": 14345
+      },
+      "writtenOn": "2016-04-27T22:52:25Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5faad753_4124df0d",
+      "range": {
+        "startLine": 88,
+        "startChar": 4,
+        "endLine": 88,
+        "endChar": 59
+      },
+      "revId": "6887a54d50a66d7884907a85f4d3ecb9fcf8fc74",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5faad753_41693f23",
         "filename": "src/com/android/incallui/CallButtonPresenter.java",
         "patchSetId": 12
@@ -82,6 +154,30 @@
       "writtenOn": "2016-04-27T20:10:15Z",
       "side": 1,
       "message": "CallButtonPresentor implements ContactInforCacheCallback already. Infact, you\u0027re calling this its implementation from your implementation.",
+      "range": {
+        "startLine": 91,
+        "startChar": 4,
+        "endLine": 110,
+        "endChar": 5
+      },
+      "revId": "6887a54d50a66d7884907a85f4d3ecb9fcf8fc74",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_ac0d8791",
+        "filename": "src/com/android/incallui/CallButtonPresenter.java",
+        "patchSetId": 12
+      },
+      "lineNbr": 110,
+      "author": {
+        "id": 14345
+      },
+      "writtenOn": "2016-04-27T22:52:25Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5faad753_41693f23",
       "range": {
         "startLine": 91,
         "startChar": 4,
@@ -117,6 +213,30 @@
     },
     {
       "key": {
+        "uuid": "5faad753_6c278f14",
+        "filename": "src/com/android/incallui/CallButtonPresenter.java",
+        "patchSetId": 12
+      },
+      "lineNbr": 196,
+      "author": {
+        "id": 14345
+      },
+      "writtenOn": "2016-04-27T22:52:25Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5faad753_e1e38ba3",
+      "range": {
+        "startLine": 196,
+        "startChar": 12,
+        "endLine": 196,
+        "endChar": 60
+      },
+      "revId": "6887a54d50a66d7884907a85f4d3ecb9fcf8fc74",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5faad753_014ca7c5",
         "filename": "src/com/android/incallui/CallButtonPresenter.java",
         "patchSetId": 12
@@ -128,6 +248,30 @@
       "writtenOn": "2016-04-27T20:01:11Z",
       "side": 1,
       "message": "Looks like a way to bypass FRP.\n\nPlease add a check to make sure we\u0027ve completed OOBE (see this patch: http://review.cyanogenmod.org#/c/141624/4/src/com/android/incallui/CallButtonPresenter.java",
+      "range": {
+        "startLine": 653,
+        "startChar": 22,
+        "endLine": 655,
+        "endChar": 44
+      },
+      "revId": "6887a54d50a66d7884907a85f4d3ecb9fcf8fc74",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_2c2197fc",
+        "filename": "src/com/android/incallui/CallButtonPresenter.java",
+        "patchSetId": 12
+      },
+      "lineNbr": 655,
+      "author": {
+        "id": 14345
+      },
+      "writtenOn": "2016-04-27T22:52:25Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5faad753_014ca7c5",
       "range": {
         "startLine": 653,
         "startChar": 22,
@@ -163,6 +307,30 @@
     },
     {
       "key": {
+        "uuid": "5faad753_4c1e53bb",
+        "filename": "src/com/android/incallui/CallButtonPresenter.java",
+        "patchSetId": 12
+      },
+      "lineNbr": 670,
+      "author": {
+        "id": 14345
+      },
+      "writtenOn": "2016-04-27T22:52:25Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5faad753_41005f35",
+      "range": {
+        "startLine": 670,
+        "startChar": 22,
+        "endLine": 670,
+        "endChar": 47
+      },
+      "revId": "6887a54d50a66d7884907a85f4d3ecb9fcf8fc74",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5faad753_01734717",
         "filename": "src/com/android/incallui/CallButtonPresenter.java",
         "patchSetId": 12
@@ -174,6 +342,30 @@
       "writtenOn": "2016-04-27T20:10:15Z",
       "side": 1,
       "message": "spelling",
+      "range": {
+        "startLine": 792,
+        "startChar": 16,
+        "endLine": 792,
+        "endChar": 33
+      },
+      "revId": "6887a54d50a66d7884907a85f4d3ecb9fcf8fc74",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_ec785ff9",
+        "filename": "src/com/android/incallui/CallButtonPresenter.java",
+        "patchSetId": 12
+      },
+      "lineNbr": 792,
+      "author": {
+        "id": 14345
+      },
+      "writtenOn": "2016-04-27T22:52:25Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5faad753_01734717",
       "range": {
         "startLine": 792,
         "startChar": 16,
@@ -209,6 +401,30 @@
     },
     {
       "key": {
+        "uuid": "5faad753_ac8267c7",
+        "filename": "src/com/android/incallui/CallButtonPresenter.java",
+        "patchSetId": 12
+      },
+      "lineNbr": 797,
+      "author": {
+        "id": 14345
+      },
+      "writtenOn": "2016-04-27T22:52:25Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5faad753_a194b3e9",
+      "range": {
+        "startLine": 795,
+        "startChar": 12,
+        "endLine": 797,
+        "endChar": 81
+      },
+      "revId": "6887a54d50a66d7884907a85f4d3ecb9fcf8fc74",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5faad753_619ebb08",
         "filename": "src/com/android/incallui/CallButtonPresenter.java",
         "patchSetId": 12
@@ -220,6 +436,30 @@
       "writtenOn": "2016-04-27T20:10:15Z",
       "side": 1,
       "message": "line wrap",
+      "range": {
+        "startLine": 801,
+        "startChar": 0,
+        "endLine": 801,
+        "endChar": 117
+      },
+      "revId": "6887a54d50a66d7884907a85f4d3ecb9fcf8fc74",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_cc87a3d7",
+        "filename": "src/com/android/incallui/CallButtonPresenter.java",
+        "patchSetId": 12
+      },
+      "lineNbr": 801,
+      "author": {
+        "id": 14345
+      },
+      "writtenOn": "2016-04-27T22:52:25Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5faad753_619ebb08",
       "range": {
         "startLine": 801,
         "startChar": 0,
@@ -271,6 +511,54 @@
         "startChar": 37,
         "endLine": 1867,
         "endChar": 51
+      },
+      "revId": "6887a54d50a66d7884907a85f4d3ecb9fcf8fc74",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_6c6c6f36",
+        "filename": "src/com/android/incallui/InCallPresenter.java",
+        "patchSetId": 12
+      },
+      "lineNbr": 1867,
+      "author": {
+        "id": 14345
+      },
+      "writtenOn": "2016-04-27T22:52:25Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5faad753_61b79b88",
+      "range": {
+        "startLine": 1867,
+        "startChar": 37,
+        "endLine": 1867,
+        "endChar": 51
+      },
+      "revId": "6887a54d50a66d7884907a85f4d3ecb9fcf8fc74",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_8c69ab26",
+        "filename": "src/com/android/incallui/InCallPresenter.java",
+        "patchSetId": 12
+      },
+      "lineNbr": 1867,
+      "author": {
+        "id": 14345
+      },
+      "writtenOn": "2016-04-27T22:52:25Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5faad753_e1914bf3",
+      "range": {
+        "startLine": 1867,
+        "startChar": 11,
+        "endLine": 1867,
+        "endChar": 36
       },
       "revId": "6887a54d50a66d7884907a85f4d3ecb9fcf8fc74",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
