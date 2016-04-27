@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5faad753_014ca7c5",
+        "filename": "src/com/android/incallui/CallButtonPresenter.java",
+        "patchSetId": 12
+      },
+      "lineNbr": 655,
+      "author": {
+        "id": 13408
+      },
+      "writtenOn": "2016-04-27T20:01:11Z",
+      "side": 1,
+      "message": "Looks like a way to bypass FRP.\n\nPlease add a check to make sure we\u0027ve completed OOBE (see this patch: http://review.cyanogenmod.org#/c/141624/4/src/com/android/incallui/CallButtonPresenter.java",
+      "range": {
+        "startLine": 653,
+        "startChar": 22,
+        "endLine": 655,
+        "endChar": 44
+      },
+      "revId": "6887a54d50a66d7884907a85f4d3ecb9fcf8fc74",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
