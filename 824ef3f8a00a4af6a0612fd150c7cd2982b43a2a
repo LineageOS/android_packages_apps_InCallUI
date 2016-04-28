@@ -1,0 +1,174 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5faad753_0f04cd14",
+        "filename": "res/values/config.xml",
+        "patchSetId": 14
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2016-04-28T05:19:15Z",
+      "side": 1,
+      "message": "I still maintain the position that this value should not be changed. Yes, that means that \u0027take note\u0027 may be placed in the overflow menu, but I don\u0027t really see a problem with that.",
+      "revId": "824ef3f8a00a4af6a0612fd150c7cd2982b43a2a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_af081928",
+        "filename": "src/com/android/incallui/CallButtonFragment.java",
+        "patchSetId": 14
+      },
+      "lineNbr": 200,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2016-04-28T05:19:15Z",
+      "side": 1,
+      "message": "Place setOnClickListener() here?",
+      "revId": "824ef3f8a00a4af6a0612fd150c7cd2982b43a2a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_cf0d5538",
+        "filename": "src/com/android/incallui/CallButtonFragment.java",
+        "patchSetId": 14
+      },
+      "lineNbr": 1047,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2016-04-28T05:19:15Z",
+      "side": 1,
+      "message": "The CallButtonFragment. prefix is superfluous here.",
+      "revId": "824ef3f8a00a4af6a0612fd150c7cd2982b43a2a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_8f0f5d2d",
+        "filename": "src/com/android/incallui/CallButtonPresenter.java",
+        "patchSetId": 14
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2016-04-28T05:19:15Z",
+      "side": 1,
+      "message": "Please sort imports alphabetically.",
+      "revId": "824ef3f8a00a4af6a0612fd150c7cd2982b43a2a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_2f1c2969",
+        "filename": "src/com/android/incallui/CallButtonPresenter.java",
+        "patchSetId": 14
+      },
+      "lineNbr": 92,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2016-04-28T05:19:15Z",
+      "side": 1,
+      "message": "private?",
+      "revId": "824ef3f8a00a4af6a0612fd150c7cd2982b43a2a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_4f196577",
+        "filename": "src/com/android/incallui/CallButtonPresenter.java",
+        "patchSetId": 14
+      },
+      "lineNbr": 155,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2016-04-28T05:19:15Z",
+      "side": 1,
+      "message": "This variable seems pointless.",
+      "revId": "824ef3f8a00a4af6a0612fd150c7cd2982b43a2a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_af21f9a1",
+        "filename": "src/com/android/incallui/CallButtonPresenter.java",
+        "patchSetId": 14
+      },
+      "lineNbr": 182,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2016-04-28T05:19:15Z",
+      "side": 1,
+      "message": "(mCall, true, newState \u003d\u003d InCallState.INCOMING)",
+      "revId": "824ef3f8a00a4af6a0612fd150c7cd2982b43a2a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_cf26b5b8",
+        "filename": "src/com/android/incallui/CallButtonPresenter.java",
+        "patchSetId": 14
+      },
+      "lineNbr": 648,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2016-04-28T05:19:15Z",
+      "side": 1,
+      "message": "Should indent like line 647 here.",
+      "revId": "824ef3f8a00a4af6a0612fd150c7cd2982b43a2a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_6f3b01d1",
+        "filename": "src/com/android/incallui/CallButtonPresenter.java",
+        "patchSetId": 14
+      },
+      "lineNbr": 649,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2016-04-28T05:19:15Z",
+      "side": 1,
+      "message": "Same as above, and place \u0026\u0026 consistently (either on line start or end).\n\n(Yes, I know the above code does that wrong, too, but that is CAF code, not ours)",
+      "revId": "824ef3f8a00a4af6a0612fd150c7cd2982b43a2a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_8f38bdd3",
+        "filename": "src/com/android/incallui/CallButtonPresenter.java",
+        "patchSetId": 14
+      },
+      "lineNbr": 790,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2016-04-28T05:19:15Z",
+      "side": 1,
+      "message": "new ComponentName(ctx, CallButtonPresenter.class)",
+      "revId": "824ef3f8a00a4af6a0612fd150c7cd2982b43a2a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
