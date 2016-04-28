@@ -1,0 +1,280 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5faad753_321c9269",
+        "filename": "res/drawable/ic_lockscreen_answer_activated_layer.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 11035
+      },
+      "writtenOn": "2016-04-28T17:15:31Z",
+      "side": 1,
+      "message": "don\u0027t have to repeat this",
+      "range": {
+        "startLine": 19,
+        "startChar": 15,
+        "endLine": 19,
+        "endChar": 73
+      },
+      "revId": "e1c61343a140481b1c5d900abe324f686fa2679a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_52326ef3",
+        "filename": "res/drawable/ic_lockscreen_answer_end_current_activated_layer.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 11035
+      },
+      "writtenOn": "2016-04-28T17:15:31Z",
+      "side": 1,
+      "message": "same here , teh namespace declaration isn\u0027t needed",
+      "range": {
+        "startLine": 19,
+        "startChar": 15,
+        "endLine": 19,
+        "endChar": 73
+      },
+      "revId": "e1c61343a140481b1c5d900abe324f686fa2679a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_f24cba77",
+        "filename": "res/drawable/ic_lockscreen_answer_end_current_activated_layer.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 11035
+      },
+      "writtenOn": "2016-04-28T17:15:31Z",
+      "side": 1,
+      "message": "extra space",
+      "range": {
+        "startLine": 27,
+        "startChar": 9,
+        "endLine": 27,
+        "endChar": 12
+      },
+      "revId": "e1c61343a140481b1c5d900abe324f686fa2679a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_127b968c",
+        "filename": "res/values/array.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 217,
+      "author": {
+        "id": 11035
+      },
+      "writtenOn": "2016-04-28T17:15:31Z",
+      "side": 1,
+      "message": "\"without_sms_and_call_waiting\" ?",
+      "range": {
+        "startLine": 217,
+        "startChar": 17,
+        "endLine": 217,
+        "endChar": 76
+      },
+      "revId": "e1c61343a140481b1c5d900abe324f686fa2679a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_f2759a99",
+        "filename": "res/values/array.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 241,
+      "author": {
+        "id": 11035
+      },
+      "writtenOn": "2016-04-28T17:15:31Z",
+      "side": 1,
+      "message": "add new line(s) so that its easier to read",
+      "range": {
+        "startLine": 240,
+        "startChar": 3,
+        "endLine": 241,
+        "endChar": 14
+      },
+      "revId": "e1c61343a140481b1c5d900abe324f686fa2679a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_f29a7ac3",
+        "filename": "res/values/cm_strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 11035
+      },
+      "writtenOn": "2016-04-28T17:15:31Z",
+      "side": 1,
+      "message": "these strings , once translated , won\u0027t behave in this manner. Maybe split this into multiple strings so that translations won\u0027t have a drastic impact",
+      "range": {
+        "startLine": 81,
+        "startChar": 62,
+        "endLine": 82,
+        "endChar": 90
+      },
+      "revId": "e1c61343a140481b1c5d900abe324f686fa2679a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_d2a97edf",
+        "filename": "src/com/android/incallui/AnswerFragment.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 11035
+      },
+      "writtenOn": "2016-04-28T17:15:31Z",
+      "side": 1,
+      "message": "why not add these to the end to make rebasing later easier ?",
+      "range": {
+        "startLine": 56,
+        "startChar": 4,
+        "endLine": 57,
+        "endChar": 78
+      },
+      "revId": "e1c61343a140481b1c5d900abe324f686fa2679a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_f2835a55",
+        "filename": "src/com/android/incallui/GlowPadWrapper.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 118,
+      "author": {
+        "id": 11035
+      },
+      "writtenOn": "2016-04-28T17:15:31Z",
+      "side": 1,
+      "message": "why not overload onAnswer() and make SHOW_POPUP the default for the last argument",
+      "range": {
+        "startLine": 117,
+        "startChar": 32,
+        "endLine": 118,
+        "endChar": 71
+      },
+      "revId": "e1c61343a140481b1c5d900abe324f686fa2679a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_32e6d246",
+        "filename": "src/com/android/incallui/TelecomAdapter.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 11035
+      },
+      "writtenOn": "2016-04-28T17:15:31Z",
+      "side": 1,
+      "message": "is this ever called then ? If not remove it ?",
+      "range": {
+        "startLine": 62,
+        "startChar": 4,
+        "endLine": 69,
+        "endChar": 5
+      },
+      "revId": "e1c61343a140481b1c5d900abe324f686fa2679a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_52bcae04",
+        "filename": "src/com/android/incallui/widget/multiwaveview/GlowPadView.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 289,
+      "author": {
+        "id": 11035
+      },
+      "writtenOn": "2016-04-28T17:15:31Z",
+      "side": 1,
+      "message": "display text , not descriptions",
+      "range": {
+        "startLine": 289,
+        "startChar": 49,
+        "endLine": 289,
+        "endChar": 84
+      },
+      "revId": "e1c61343a140481b1c5d900abe324f686fa2679a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_325492ca",
+        "filename": "src/com/android/incallui/widget/multiwaveview/GlowPadView.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 298,
+      "author": {
+        "id": 11035
+      },
+      "writtenOn": "2016-04-28T17:15:31Z",
+      "side": 1,
+      "message": "you shouldn\u0027t hardcode this .. get this from the context\u0027s theme",
+      "range": {
+        "startLine": 298,
+        "startChar": 30,
+        "endLine": 298,
+        "endChar": 86
+      },
+      "revId": "e1c61343a140481b1c5d900abe324f686fa2679a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_52182e1c",
+        "filename": "src/com/android/incallui/widget/multiwaveview/GlowPadView.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 1252,
+      "author": {
+        "id": 11035
+      },
+      "writtenOn": "2016-04-28T17:15:31Z",
+      "side": 1,
+      "message": "kinda worried abt this breaking for teh same reasons mentioned in teh strings res file .. i\u0027ll publish teh comments i have and try n think of an alternative in the interim",
+      "range": {
+        "startLine": 1243,
+        "startChar": 11,
+        "endLine": 1252,
+        "endChar": 13
+      },
+      "revId": "e1c61343a140481b1c5d900abe324f686fa2679a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
