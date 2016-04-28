@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "5faad753_920a2624",
+        "filename": "res/layout/call_button_fragment.xml",
+        "patchSetId": 21
+      },
+      "lineNbr": 113,
+      "author": {
+        "id": 14345
+      },
+      "writtenOn": "2016-04-28T21:00:01Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5faad753_f2303a0a",
+      "revId": "5477b331dc54b0d31b7a31bebeb2d7a8c4fd74ad",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5faad753_12363605",
         "filename": "src/com/android/incallui/CallButtonPresenter.java",
         "patchSetId": 21
@@ -30,6 +48,30 @@
       "writtenOn": "2016-04-28T20:47:14Z",
       "side": 1,
       "message": "extra space",
+      "range": {
+        "startLine": 104,
+        "startChar": 15,
+        "endLine": 104,
+        "endChar": 16
+      },
+      "revId": "5477b331dc54b0d31b7a31bebeb2d7a8c4fd74ad",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_fdfecb03",
+        "filename": "src/com/android/incallui/CallButtonPresenter.java",
+        "patchSetId": 21
+      },
+      "lineNbr": 104,
+      "author": {
+        "id": 14345
+      },
+      "writtenOn": "2016-04-28T21:00:01Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5faad753_12363605",
       "range": {
         "startLine": 104,
         "startChar": 15,
@@ -65,6 +107,30 @@
     },
     {
       "key": {
+        "uuid": "5faad753_bd085328",
+        "filename": "src/com/android/incallui/CallButtonPresenter.java",
+        "patchSetId": 21
+      },
+      "lineNbr": 784,
+      "author": {
+        "id": 14345
+      },
+      "writtenOn": "2016-04-28T21:00:01Z",
+      "side": 1,
+      "message": "This is a weird one - its used this way all through this file... I can import, but then we\u0027ll either need to update it everywhere or have some that use this style and others that are imported....  happy to change it but we seem to be avoiding changes in multiple places.",
+      "parentUuid": "5faad753_b23ac2e4",
+      "range": {
+        "startLine": 784,
+        "startChar": 12,
+        "endLine": 784,
+        "endChar": 33
+      },
+      "revId": "5477b331dc54b0d31b7a31bebeb2d7a8c4fd74ad",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5faad753_9221c6b7",
         "filename": "src/com/android/incallui/CallButtonPresenter.java",
         "patchSetId": 21
@@ -88,6 +154,30 @@
     },
     {
       "key": {
+        "uuid": "5faad753_7d12db5a",
+        "filename": "src/com/android/incallui/CallButtonPresenter.java",
+        "patchSetId": 21
+      },
+      "lineNbr": 786,
+      "author": {
+        "id": 14345
+      },
+      "writtenOn": "2016-04-28T21:00:01Z",
+      "side": 1,
+      "message": "TextUtils.isEmpty is probably a better choice - I do believe this can be null as I\u0027ve encountered it during dev and there are some comments regarding that state further up.",
+      "parentUuid": "5faad753_9221c6b7",
+      "range": {
+        "startLine": 786,
+        "startChar": 28,
+        "endLine": 786,
+        "endChar": 60
+      },
+      "revId": "5477b331dc54b0d31b7a31bebeb2d7a8c4fd74ad",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5faad753_322ed2a5",
         "filename": "src/com/android/incallui/CallButtonPresenter.java",
         "patchSetId": 21
@@ -99,6 +189,30 @@
       "writtenOn": "2016-04-28T20:47:14Z",
       "side": 1,
       "message": "DeepNoteDeepLink sounds a little odd, NoteDeepLink?",
+      "range": {
+        "startLine": 807,
+        "startChar": 47,
+        "endLine": 807,
+        "endChar": 72
+      },
+      "revId": "5477b331dc54b0d31b7a31bebeb2d7a8c4fd74ad",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_9d0f972d",
+        "filename": "src/com/android/incallui/CallButtonPresenter.java",
+        "patchSetId": 21
+      },
+      "lineNbr": 807,
+      "author": {
+        "id": 14345
+      },
+      "writtenOn": "2016-04-28T21:00:01Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5faad753_322ed2a5",
       "range": {
         "startLine": 807,
         "startChar": 47,
