@@ -1,0 +1,113 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5faad753_f2303a0a",
+        "filename": "res/layout/call_button_fragment.xml",
+        "patchSetId": 21
+      },
+      "lineNbr": 113,
+      "author": {
+        "id": 9528
+      },
+      "writtenOn": "2016-04-28T20:47:14Z",
+      "side": 1,
+      "message": "since the other image buttons here have a comment to describe them, let\u0027s add something here as well. just to be consistent",
+      "revId": "5477b331dc54b0d31b7a31bebeb2d7a8c4fd74ad",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_12363605",
+        "filename": "src/com/android/incallui/CallButtonPresenter.java",
+        "patchSetId": 21
+      },
+      "lineNbr": 104,
+      "author": {
+        "id": 9528
+      },
+      "writtenOn": "2016-04-28T20:47:14Z",
+      "side": 1,
+      "message": "extra space",
+      "range": {
+        "startLine": 104,
+        "startChar": 15,
+        "endLine": 104,
+        "endChar": 16
+      },
+      "revId": "5477b331dc54b0d31b7a31bebeb2d7a8c4fd74ad",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_b23ac2e4",
+        "filename": "src/com/android/incallui/CallButtonPresenter.java",
+        "patchSetId": 21
+      },
+      "lineNbr": 784,
+      "author": {
+        "id": 9528
+      },
+      "writtenOn": "2016-04-28T20:47:14Z",
+      "side": 1,
+      "message": "seems like this should be imported.",
+      "range": {
+        "startLine": 784,
+        "startChar": 12,
+        "endLine": 784,
+        "endChar": 33
+      },
+      "revId": "5477b331dc54b0d31b7a31bebeb2d7a8c4fd74ad",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_9221c6b7",
+        "filename": "src/com/android/incallui/CallButtonPresenter.java",
+        "patchSetId": 21
+      },
+      "lineNbr": 786,
+      "author": {
+        "id": 9528
+      },
+      "writtenOn": "2016-04-28T20:47:14Z",
+      "side": 1,
+      "message": "can mPrimaryContactInfo be null?\n\nalso might be better to use \"TextUtils.isEmpty\" instead?",
+      "range": {
+        "startLine": 786,
+        "startChar": 28,
+        "endLine": 786,
+        "endChar": 60
+      },
+      "revId": "5477b331dc54b0d31b7a31bebeb2d7a8c4fd74ad",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_322ed2a5",
+        "filename": "src/com/android/incallui/CallButtonPresenter.java",
+        "patchSetId": 21
+      },
+      "lineNbr": 807,
+      "author": {
+        "id": 9528
+      },
+      "writtenOn": "2016-04-28T20:47:14Z",
+      "side": 1,
+      "message": "DeepNoteDeepLink sounds a little odd, NoteDeepLink?",
+      "range": {
+        "startLine": 807,
+        "startChar": 47,
+        "endLine": 807,
+        "endChar": 72
+      },
+      "revId": "5477b331dc54b0d31b7a31bebeb2d7a8c4fd74ad",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
