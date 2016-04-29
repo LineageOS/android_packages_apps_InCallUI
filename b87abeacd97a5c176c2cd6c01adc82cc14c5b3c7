@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "5faad753_5ea8351e",
+        "filename": "res/values/config.xml",
+        "patchSetId": 25
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 9528
+      },
+      "writtenOn": "2016-04-29T22:47:15Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5faad753_1e9abd13",
+      "range": {
+        "startLine": 19,
+        "startChar": 4,
+        "endLine": 19,
+        "endChar": 53
+      },
+      "revId": "b87abeacd97a5c176c2cd6c01adc82cc14c5b3c7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5faad753_dea3c54e",
         "filename": "src/com/android/incallui/CallButtonPresenter.java",
         "patchSetId": 25
@@ -36,6 +60,30 @@
       "writtenOn": "2016-04-29T22:35:23Z",
       "side": 1,
       "message": "import",
+      "range": {
+        "startLine": 786,
+        "startChar": 12,
+        "endLine": 786,
+        "endChar": 40
+      },
+      "revId": "b87abeacd97a5c176c2cd6c01adc82cc14c5b3c7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_fe624116",
+        "filename": "src/com/android/incallui/CallButtonPresenter.java",
+        "patchSetId": 25
+      },
+      "lineNbr": 786,
+      "author": {
+        "id": 9528
+      },
+      "writtenOn": "2016-04-29T22:47:15Z",
+      "side": 1,
+      "message": "they do this everywhere else in this file",
+      "parentUuid": "5faad753_dea3c54e",
       "range": {
         "startLine": 786,
         "startChar": 12,
