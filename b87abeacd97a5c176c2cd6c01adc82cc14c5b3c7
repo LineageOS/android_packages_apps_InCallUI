@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5faad753_1e9abd13",
+        "filename": "res/values/config.xml",
+        "patchSetId": 25
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 12937
+      },
+      "writtenOn": "2016-04-29T22:35:23Z",
+      "side": 1,
+      "message": "since we are working on a new solution for this, please keep this set to 5",
+      "range": {
+        "startLine": 19,
+        "startChar": 4,
+        "endLine": 19,
+        "endChar": 53
+      },
+      "revId": "b87abeacd97a5c176c2cd6c01adc82cc14c5b3c7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_dea3c54e",
+        "filename": "src/com/android/incallui/CallButtonPresenter.java",
+        "patchSetId": 25
+      },
+      "lineNbr": 786,
+      "author": {
+        "id": 12937
+      },
+      "writtenOn": "2016-04-29T22:35:23Z",
+      "side": 1,
+      "message": "import",
+      "range": {
+        "startLine": 786,
+        "startChar": 12,
+        "endLine": 786,
+        "endChar": 40
+      },
+      "revId": "b87abeacd97a5c176c2cd6c01adc82cc14c5b3c7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
