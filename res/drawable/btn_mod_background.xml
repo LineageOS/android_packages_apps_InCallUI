@@ -15,13 +15,19 @@
      limitations under the License.
 -->
 
-<resources>
-    <color name="videocall_handoff_item_text_color">#de000000</color>
-    <color name="vidoecall_handoff_default_video_call_color">#8a000000</color>
+<!-- Background resource for "compound buttons" in the in-call UI.
+     These buttons have two states (checked and unchecked), and
+     show a blue bar along the bottom edge when checked. -->
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+        android:color="@color/incall_accent_color">
+    <item>
+        <selector>
 
-    <color name="snackbar_action_text_color">@color/dialer_theme_color</color>
+            <item android:state_focused="true"
+                  android:drawable="@drawable/btn_unselected_focused" />
 
-    <color name="contact_info_spam_info_text_color">#ff402c</color>
-    <color name="contact_info_attribution_text_color">#ffffff</color>
-    <color name="mod_button_background_color">@color/dialer_theme_color_dark</color>
-</resources>
+            <item android:drawable="@drawable/btn_mod_unselected" />
+
+        </selector>
+    </item>
+</ripple>

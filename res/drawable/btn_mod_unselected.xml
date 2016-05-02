@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <!--
      Copyright (C) 2016 The CyanogenMod Project
 
@@ -15,13 +16,10 @@
      limitations under the License.
 -->
 
-<resources>
-    <color name="videocall_handoff_item_text_color">#de000000</color>
-    <color name="vidoecall_handoff_default_video_call_color">#8a000000</color>
-
-    <color name="snackbar_action_text_color">@color/dialer_theme_color</color>
-
-    <color name="contact_info_spam_info_text_color">#ff402c</color>
-    <color name="contact_info_attribution_text_color">#ffffff</color>
-    <color name="mod_button_background_color">@color/dialer_theme_color_dark</color>
-</resources>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/mod_button_background_color" />
+        </shape>
+    </item>
+</layer-list>
