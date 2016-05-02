@@ -16,12 +16,6 @@
 -->
 
 <resources>
-    <color name="videocall_handoff_item_text_color">#de000000</color>
-    <color name="vidoecall_handoff_default_video_call_color">#8a000000</color>
-
-    <color name="snackbar_action_text_color">@color/dialer_theme_color</color>
-
-    <color name="contact_info_spam_info_text_color">#ff402c</color>
-    <color name="contact_info_attribution_text_color">#ffffff</color>
-    <color name="mod_button_background_color">@color/dialer_theme_color_dark</color>
+    <dimen name="mod_button_inset">8dp</dimen>
+    <dimen name="mod_bar_margin_sides">8dp</dimen>
 </resources>

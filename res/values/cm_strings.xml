@@ -71,4 +71,5 @@
     <!-- Text to place in the name field of a Call DeepLink when the contact name is not known -->
     <string name="deeplink_unknown_caller">Unknown</string>
 
+    <string name="onscreenModOverflowText">More Mods</string>
 </resources>
