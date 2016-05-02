@@ -36,4 +36,7 @@
     <dimen name="lookup_extra_info_container_margin_top">25dp</dimen>
 
     <dimen name="notification_three_action_padding">12dp</dimen>
+    <dimen name="mod_button_inset">12dp</dimen>
+    <dimen name="mod_button_margin_bottom">0dp</dimen>
+    <dimen name="mod_bar_margin_sides">30dp</dimen>
 </resources>
