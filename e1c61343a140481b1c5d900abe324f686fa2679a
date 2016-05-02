@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "5faad753_b76ce636",
+        "filename": "res/drawable/ic_lockscreen_answer_activated_layer.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 14463
+      },
+      "writtenOn": "2016-05-02T22:59:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5faad753_321c9269",
+      "range": {
+        "startLine": 19,
+        "startChar": 15,
+        "endLine": 19,
+        "endChar": 73
+      },
+      "revId": "e1c61343a140481b1c5d900abe324f686fa2679a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5faad753_52326ef3",
         "filename": "res/drawable/ic_lockscreen_answer_end_current_activated_layer.xml",
         "patchSetId": 4
@@ -36,6 +60,30 @@
       "writtenOn": "2016-04-28T17:15:31Z",
       "side": 1,
       "message": "same here , teh namespace declaration isn\u0027t needed",
+      "range": {
+        "startLine": 19,
+        "startChar": 15,
+        "endLine": 19,
+        "endChar": 73
+      },
+      "revId": "e1c61343a140481b1c5d900abe324f686fa2679a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_77766e09",
+        "filename": "res/drawable/ic_lockscreen_answer_end_current_activated_layer.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 14463
+      },
+      "writtenOn": "2016-05-02T22:59:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5faad753_52326ef3",
       "range": {
         "startLine": 19,
         "startChar": 15,
@@ -71,6 +119,30 @@
     },
     {
       "key": {
+        "uuid": "5faad753_9773ea15",
+        "filename": "res/drawable/ic_lockscreen_answer_end_current_activated_layer.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 14463
+      },
+      "writtenOn": "2016-05-02T22:59:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5faad753_f24cba77",
+      "range": {
+        "startLine": 27,
+        "startChar": 9,
+        "endLine": 27,
+        "endChar": 12
+      },
+      "revId": "e1c61343a140481b1c5d900abe324f686fa2679a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5faad753_127b968c",
         "filename": "res/values/array.xml",
         "patchSetId": 4
@@ -82,6 +154,30 @@
       "writtenOn": "2016-04-28T17:15:31Z",
       "side": 1,
       "message": "\"without_sms_and_call_waiting\" ?",
+      "range": {
+        "startLine": 217,
+        "startChar": 17,
+        "endLine": 217,
+        "endChar": 76
+      },
+      "revId": "e1c61343a140481b1c5d900abe324f686fa2679a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_37623640",
+        "filename": "res/values/array.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 217,
+      "author": {
+        "id": 14463
+      },
+      "writtenOn": "2016-05-02T22:59:26Z",
+      "side": 1,
+      "message": "Done. \"without_sms_with_call_waiting\"",
+      "parentUuid": "5faad753_127b968c",
       "range": {
         "startLine": 217,
         "startChar": 17,
@@ -117,6 +213,30 @@
     },
     {
       "key": {
+        "uuid": "5faad753_5767b24e",
+        "filename": "res/values/array.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 241,
+      "author": {
+        "id": 14463
+      },
+      "writtenOn": "2016-05-02T22:59:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5faad753_f2759a99",
+      "range": {
+        "startLine": 240,
+        "startChar": 3,
+        "endLine": 241,
+        "endChar": 14
+      },
+      "revId": "e1c61343a140481b1c5d900abe324f686fa2679a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5faad753_f29a7ac3",
         "filename": "res/values/cm_strings.xml",
         "patchSetId": 4
@@ -128,6 +248,30 @@
       "writtenOn": "2016-04-28T17:15:31Z",
       "side": 1,
       "message": "these strings , once translated , won\u0027t behave in this manner. Maybe split this into multiple strings so that translations won\u0027t have a drastic impact",
+      "range": {
+        "startLine": 81,
+        "startChar": 62,
+        "endLine": 82,
+        "endChar": 90
+      },
+      "revId": "e1c61343a140481b1c5d900abe324f686fa2679a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_f75b3e84",
+        "filename": "res/values/cm_strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 14463
+      },
+      "writtenOn": "2016-05-02T22:59:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5faad753_f29a7ac3",
       "range": {
         "startLine": 81,
         "startChar": 62,
@@ -163,6 +307,30 @@
     },
     {
       "key": {
+        "uuid": "5faad753_17613a37",
+        "filename": "src/com/android/incallui/AnswerFragment.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 14463
+      },
+      "writtenOn": "2016-05-02T22:59:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5faad753_d2a97edf",
+      "range": {
+        "startLine": 56,
+        "startChar": 4,
+        "endLine": 57,
+        "endChar": 78
+      },
+      "revId": "e1c61343a140481b1c5d900abe324f686fa2679a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5faad753_f2835a55",
         "filename": "src/com/android/incallui/GlowPadWrapper.java",
         "patchSetId": 4
@@ -174,6 +342,30 @@
       "writtenOn": "2016-04-28T17:15:31Z",
       "side": 1,
       "message": "why not overload onAnswer() and make SHOW_POPUP the default for the last argument",
+      "range": {
+        "startLine": 117,
+        "startChar": 32,
+        "endLine": 118,
+        "endChar": 71
+      },
+      "revId": "e1c61343a140481b1c5d900abe324f686fa2679a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_774f4ebd",
+        "filename": "src/com/android/incallui/GlowPadWrapper.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 118,
+      "author": {
+        "id": 14463
+      },
+      "writtenOn": "2016-05-02T22:59:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5faad753_f2835a55",
       "range": {
         "startLine": 117,
         "startChar": 32,
@@ -209,6 +401,30 @@
     },
     {
       "key": {
+        "uuid": "5faad753_974c4ac8",
+        "filename": "src/com/android/incallui/TelecomAdapter.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 14463
+      },
+      "writtenOn": "2016-05-02T22:59:26Z",
+      "side": 1,
+      "message": "Yes, there are other calls to it.",
+      "parentUuid": "5faad753_32e6d246",
+      "range": {
+        "startLine": 62,
+        "startChar": 4,
+        "endLine": 69,
+        "endChar": 5
+      },
+      "revId": "e1c61343a140481b1c5d900abe324f686fa2679a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5faad753_52bcae04",
         "filename": "src/com/android/incallui/widget/multiwaveview/GlowPadView.java",
         "patchSetId": 4
@@ -220,6 +436,30 @@
       "writtenOn": "2016-04-28T17:15:31Z",
       "side": 1,
       "message": "display text , not descriptions",
+      "range": {
+        "startLine": 289,
+        "startChar": 49,
+        "endLine": 289,
+        "endChar": 84
+      },
+      "revId": "e1c61343a140481b1c5d900abe324f686fa2679a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_37c79615",
+        "filename": "src/com/android/incallui/widget/multiwaveview/GlowPadView.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 289,
+      "author": {
+        "id": 14463
+      },
+      "writtenOn": "2016-05-02T22:59:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5faad753_52bcae04",
       "range": {
         "startLine": 289,
         "startChar": 49,
@@ -255,6 +495,30 @@
     },
     {
       "key": {
+        "uuid": "5faad753_57cc9234",
+        "filename": "src/com/android/incallui/widget/multiwaveview/GlowPadView.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 298,
+      "author": {
+        "id": 14463
+      },
+      "writtenOn": "2016-05-02T22:59:26Z",
+      "side": 1,
+      "message": "I removed setting the font type manually. This should now use the default, right?",
+      "parentUuid": "5faad753_325492ca",
+      "range": {
+        "startLine": 298,
+        "startChar": 30,
+        "endLine": 298,
+        "endChar": 86
+      },
+      "revId": "e1c61343a140481b1c5d900abe324f686fa2679a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5faad753_52182e1c",
         "filename": "src/com/android/incallui/widget/multiwaveview/GlowPadView.java",
         "patchSetId": 4
@@ -266,6 +530,30 @@
       "writtenOn": "2016-04-28T17:15:31Z",
       "side": 1,
       "message": "kinda worried abt this breaking for teh same reasons mentioned in teh strings res file .. i\u0027ll publish teh comments i have and try n think of an alternative in the interim",
+      "range": {
+        "startLine": 1243,
+        "startChar": 11,
+        "endLine": 1252,
+        "endChar": 13
+      },
+      "revId": "e1c61343a140481b1c5d900abe324f686fa2679a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_f7d01ecc",
+        "filename": "src/com/android/incallui/widget/multiwaveview/GlowPadView.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 1252,
+      "author": {
+        "id": 14463
+      },
+      "writtenOn": "2016-05-02T22:59:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5faad753_52182e1c",
       "range": {
         "startLine": 1243,
         "startChar": 11,
