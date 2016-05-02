@@ -16,12 +16,15 @@
 -->
 
 <resources>
-    <color name="videocall_handoff_item_text_color">#de000000</color>
-    <color name="vidoecall_handoff_default_video_call_color">#8a000000</color>
 
-    <color name="snackbar_action_text_color">@color/dialer_theme_color</color>
+    <!-- Buttons in the main "mod button row" of the in-call onscreen touch UI. -->
+    <style name="ModButton">
+        <item name="android:layout_width">@dimen/in_call_button_dimension</item>
+        <item name="android:layout_height">@dimen/in_call_button_dimension</item>
+        <item name="android:layout_marginBottom">@dimen/mod_button_margin_bottom</item>
+        <item name="android:layout_marginLeft">@dimen/call_button_margin_horizontal</item>
+        <item name="android:layout_marginRight">@dimen/call_button_margin_horizontal</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+    </style>
 
-    <color name="contact_info_spam_info_text_color">#ff402c</color>
-    <color name="contact_info_attribution_text_color">#ffffff</color>
-    <color name="mod_button_background_color">@color/dialer_theme_color_dark</color>
 </resources>
