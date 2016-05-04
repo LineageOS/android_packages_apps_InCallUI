@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "5faad753_5189fa72",
+        "filename": "src/com/android/incallui/AnswerFragment.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 14463
+      },
+      "writtenOn": "2016-05-04T18:22:44Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5faad753_005c8e7c",
+      "range": {
+        "startLine": 82,
+        "startChar": 0,
+        "endLine": 82,
+        "endChar": 31
+      },
+      "revId": "e4a83a3d12250bb1e1e9c0d1afbef3bf2f5ba18a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5faad753_60f54257",
         "filename": "src/com/android/incallui/widget/multiwaveview/GlowPadView.java",
         "patchSetId": 6
@@ -36,6 +60,30 @@
       "writtenOn": "2016-05-03T21:08:02Z",
       "side": 1,
       "message": "define a res and reference that resource",
+      "range": {
+        "startLine": 300,
+        "startChar": 28,
+        "endLine": 300,
+        "endChar": 39
+      },
+      "revId": "e4a83a3d12250bb1e1e9c0d1afbef3bf2f5ba18a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_f10d8690",
+        "filename": "src/com/android/incallui/widget/multiwaveview/GlowPadView.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 300,
+      "author": {
+        "id": 14463
+      },
+      "writtenOn": "2016-05-04T18:22:44Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5faad753_60f54257",
       "range": {
         "startLine": 300,
         "startChar": 28,
@@ -71,6 +119,30 @@
     },
     {
       "key": {
+        "uuid": "5faad753_111382b7",
+        "filename": "src/com/android/incallui/widget/multiwaveview/GlowPadView.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 302,
+      "author": {
+        "id": 14463
+      },
+      "writtenOn": "2016-05-04T18:22:44Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5faad753_c088b6c7",
+      "range": {
+        "startLine": 302,
+        "startChar": 27,
+        "endLine": 302,
+        "endChar": 49
+      },
+      "revId": "e4a83a3d12250bb1e1e9c0d1afbef3bf2f5ba18a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5faad753_c003d641",
         "filename": "src/com/android/incallui/widget/multiwaveview/GlowPadView.java",
         "patchSetId": 6
@@ -82,6 +154,30 @@
       "writtenOn": "2016-05-03T21:08:02Z",
       "side": 1,
       "message": "use TextUtils",
+      "range": {
+        "startLine": 1249,
+        "startChar": 16,
+        "endLine": 1249,
+        "endChar": 82
+      },
+      "revId": "e4a83a3d12250bb1e1e9c0d1afbef3bf2f5ba18a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_b1270e13",
+        "filename": "src/com/android/incallui/widget/multiwaveview/GlowPadView.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 1249,
+      "author": {
+        "id": 14463
+      },
+      "writtenOn": "2016-05-04T18:22:44Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5faad753_c003d641",
       "range": {
         "startLine": 1249,
         "startChar": 16,
@@ -117,6 +213,30 @@
     },
     {
       "key": {
+        "uuid": "5faad753_d1240a10",
+        "filename": "src/com/android/incallui/widget/multiwaveview/GlowPadView.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 1250,
+      "author": {
+        "id": 14463
+      },
+      "writtenOn": "2016-05-04T18:22:44Z",
+      "side": 1,
+      "message": "No, it is replacing entire length of the existing string with new value.",
+      "parentUuid": "5faad753_609a2215",
+      "range": {
+        "startLine": 1250,
+        "startChar": 29,
+        "endLine": 1250,
+        "endChar": 76
+      },
+      "revId": "e4a83a3d12250bb1e1e9c0d1afbef3bf2f5ba18a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5faad753_009fae03",
         "filename": "src/com/android/incallui/widget/multiwaveview/GlowPadView.java",
         "patchSetId": 6
@@ -128,6 +248,30 @@
       "writtenOn": "2016-05-03T21:08:02Z",
       "side": 1,
       "message": "also you might have to play around w/ the font size to make sure that , long translated strings won\u0027t overrun the glow ring",
+      "range": {
+        "startLine": 1254,
+        "startChar": 12,
+        "endLine": 1254,
+        "endChar": 90
+      },
+      "revId": "e4a83a3d12250bb1e1e9c0d1afbef3bf2f5ba18a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_911e92b8",
+        "filename": "src/com/android/incallui/widget/multiwaveview/GlowPadView.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 1254,
+      "author": {
+        "id": 14463
+      },
+      "writtenOn": "2016-05-04T18:22:44Z",
+      "side": 1,
+      "message": "Yes, verified. Also tried with German, which is usually longest. It shows fine.",
+      "parentUuid": "5faad753_009fae03",
       "range": {
         "startLine": 1254,
         "startChar": 12,
