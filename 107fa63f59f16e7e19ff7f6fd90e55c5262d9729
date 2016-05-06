@@ -1,0 +1,158 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5faad753_a5949f8c",
+        "filename": "res/color/mod_icon_tint.xml",
+        "patchSetId": 11
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 9528
+      },
+      "writtenOn": "2016-05-06T21:25:59Z",
+      "side": 1,
+      "message": "is this actually from aosp?",
+      "revId": "107fa63f59f16e7e19ff7f6fd90e55c5262d9729",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_a5d9ff83",
+        "filename": "res/layout-land/call_card_fragment.xml",
+        "patchSetId": 11
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 9528
+      },
+      "writtenOn": "2016-05-06T21:25:59Z",
+      "side": 1,
+      "message": "since we\u0027re doing match parent, do we need to set layout_gravity or alignparentbottom? we just want to make sure the children of this linear layout are on the bottom of this linear layout right?",
+      "range": {
+        "startLine": 85,
+        "startChar": 0,
+        "endLine": 86,
+        "endChar": 51
+      },
+      "revId": "107fa63f59f16e7e19ff7f6fd90e55c5262d9729",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_45e60b47",
+        "filename": "res/layout/mod_button_fragment.xml",
+        "patchSetId": 11
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 9528
+      },
+      "writtenOn": "2016-05-06T21:25:59Z",
+      "side": 1,
+      "message": "does this do anything?",
+      "revId": "107fa63f59f16e7e19ff7f6fd90e55c5262d9729",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_65e30735",
+        "filename": "res/layout/mod_button_fragment.xml",
+        "patchSetId": 11
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 9528
+      },
+      "writtenOn": "2016-05-06T21:25:59Z",
+      "side": 1,
+      "message": "does this do anything?",
+      "range": {
+        "startLine": 24,
+        "startChar": 0,
+        "endLine": 25,
+        "endChar": 25
+      },
+      "revId": "107fa63f59f16e7e19ff7f6fd90e55c5262d9729",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_05d2535d",
+        "filename": "res/layout/mod_button_fragment.xml",
+        "patchSetId": 11
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 9528
+      },
+      "writtenOn": "2016-05-06T21:25:59Z",
+      "side": 1,
+      "message": "is this just future proofing? whats this used for?",
+      "range": {
+        "startLine": 53,
+        "startChar": 9,
+        "endLine": 58,
+        "endChar": 40
+      },
+      "revId": "107fa63f59f16e7e19ff7f6fd90e55c5262d9729",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_e5d05753",
+        "filename": "res/values/cm_dimens.xml",
+        "patchSetId": 11
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 9528
+      },
+      "writtenOn": "2016-05-06T21:25:59Z",
+      "side": 1,
+      "message": "lets separate these dimens from the one above it (white space)",
+      "revId": "107fa63f59f16e7e19ff7f6fd90e55c5262d9729",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_85c5e390",
+        "filename": "src/com/android/incallui/CallCardFragment.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 1488,
+      "author": {
+        "id": 9528
+      },
+      "writtenOn": "2016-05-06T21:25:59Z",
+      "side": 1,
+      "message": "does the order of these view containers matter?",
+      "revId": "107fa63f59f16e7e19ff7f6fd90e55c5262d9729",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_4554cbca",
+        "filename": "src/com/android/incallui/ModButtonPresenter.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 274,
+      "author": {
+        "id": 9528
+      },
+      "writtenOn": "2016-05-06T21:25:59Z",
+      "side": 1,
+      "message": "DEBUG?",
+      "revId": "107fa63f59f16e7e19ff7f6fd90e55c5262d9729",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
