@@ -780,21 +780,28 @@ public class CallButtonPresenter extends Presenter<CallButtonPresenter.CallButto
     }
 
     public void takeNote() {
-        if (mCall != null && mNoteDeepLink != null) {
-            Context ctx = getUi().getContext();
-
-            android.telecom.Call.Details details = mCall.getTelecommCall().getDetails();
-            CallDeepLinkContent content = new CallDeepLinkContent(mNoteDeepLink);
-            content.setName(TextUtils.isEmpty(mPrimaryContactInfo.name) ?
-                    ctx.getString(R.string.deeplink_unknown_caller) : mPrimaryContactInfo.name);
-            content.setNumber(mCall.getNumber());
-            content.setUri(DeepLinkIntegrationManager.generateCallUri(mCall.getNumber(),
-                    details.getCreateTimeMillis()));
-            DeepLinkIntegrationManager.getInstance().sendContentSentEvent(ctx, mNoteDeepLink,
-                    new ComponentName(ctx, CallButtonPresenter.class));
-            ctx.startActivity(content.build());
-
+        if (mCall == null || mNoteDeepLink == null || getUi() == null) {
+            return;
         }
+        Context ctx = getUi().getContext();
+        android.telecom.Call.Details details = mCall.getTelecommCall().getDetails();
+        String name;
+        String number;
+        if (mCall.isConferenceCall()) {
+            name = getConferanceCallNames(ctx);
+            number = getConferenceCallNumbers();
+        } else {
+            name = getNormalizedName(ctx, mPrimaryContactInfo.name);
+            number = mCall.getNumber();
+        }
+        CallDeepLinkContent content = new CallDeepLinkContent(mNoteDeepLink);
+        content.setNumber(number);
+        content.setName(name);
+        content.setUri(DeepLinkIntegrationManager.generateCallUri(number,
+                details.getCreateTimeMillis()));
+        DeepLinkIntegrationManager.getInstance().sendContentSentEvent(ctx, mNoteDeepLink,
+                new ComponentName(ctx, CallButtonPresenter.class));
+        ctx.startActivity(content.build());
     }
 
     public void getPreferredLinks() {
@@ -827,4 +834,39 @@ public class CallButtonPresenter extends Presenter<CallButtonPresenter.CallButto
             getUi().setDeepLinkNoteIcon(toDraw);
         }
     };
+
+    private String getConferanceCallNames(Context ctx) {
+        StringBuilder sb = new StringBuilder();
+        List<String> callIds = mCall.getChildCallIds();
+        int len = callIds.size();
+        for (int i = 0; i < len; i++) {
+            ContactCacheEntry callInfo = ContactInfoCache.getInstance(
+                    getUi().getContext()).getInfo(callIds.get(i));
+            sb.append(getNormalizedName(ctx, callInfo.name));
+            if (i < len - 1) {
+                sb.append(", ");
+            }
+        }
+        return sb.toString();
+    }
+
+    private String getConferenceCallNumbers() {
+        StringBuilder sb = new StringBuilder();
+        List<String> callIds = mCall.getChildCallIds();
+        int len = callIds.size();
+        for (int i = 0; i < len; i++) {
+            ContactCacheEntry callInfo = ContactInfoCache.getInstance(
+                    getUi().getContext()).getInfo(callIds.get(i));
+            sb.append(callInfo.number);
+            if (i < len - 1) {
+                sb.append(", ");
+            }
+        }
+        return sb.toString();
+    }
+
+    private String getNormalizedName(Context ctx, String name) {
+        return TextUtils.isEmpty(name) ?
+                ctx.getString(R.string.deeplink_unknown_caller) : mPrimaryContactInfo.name;
+    }
 }
