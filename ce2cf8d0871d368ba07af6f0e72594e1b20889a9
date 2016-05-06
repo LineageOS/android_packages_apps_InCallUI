@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5faad753_2f364e05",
+        "filename": "src/com/android/incallui/CallButtonPresenter.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 783,
+      "author": {
+        "id": 14345
+      },
+      "writtenOn": "2016-05-06T18:39:10Z",
+      "side": 1,
+      "message": "Might want to pull all this note code out into a new class?",
+      "revId": "ce2cf8d0871d368ba07af6f0e72594e1b20889a9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
