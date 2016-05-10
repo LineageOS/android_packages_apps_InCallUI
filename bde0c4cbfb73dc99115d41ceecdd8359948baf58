@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "5faad753_aabbfe6f",
+        "filename": "src/com/android/incallui/InCallActivity.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 1036,
+      "author": {
+        "id": 12937
+      },
+      "writtenOn": "2016-05-10T18:54:28Z",
+      "side": 1,
+      "message": "This isn\u0027t specific to any one fragment and could be used by any number of fragments within incallui. If we were to move it to a fragment, it would have to be the callcardfragment, and we\u0027d have to go through incallactivity anyway to get from callbuttonpresenter to callcardfragment.\n\nI\u0027m going to leave it hear unless you or anyone else has any more concrete issues with this.",
+      "parentUuid": "5faad753_0ff9044c",
+      "range": {
+        "startLine": 1036,
+        "startChar": 15,
+        "endLine": 1036,
+        "endChar": 44
+      },
+      "revId": "bde0c4cbfb73dc99115d41ceecdd8359948baf58",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5faad753_cf98cc1c",
         "filename": "src/com/android/incallui/InCallActivity.java",
         "patchSetId": 2
@@ -48,6 +72,30 @@
     },
     {
       "key": {
+        "uuid": "5faad753_eac1f6e5",
+        "filename": "src/com/android/incallui/InCallActivity.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 1063,
+      "author": {
+        "id": 12937
+      },
+      "writtenOn": "2016-05-10T18:54:28Z",
+      "side": 1,
+      "message": "nope, if intent is null here we don\u0027t show an action, just the snackbar with the text.",
+      "parentUuid": "5faad753_cf98cc1c",
+      "range": {
+        "startLine": 1063,
+        "startChar": 22,
+        "endLine": 1063,
+        "endChar": 26
+      },
+      "revId": "bde0c4cbfb73dc99115d41ceecdd8359948baf58",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5faad753_4ffffc33",
         "filename": "src/com/android/incallui/InCallActivity.java",
         "patchSetId": 2
@@ -59,6 +107,30 @@
       "writtenOn": "2016-05-10T15:45:27Z",
       "side": 1,
       "message": "don\u0027t we still want to set the actiontextcolor the same regardless of inviteIntent being null?",
+      "range": {
+        "startLine": 1064,
+        "startChar": 28,
+        "endLine": 1065,
+        "endChar": 66
+      },
+      "revId": "bde0c4cbfb73dc99115d41ceecdd8359948baf58",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_8ab88276",
+        "filename": "src/com/android/incallui/InCallActivity.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 1065,
+      "author": {
+        "id": 12937
+      },
+      "writtenOn": "2016-05-10T18:54:28Z",
+      "side": 1,
+      "message": "no, if there is no invite intent, there is no action, therefor no action text color to be set.",
+      "parentUuid": "5faad753_4ffffc33",
       "range": {
         "startLine": 1064,
         "startChar": 28,
@@ -117,6 +189,30 @@
     },
     {
       "key": {
+        "uuid": "5faad753_ca63da19",
+        "filename": "src/com/android/incallui/ModButtonPresenter.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 236,
+      "author": {
+        "id": 12937
+      },
+      "writtenOn": "2016-05-10T18:54:28Z",
+      "side": 1,
+      "message": "habit, since we aren\u0027t letting this live in a callback where activity context might want to be garbage collected, this part can be omitted.",
+      "parentUuid": "5faad753_8fd414bf",
+      "range": {
+        "startLine": 236,
+        "startChar": 48,
+        "endLine": 236,
+        "endChar": 73
+      },
+      "revId": "bde0c4cbfb73dc99115d41ceecdd8359948baf58",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5faad753_2cd08e1f",
         "filename": "src/com/android/incallui/ModButtonPresenter.java",
         "patchSetId": 2
@@ -163,6 +259,30 @@
     },
     {
       "key": {
+        "uuid": "5faad753_ea66d629",
+        "filename": "src/com/android/incallui/ModButtonPresenter.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 296,
+      "author": {
+        "id": 12937
+      },
+      "writtenOn": "2016-05-10T18:54:28Z",
+      "side": 1,
+      "message": "sure thing",
+      "parentUuid": "5faad753_4fd61cc6",
+      "range": {
+        "startLine": 294,
+        "startChar": 1,
+        "endLine": 296,
+        "endChar": 13
+      },
+      "revId": "bde0c4cbfb73dc99115d41ceecdd8359948baf58",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5faad753_4ccb8a71",
         "filename": "src/com/android/incallui/ModButtonPresenter.java",
         "patchSetId": 2
@@ -197,6 +317,30 @@
       "writtenOn": "2016-05-10T15:45:27Z",
       "side": 1,
       "message": "why?",
+      "range": {
+        "startLine": 323,
+        "startChar": 68,
+        "endLine": 323,
+        "endChar": 75
+      },
+      "revId": "bde0c4cbfb73dc99115d41ceecdd8359948baf58",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_8a6de205",
+        "filename": "src/com/android/incallui/ModButtonPresenter.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 323,
+      "author": {
+        "id": 12937
+      },
+      "writtenOn": "2016-05-10T18:54:28Z",
+      "side": 1,
+      "message": "same as above",
+      "parentUuid": "5faad753_aff0f068",
       "range": {
         "startLine": 323,
         "startChar": 68,
@@ -256,6 +400,30 @@
     },
     {
       "key": {
+        "uuid": "5faad753_aa49be8b",
+        "filename": "src/com/android/incallui/ModButtonPresenter.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 329,
+      "author": {
+        "id": 12937
+      },
+      "writtenOn": "2016-05-10T18:54:28Z",
+      "side": 1,
+      "message": "good call, this should be reworked.",
+      "parentUuid": "5faad753_0fe02496",
+      "range": {
+        "startLine": 329,
+        "startChar": 24,
+        "endLine": 329,
+        "endChar": 29
+      },
+      "revId": "bde0c4cbfb73dc99115d41ceecdd8359948baf58",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5faad753_2f04004a",
         "filename": "src/com/android/incallui/ModButtonPresenter.java",
         "patchSetId": 2
@@ -267,6 +435,30 @@
       "writtenOn": "2016-05-10T15:45:27Z",
       "side": 1,
       "message": "shouldn\u0027t we make sure this isn\u0027t null? also before calling \"show invite snackbar\"",
+      "range": {
+        "startLine": 331,
+        "startChar": 63,
+        "endLine": 331,
+        "endChar": 74
+      },
+      "revId": "bde0c4cbfb73dc99115d41ceecdd8359948baf58",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_4a604a02",
+        "filename": "src/com/android/incallui/ModButtonPresenter.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 331,
+      "author": {
+        "id": 12937
+      },
+      "writtenOn": "2016-05-10T18:54:28Z",
+      "side": 1,
+      "message": "no, pendingInvite can be null which means two things. 1) that we have queried this intent already 2) no intent has been found, so give the user a generic message saying they have to add the contact manually because incall plugin failed to do the work for them. See lines 339-354",
+      "parentUuid": "5faad753_2f04004a",
       "range": {
         "startLine": 331,
         "startChar": 63,
