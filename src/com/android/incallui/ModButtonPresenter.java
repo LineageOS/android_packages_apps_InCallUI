@@ -138,9 +138,9 @@ public class ModButtonPresenter extends Presenter<ModButtonPresenter.ModButtonUi
 
         if (mCall != null && mPrimaryContactInfo == null) {
             startContactInfoSearch(mCall, newState == InCallState.INCOMING);
-            getPreferredLinks();
         }
 
+        getPreferredLinks();
         updateUi(newState, mCall);
     }
 
