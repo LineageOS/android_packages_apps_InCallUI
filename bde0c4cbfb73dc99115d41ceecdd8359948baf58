@@ -1,0 +1,96 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5faad753_ccbf7ace",
+        "filename": "src/com/android/incallui/ModButtonPresenter.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 12937
+      },
+      "writtenOn": "2016-05-10T12:46:58Z",
+      "side": 1,
+      "message": "incorrect!",
+      "range": {
+        "startLine": 74,
+        "startChar": 41,
+        "endLine": 74,
+        "endChar": 45
+      },
+      "revId": "bde0c4cbfb73dc99115d41ceecdd8359948baf58",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_2cd08e1f",
+        "filename": "src/com/android/incallui/ModButtonPresenter.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 281,
+      "author": {
+        "id": 12937
+      },
+      "writtenOn": "2016-05-10T12:46:58Z",
+      "side": 1,
+      "message": "this is duplicated logic. the first part is sometimes true, but the second part is always true if the first part is true.\ninviteIntent can only be non-null if mInviteIntentMap.contains(callId)",
+      "range": {
+        "startLine": 281,
+        "startChar": 12,
+        "endLine": 281,
+        "endChar": 72
+      },
+      "revId": "bde0c4cbfb73dc99115d41ceecdd8359948baf58",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_4ccb8a71",
+        "filename": "src/com/android/incallui/ModButtonPresenter.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 304,
+      "author": {
+        "id": 12937
+      },
+      "writtenOn": "2016-05-10T12:46:58Z",
+      "side": 1,
+      "message": "check !\u003d null before creating the InCallContactInfo which requires items of cacheEntry",
+      "range": {
+        "startLine": 303,
+        "startChar": 12,
+        "endLine": 304,
+        "endChar": 77
+      },
+      "revId": "bde0c4cbfb73dc99115d41ceecdd8359948baf58",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_ecc91678",
+        "filename": "src/com/android/incallui/ModButtonPresenter.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 329,
+      "author": {
+        "id": 12937
+      },
+      "writtenOn": "2016-05-10T12:46:58Z",
+      "side": 1,
+      "message": "we are getting new references to context to make sure it still exists within this callback, we should do the same for mCall.",
+      "range": {
+        "startLine": 329,
+        "startChar": 24,
+        "endLine": 329,
+        "endChar": 29
+      },
+      "revId": "bde0c4cbfb73dc99115d41ceecdd8359948baf58",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
