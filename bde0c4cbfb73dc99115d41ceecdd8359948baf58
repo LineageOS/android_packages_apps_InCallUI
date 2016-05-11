@@ -238,6 +238,30 @@
     },
     {
       "key": {
+        "uuid": "5faad753_9e4f63bc",
+        "filename": "src/com/android/incallui/ModButtonPresenter.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 12937
+      },
+      "writtenOn": "2016-05-11T20:25:18Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5faad753_ccbf7ace",
+      "range": {
+        "startLine": 74,
+        "startChar": 41,
+        "endLine": 74,
+        "endChar": 45
+      },
+      "revId": "bde0c4cbfb73dc99115d41ceecdd8359948baf58",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5faad753_8fd414bf",
         "filename": "src/com/android/incallui/ModButtonPresenter.java",
         "patchSetId": 2
@@ -309,6 +333,30 @@
     },
     {
       "key": {
+        "uuid": "5faad753_be4a5fa9",
+        "filename": "src/com/android/incallui/ModButtonPresenter.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 236,
+      "author": {
+        "id": 12937
+      },
+      "writtenOn": "2016-05-11T20:25:18Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5faad753_65f459d0",
+      "range": {
+        "startLine": 236,
+        "startChar": 48,
+        "endLine": 236,
+        "endChar": 73
+      },
+      "revId": "bde0c4cbfb73dc99115d41ceecdd8359948baf58",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5faad753_2cd08e1f",
         "filename": "src/com/android/incallui/ModButtonPresenter.java",
         "patchSetId": 2
@@ -320,6 +368,30 @@
       "writtenOn": "2016-05-10T12:46:58Z",
       "side": 1,
       "message": "this is duplicated logic. the first part is sometimes true, but the second part is always true if the first part is true.\ninviteIntent can only be non-null if mInviteIntentMap.contains(callId)",
+      "range": {
+        "startLine": 281,
+        "startChar": 12,
+        "endLine": 281,
+        "endChar": 72
+      },
+      "revId": "bde0c4cbfb73dc99115d41ceecdd8359948baf58",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_5ec7ab13",
+        "filename": "src/com/android/incallui/ModButtonPresenter.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 281,
+      "author": {
+        "id": 12937
+      },
+      "writtenOn": "2016-05-11T20:25:18Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5faad753_2cd08e1f",
       "range": {
         "startLine": 281,
         "startChar": 12,
@@ -379,6 +451,30 @@
     },
     {
       "key": {
+        "uuid": "5faad753_7ecaa71a",
+        "filename": "src/com/android/incallui/ModButtonPresenter.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 296,
+      "author": {
+        "id": 12937
+      },
+      "writtenOn": "2016-05-11T20:25:18Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5faad753_4fd61cc6",
+      "range": {
+        "startLine": 294,
+        "startChar": 1,
+        "endLine": 296,
+        "endChar": 13
+      },
+      "revId": "bde0c4cbfb73dc99115d41ceecdd8359948baf58",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5faad753_4ccb8a71",
         "filename": "src/com/android/incallui/ModButtonPresenter.java",
         "patchSetId": 2
@@ -390,6 +486,30 @@
       "writtenOn": "2016-05-10T12:46:58Z",
       "side": 1,
       "message": "check !\u003d null before creating the InCallContactInfo which requires items of cacheEntry",
+      "range": {
+        "startLine": 303,
+        "startChar": 12,
+        "endLine": 304,
+        "endChar": 77
+      },
+      "revId": "bde0c4cbfb73dc99115d41ceecdd8359948baf58",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_1ed133ce",
+        "filename": "src/com/android/incallui/ModButtonPresenter.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 304,
+      "author": {
+        "id": 12937
+      },
+      "writtenOn": "2016-05-11T20:25:18Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5faad753_4ccb8a71",
       "range": {
         "startLine": 303,
         "startChar": 12,
@@ -437,6 +557,30 @@
       "side": 1,
       "message": "same as above",
       "parentUuid": "5faad753_aff0f068",
+      "range": {
+        "startLine": 323,
+        "startChar": 68,
+        "endLine": 323,
+        "endChar": 75
+      },
+      "revId": "bde0c4cbfb73dc99115d41ceecdd8359948baf58",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_3ed42fbd",
+        "filename": "src/com/android/incallui/ModButtonPresenter.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 323,
+      "author": {
+        "id": 12937
+      },
+      "writtenOn": "2016-05-11T20:25:18Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5faad753_8a6de205",
       "range": {
         "startLine": 323,
         "startChar": 68,
