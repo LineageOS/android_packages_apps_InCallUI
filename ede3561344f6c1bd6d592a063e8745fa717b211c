@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3fa7e38b_79a9a1dd",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 848
+      },
+      "writtenOn": "2016-07-05T17:27:38Z",
+      "side": 1,
+      "message": "More specific commit message: \"Truecaller: Don\u0027t search on emergency calls\"",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 24
+      },
+      "revId": "ede3561344f6c1bd6d592a063e8745fa717b211c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3fa7e38b_19ae6de7",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 848
+      },
+      "writtenOn": "2016-07-05T17:27:38Z",
+      "side": 1,
+      "message": "Add ticket #: CYNGNOS-3096",
+      "revId": "ede3561344f6c1bd6d592a063e8745fa717b211c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
