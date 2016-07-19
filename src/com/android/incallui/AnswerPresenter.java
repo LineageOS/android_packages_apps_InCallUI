@@ -128,6 +128,9 @@ public class AnswerPresenter extends Presenter<AnswerPresenter.AnswerUi>
 
         public void notifyRefreshViceInfo(QtiViceInfo qtiViceInfo) {
         }
+
+	public void receiveCallTransferResponse(int result) {
+    	}
     };
 
     /**
