@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1fa4df85_6dc53b3c",
+        "filename": "src/com/android/incallui/widget/multiwaveview/TargetDrawable.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 232,
+      "author": {
+        "id": 14474
+      },
+      "writtenOn": "2016-08-30T18:56:05Z",
+      "side": 1,
+      "message": "What\u0027s this for?",
+      "range": {
+        "startLine": 232,
+        "startChar": 12,
+        "endLine": 232,
+        "endChar": 28
+      },
+      "revId": "f92a9902f1fd9e63f4029681f825be25088452b9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
