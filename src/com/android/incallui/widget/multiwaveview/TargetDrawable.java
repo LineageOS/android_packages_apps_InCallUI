@@ -46,7 +46,6 @@ public class TargetDrawable {
     private Drawable mDrawable;
     private boolean mEnabled = true;
     private final int mResourceId;
-    private int mNumDrawables = 1;
     private Rect mBounds;
 
     /**
@@ -56,12 +55,10 @@ public class TargetDrawable {
      *
      * @param res
      * @param resId
-     * @param count The number of drawables in the resource.
      */
-    public TargetDrawable(Resources res, int resId, int count) {
+    public TargetDrawable(Resources res, int resId) {
         mResourceId = resId;
         setDrawable(res, resId);
-        mNumDrawables = count;
     }
 
     public void setDrawable(Resources res, int resId) {
@@ -87,6 +84,14 @@ public class TargetDrawable {
             StateListDrawable d = (StateListDrawable) mDrawable;
             d.setState(state);
         }
+    }
+
+    public int[] getState() {
+        if (mDrawable instanceof StateListDrawable) {
+            StateListDrawable d = (StateListDrawable) mDrawable;
+            return d.getState();
+        }
+        return null;
     }
 
     /**
@@ -128,7 +133,8 @@ public class TargetDrawable {
             int maxWidth = 0;
             int maxHeight = 0;
 
-            for (int i = 0; i < mNumDrawables; i++) {
+            int count = d.getStateCount();
+            for (int i = 0; i < count; i++) {
                 d.selectDrawable(i);
                 Drawable childDrawable = d.getCurrent();
                 maxWidth = Math.max(maxWidth, childDrawable.getIntrinsicWidth());
@@ -139,7 +145,7 @@ public class TargetDrawable {
                     + maxWidth + "x" + maxHeight);
             d.setBounds(0, 0, maxWidth, maxHeight);
 
-            for (int i = 0; i < mNumDrawables; i++) {
+            for (int i = 0; i < count; i++) {
                 d.selectDrawable(i);
                 Drawable childDrawable = d.getCurrent();
                 if (DEBUG) Log.v(TAG, "sizing drawable " + childDrawable + " to: "
@@ -209,11 +215,47 @@ public class TargetDrawable {
     }
 
     public int getWidth() {
-        return mDrawable != null ? mDrawable.getIntrinsicWidth() : 0;
+        if (mDrawable == null) {
+            return 0;
+        }
+        int maxWidth = 0;
+        if (mDrawable instanceof StateListDrawable && mDrawable.isStateful()) {
+            // to really know height, one must know ourselves....
+            StateListDrawable d = (StateListDrawable) mDrawable;
+            int[] state = getState();
+            int count = d.getStateCount();
+            for (int i = 0; i < count; i++) {
+                d.selectDrawable(i);
+                Drawable childDrawable = d.getCurrent();
+                maxWidth = Math.max(maxWidth, childDrawable.getIntrinsicWidth());
+            }
+            setState(state);
+        } else {
+            maxWidth = mDrawable.getIntrinsicHeight();
+        }
+        return maxWidth;
     }
 
     public int getHeight() {
-        return mDrawable != null ? mDrawable.getIntrinsicHeight() : 0;
+        if (mDrawable == null) {
+            return 0;
+        }
+        int maxHeight = 0;
+        if (mDrawable instanceof StateListDrawable && mDrawable.isStateful()) {
+            // to really know height, one must know ourselves....
+            StateListDrawable d = (StateListDrawable) mDrawable;
+            int[] state = getState();
+            int count = d.getStateCount();
+            for (int i = 0; i < count; i++) {
+                d.selectDrawable(i);
+                Drawable childDrawable = d.getCurrent();
+                maxHeight = Math.max(maxHeight, childDrawable.getIntrinsicHeight());
+            }
+            setState(state);
+        } else {
+            maxHeight = mDrawable.getIntrinsicHeight();
+        }
+        return maxHeight;
     }
 
     public Rect getBounds() {
