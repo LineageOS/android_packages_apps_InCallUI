@@ -2,6 +2,40 @@
   "comments": [
     {
       "key": {
+        "uuid": "1fa4df85_8d1e77b8",
+        "filename": "src/com/android/incallui/widget/multiwaveview/TargetDrawable.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 223,
+      "author": {
+        "id": 9621
+      },
+      "writtenOn": "2016-08-30T19:58:37Z",
+      "side": 1,
+      "message": "height -\u003e width. Must fix wise comment to be accurate",
+      "revId": "f92a9902f1fd9e63f4029681f825be25088452b9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1fa4df85_2d7983fb",
+        "filename": "src/com/android/incallui/widget/multiwaveview/TargetDrawable.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 228,
+      "author": {
+        "id": 9621
+      },
+      "writtenOn": "2016-08-30T19:58:37Z",
+      "side": 1,
+      "message": "What is this doing? Are you selecting (and making visible) all the states as you find the largest width one? Is that the right thing to do?",
+      "revId": "f92a9902f1fd9e63f4029681f825be25088452b9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1fa4df85_6dc53b3c",
         "filename": "src/com/android/incallui/widget/multiwaveview/TargetDrawable.java",
         "patchSetId": 2
