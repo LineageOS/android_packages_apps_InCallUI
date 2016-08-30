@@ -252,7 +252,7 @@ public class GlowPadView extends View {
         TypedValue handle = a.peekValue(R.styleable.GlowPadView_handleDrawable);
         setHandleDrawable(handle != null ? handle.resourceId : R.drawable.ic_incall_audio_handle);
         mOuterRing = new TargetDrawable(res,
-                getResourceId(a, R.styleable.GlowPadView_outerRingDrawable), 1);
+                getResourceId(a, R.styleable.GlowPadView_outerRingDrawable));
 
         mAlwaysTrackFinger = a.getBoolean(R.styleable.GlowPadView_alwaysTrackFinger, false);
 
@@ -643,7 +643,7 @@ public class GlowPadView extends View {
         ArrayList<TargetDrawable> drawables = new ArrayList<TargetDrawable>(count);
         for (int i = 0; i < count; i++) {
             TypedValue value = array.peekValue(getRtlTarget(i));
-            TargetDrawable target = new TargetDrawable(res, value != null ? value.resourceId : 0, 3);
+            TargetDrawable target = new TargetDrawable(res, value != null ? value.resourceId : 0);
             drawables.add(target);
         }
         array.recycle();
@@ -698,7 +698,7 @@ public class GlowPadView extends View {
         if (mHandleDrawable != null) {
             mHandleDrawable.setDrawable(getResources(), resourceId);
         } else {
-            mHandleDrawable = new TargetDrawable(getResources(), resourceId, 1);
+            mHandleDrawable = new TargetDrawable(getResources(), resourceId);
         }
         mHandleDrawable.setState(TargetDrawable.STATE_INACTIVE);
     }
