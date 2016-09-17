@@ -18,10 +18,12 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Official label of the phone app, as seen in "Manage Applications"
          and other settings UIs. -->
+  <string name="phoneAppLabel" product="default">Telefono</string>
   <!-- Official label for the in-call UI. DO NOT TRANSLATE. -->
   <!-- Call status -->
   <!-- In-call screen: status label for a call that's on hold -->
   <!-- Incoming call screen, name of "unknown" caller -->
+  <string name="unknown">Nekonata</string>
   <!-- Incoming call screen, string when number hidden -->
   <!-- Incoming call screen, string when called from a pay phone -->
   <!-- In-call screen: status label for a conference call -->
@@ -41,7 +43,9 @@
          informative message to the user to show the sending numbers following the "Pause". -->
   <!-- In-call screen: button label on the "wait" prompt dialog -->
   <!-- In-call screen: button label on the "wait" prompt dialog in CDMA Mode-->
+  <string name="pause_prompt_yes">Jes</string>
   <!-- In-call screen: button label on the "wait" prompt dialog in CDMA Mode-->
+  <string name="pause_prompt_no">Ne</string>
   <!-- In-call screen: on the "wild" character dialog, this is the label
          for a text widget that lets the user enter the digits that should
          replace the "wild" character. -->
@@ -188,6 +192,7 @@
   <!--  Use this to describe the select contact button in EditPhoneNumberPreference; currently for screen readers through accessibility. -->
   <!-- "Respond via SMS" option that lets you compose a custom response. [CHAR LIMIT=30] -->
   <!-- "Custom Message" Cancel alert dialog button -->
+  <string name="custom_message_cancel">Nuligi</string>
   <!-- "Custom Message" Send alert dialog button -->
   <!-- Description of the answer target in the Slide unlock screen of Phone. [CHAR LIMIT=NONE] -->
   <!-- Description of the send_sms target in the Slide unlock screen of Phone. [CHAR LIMIT=NONE] -->
