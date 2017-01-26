@@ -30,6 +30,7 @@
   <string name="calling_via_waiting_template">Apelare via <xliff:g id="provider_name">%s</xliff:g> (În așteptare\u2026)</string>
   <!-- In-call screen: status label template for an active call that's routed via a specific
          provider (e.g. MSIM) -->
+  <string name="card_title_active_via_template"><xliff:g id="status" example="Call on hold">%1$s</xliff:g> (via <xliff:g id="provider_name">%2$s</xliff:g>)</string>
   <!-- In-call screen: status label for a call that is held remotely  -->
   <string name="card_title_waiting_call">Apel în așteptare</string>
   <string name="call_recording_failed_message">Înregistrarea apelului a eșuat</string>
@@ -39,16 +40,38 @@
   <string name="recording_time_text">Înregistrare</string>
   <string name="recording_warning_title">Activați înregistrarea apelurilor?</string>
   <string name="recording_warning_text">Anunț: Sunteți responsabil pentru respectarea oricărei legi, regulament și normă care se aplică la utilizarea funcției de înregistrare și folosirea sau distribuirea acestor înregistrări.</string>
+  <string name="onscreenTransferCall">Transferați apelul</string>
   <!-- In-call screen: Video Call Options for VT or plugin handoff -->
+  <string name="video_call_option_title">Selectaţi serviciul video</string>
+  <string name="snackbar_incall_plugin_no_invite_found">Acest contact nu este un contact <xliff:g id="incall_plugin">%s</xliff:g>. Trebuie să adăugați această persoană înainte de a efectua apeluri video.</string>
+  <string name="snackbar_incall_plugin_contact_invite">Acest contact nu este un contact <xliff:g id="incall_plugin">%s</xliff:g>. Invitați acest contact?</string>
+  <string name="snackbar_invite_action_text">INVITAȚI</string>
+  <string name="caller_info_loading">Căutare <xliff:g id="provider">%s</xliff:g>\u2026</string>
+  <string name="caller_info_failure"><xliff:g id="provider">%s</xliff:g> nu a fost găsit</string>
+  <string name="caller_info_no_result">Nicio potrivire cu <xliff:g id="provider">%s</xliff:g> găsită</string>
+  <string name="caller_info_unauthenticated"><xliff:g id="provider">%s</xliff:g> configurare incompletă</string>
+  <string name="call_button_contact_unknown">Necunoscut</string>
   <!-- Description of the target to block a call -->
+  <string name="description_target_block">Blocați apelantul</string>
   <!-- [CHAR LIMIT=12] -->
+  <string name="notification_action_block">Blocați</string>
   <!-- text for the onscreen Note Badge in the CallButtonFragment. When clicked this button will
          launch the appropriate Note taking application as configured by the user. -->
+  <string name="onscreenNoteText">Luați o notiță</string>
   <!-- Text to place in the name field of a Call DeepLink when the contact name is not known -->
+  <string name="deeplink_unknown_caller">Necunoscut</string>
   <!-- Description of the hold and answer target in the Slide unlock screen of Phone. [CHAR
     LIMIT=NONE] -->
+  <string name="description_target_answer_hold_active">Țineți apelul curent și răspundeți</string>
   <!-- Description of the end and answer target in the Slide unlock screen of Phone. [CHAR
     LIMIT=NONE] -->
+  <string name="description_target_answer_end_active">Terminați apelul curent și răspundeți</string>
   <!-- In-call screen: display text for the target action -->
-  <string name="empty_string"></string>
+  <string name="display_text_target_dismiss">RESPINGEȚI</string>
+  <string name="display_text_target_block">BLOCAȚI</string>
+  <string name="display_text_target_answer">RĂSPUNDEȚI</string>
+  <string name="display_text_target_sms">MESAJ RAPID</string>
+  <string name="display_text_target_answer_and_hold_active">ŢINEŢI APELUL CURENT ŞI RĂSPUNDEȚI</string>
+  <string name="display_text_target_answer_and_end_active">TERMINAŢI APELUL CURENT ŞI RĂSPUNDEȚI</string>
+  <string name="onscreenModOverflowText">Mai multe Mod-uri</string>
 </resources>

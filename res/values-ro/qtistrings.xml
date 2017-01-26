@@ -32,6 +32,7 @@
 <!-- The xml contains Qti specific resource strings neede for any value added features. -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Call substate label -->
+  <string name="call_substate_label"><xliff:g id="id">%1$s</xliff:g>: Substatus apel:\u000a <xliff:g id="state" example="Resumed">%2$s</xliff:g></string>
   <!-- Call substate label for call resumed -->
   <string name="call_substate_call_resumed">Reluat</string>
   <!-- Call substate label for call connected suspended (audio) -->
@@ -41,6 +42,7 @@
   <!-- Call substate label for avp retry -->
   <string name="call_substate_avp_retry">Detectarea calității semnalului video\u2026</string>
   <!-- Video quality changed message -->
+  <string name="video_quality_changed"><xliff:g id="id">%1$s</xliff:g>: Calitate video schimbată la <xliff:g id="quality" example="high">%2$s</xliff:g></string>
   <!-- Video quality High -->
   <string name="video_quality_high">ridicată</string>
   <!-- Video quality Medium -->
@@ -50,12 +52,16 @@
   <!-- Video quality Unknown -->
   <string name="video_quality_unknown">necunoscută</string>
   <!-- Message indicating that Video Started flowing for IMS-VT calls -->
+  <string name="player_started">Redarea a început</string>
   <!-- Message indicating that Video Stopped flowing for IMS-VT calls -->
+  <string name="player_stopped">Redarea a fost oprită</string>
   <!-- Message indicating that camera failure has occurred for the selected camera and
          as result camera is not ready -->
   <string name="camera_not_ready">Camera foto nu este pregătită</string>
   <!-- Message indicating that camera is ready/available -->
+  <string name="camera_ready">Camera foto este gata</string>
   <!-- Message indicating unknown call session event -->
+  <string name="unknown_call_session_event">Eveniment necunoscut al sesiunii de apel</string>
   <!-- Message indicating data usage -->
   <string name="data_usage_label">Utilizarea datelor: <xliff:g id="usage">%1$s</xliff:g></string>
   <!-- In-call screen: Modify Call Options for IMS call -->
@@ -67,10 +73,13 @@
   <!-- Modify call error cause -->
   <string name="modify_call_failed_due_to_low_battery">Nu s-a reușit modificarea apelului din cauza bateriei descărcate.</string>
   <!-- Message indicating video calls not allowed if user enabled TTY Mode -->
+  <string name="video_call_not_allowed_if_tty_enabled">Vă rugăm să dezactivați modul TTY pentru a progresa spre apeluri video.</string>
   <!-- Text for the onscreen "Add Participant" button -->
   <string name="onscreenAddParticipant">Adaugă participant</string>
   <!-- Description of the deflect target in the Slide unlock screen. [CHAR LIMIT=NONE] -->
+  <string name="qti_description_target_deflect">Deformare</string>
   <string name="qti_description_deflect_error">Număr nesetat. Oferă numărul prin setări IMS și reîncercă.</string>
+  <string name="qti_description_deflect_service_error">Serviciul de deformare a apelului nu este suportat.</string>
   <!-- Message indicating call failed due to handover not feasible -->
   <string name="call_failed_ho_not_feasible">Apelul a fost încheiat deoarece comutarea din 4G la 3G/2G nu a fost posibilă.</string>
   <!-- Title of the IMS to CS redial dialog -->

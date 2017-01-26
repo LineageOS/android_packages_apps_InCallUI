@@ -27,19 +27,19 @@
   <string name="card_title_dialing_waiting">正在拨号 (等待中\u2026)</string>
   <!-- In-call screen: status label for an outgoing call that's routed via a specific
          provider (e.g. MSIM) and is waiting for the busy remote side -->
-  <string name="calling_via_waiting_template">正在经由 <xliff:g id="provider_name">%s</xliff:g> 进行呼叫 (等待中\u2026)</string>
+  <string name="calling_via_waiting_template">正通过 <xliff:g id="provider_name">%s</xliff:g> 呼叫 (等待中\u2026)</string>
   <!-- In-call screen: status label template for an active call that's routed via a specific
          provider (e.g. MSIM) -->
-  <string name="card_title_active_via_template"><xliff:g id="status" example="Call on hold">%1$s</xliff:g> （通过： <xliff:g id="provider_name">%2$s</xliff:g>）</string>
+  <string name="card_title_active_via_template"><xliff:g id="status" example="Call on hold">%1$s</xliff:g>（通过：<xliff:g id="provider_name">%2$s</xliff:g>）</string>
   <!-- In-call screen: status label for a call that is held remotely  -->
   <string name="card_title_waiting_call">呼叫保持</string>
   <string name="call_recording_failed_message">启动通话录音失败</string>
-  <string name="call_recording_file_location">已保存通话录音至  <xliff:g id="filename">%s</xliff:g></string>
+  <string name="call_recording_file_location">通话录音已保存到 <xliff:g id="filename">%s</xliff:g></string>
   <string name="onscreenCallRecordText">通话录音</string>
   <string name="onscreenStopCallRecordText">停止录音</string>
   <string name="recording_time_text">正在录音</string>
   <string name="recording_warning_title">启用通话录音吗？</string>
-  <string name="recording_warning_text">注意：您有责任遵守任何有关通话录音，以及对于录音使用、分发相关的法律、法规和规定。</string>
+  <string name="recording_warning_text">注意：您有责任遵守有关通话录音以及录音使用、分发相关的任何法律、法规和规定。</string>
   <string name="onscreenTransferCall">呼叫转移</string>
   <!-- In-call screen: Video Call Options for VT or plugin handoff -->
   <string name="video_call_option_title">选择视频服务</string>
@@ -48,7 +48,7 @@
   <string name="snackbar_invite_action_text">邀请</string>
   <string name="caller_info_loading">正在搜索 <xliff:g id="provider">%s</xliff:g>\u2026</string>
   <string name="caller_info_failure">无法连接到 <xliff:g id="provider">%s</xliff:g></string>
-  <string name="caller_info_no_result">没有符合 <xliff:g id="provider">%s</xliff:g> 的匹配</string>
+  <string name="caller_info_no_result">没有符合 <xliff:g id="provider">%s</xliff:g> 的项目</string>
   <string name="caller_info_unauthenticated"><xliff:g id="provider">%s</xliff:g> 安装未完成</string>
   <string name="call_button_contact_unknown">未知</string>
   <!-- Description of the target to block a call -->
@@ -67,7 +67,6 @@
     LIMIT=NONE] -->
   <string name="description_target_answer_end_active">结束当前的呼叫并应答</string>
   <!-- In-call screen: display text for the target action -->
-  <string name="empty_string"></string>
   <string name="display_text_target_dismiss">忽略</string>
   <string name="display_text_target_block">屏蔽</string>
   <string name="display_text_target_answer">应答</string>

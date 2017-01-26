@@ -63,7 +63,7 @@
   <!-- Message indicating unknown call session event -->
   <string name="unknown_call_session_event">未知的通話事件</string>
   <!-- Message indicating data usage -->
-  <string name="data_usage_label">數據用量: <xliff:g id="usage">%1$s </xliff:g></string>
+  <string name="data_usage_label">數據用量：<xliff:g id="usage">%1$s </xliff:g></string>
   <!-- In-call screen: Modify Call Options for IMS call -->
   <string name="modify_call_option_title">選取通話類型</string>
   <string name="modify_call_option_vt">視訊通話</string>
@@ -71,7 +71,7 @@
   <string name="modify_call_option_vt_rx">視訊接收</string>
   <string name="modify_call_option_voice">僅限語音</string>
   <!-- Modify call error cause -->
-  <string name="modify_call_failed_due_to_low_battery">由於電量過低，無法更改通話。</string>
+  <string name="modify_call_failed_due_to_low_battery">由於電量過低，無法變更通話。</string>
   <!-- Message indicating video calls not allowed if user enabled TTY Mode -->
   <string name="video_call_not_allowed_if_tty_enabled">停用 TTY 模式即可進行視訊通話</string>
   <!-- Text for the onscreen "Add Participant" button -->
