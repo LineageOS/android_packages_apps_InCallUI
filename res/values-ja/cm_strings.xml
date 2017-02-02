@@ -24,10 +24,10 @@
   <!-- In-call screen: "call type" indication for a forwarded call [CHAR LIMIT=30] -->
   <string name="incall_call_type_label_forwarded">転送された通話</string>
   <!-- In-call screen: status label for a call in the "dialing" state that's waiting for the busy remote side -->
-  <string name="card_title_dialing_waiting">ダイヤル中（待機中\u2026）</string>
+  <string name="card_title_dialing_waiting">ダイヤル中（待機中...）</string>
   <!-- In-call screen: status label for an outgoing call that's routed via a specific
          provider (e.g. MSIM) and is waiting for the busy remote side -->
-  <string name="calling_via_waiting_template"><xliff:g id="provider_name">%s</xliff:g>経由の通話（待機中\u2026）</string>
+  <string name="calling_via_waiting_template"><xliff:g id="provider_name">%s</xliff:g>経由の通話（待機中...）</string>
   <!-- In-call screen: status label template for an active call that's routed via a specific
          provider (e.g. MSIM) -->
   <string name="card_title_active_via_template"><xliff:g id="status" example="Call on hold">%1$s</xliff:g>（<xliff:g id="provider_name">%2$s</xliff:g>経由）</string>
@@ -46,7 +46,7 @@
   <string name="snackbar_incall_plugin_no_invite_found">この連絡先は<xliff:g id="incall_plugin">%s</xliff:g>の連絡先ではありません。ビデオ通話を発信するには、先にこの人物を追加する必要があります。</string>
   <string name="snackbar_incall_plugin_contact_invite">この連絡先は<xliff:g id="incall_plugin">%s</xliff:g>の連絡先ではありません。この連絡先を招待しますか？</string>
   <string name="snackbar_invite_action_text">招待</string>
-  <string name="caller_info_loading"><xliff:g id="provider">%s</xliff:g>を検索中\u2026</string>
+  <string name="caller_info_loading"><xliff:g id="provider">%s</xliff:g>を検索中...</string>
   <string name="caller_info_failure"><xliff:g id="provider">%s</xliff:g>に接続できませんでした</string>
   <string name="caller_info_no_result"><xliff:g id="provider">%s</xliff:g>で一致する人物は見つかりませんでした</string>
   <string name="caller_info_unauthenticated"><xliff:g id="provider">%s</xliff:g>のセットアップが完了しませんでした</string>
