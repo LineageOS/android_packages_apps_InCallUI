@@ -73,4 +73,5 @@
   <string name="display_text_target_sms">TIN NHẮN NHANH</string>
   <string name="display_text_target_answer_and_hold_active">GIỮ CUỘC GỌI HIỆN TẠI VÀ TRẢ LỜI</string>
   <string name="display_text_target_answer_and_end_active">KẾT THÚC CUỘC GỌI HIỆN TẠI VÀ TRẢ LỜI</string>
+  <string name="onscreenModOverflowText">Thêm các tinh chỉnh</string>
 </resources>
