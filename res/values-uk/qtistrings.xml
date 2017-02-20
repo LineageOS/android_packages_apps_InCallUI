@@ -100,6 +100,7 @@
   <!-- Session modify cause code downgrade qos -->
   <string name="session_modify_cause_downgrade_qos">Виклик знижений через якість обслуговування</string>
   <!-- Session modify cause code downgrade packet loss -->
+  <string name="session_modify_cause_downgrade_packet_loss">Якість виклику знижено через втрату пакетів</string>
   <!-- Session modify cause code downgrade low thrput -->
   <string name="session_modify_cause_downgrade_low_thrput">Виклик знижений через низьку пропускну здатність</string>
   <!-- Session modify cause code downgrade thermal mitigation -->
