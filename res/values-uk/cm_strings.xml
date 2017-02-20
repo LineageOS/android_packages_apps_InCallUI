@@ -40,15 +40,38 @@
   <string name="recording_time_text">Йде запис</string>
   <string name="recording_warning_title">Увімкнути запис дзвінків?</string>
   <string name="recording_warning_text">Повідомлення: Ви відповідальні за дотримання будь-яки законів, правил та обмежень, що стосуються використання функції запису дзвінків і використання або розповсюдження цих записів.</string>
+  <string name="onscreenTransferCall">Перевести виклик</string>
   <!-- In-call screen: Video Call Options for VT or plugin handoff -->
+  <string name="video_call_option_title">Обрати відео службу</string>
+  <string name="snackbar_incall_plugin_no_invite_found">Даний абонент не є контактом <xliff:g id="incall_plugin">%s</xliff:g>. Для здійснення відеовикликів необхідно додати абонента до контактів.</string>
+  <string name="snackbar_incall_plugin_contact_invite">Даний абонент не є контактом <xliff:g id="incall_plugin">%s</xliff:g>. Запросити до контактів?</string>
+  <string name="snackbar_invite_action_text">ЗАПРОСИТИ</string>
+  <string name="caller_info_loading">Пошук <xliff:g id="provider">%s</xliff:g>\u2026</string>
+  <string name="caller_info_failure">Не вдалося під\'єднатися до <xliff:g id="provider">%s</xliff:g></string>
+  <string name="caller_info_no_result">Не виявлено відповідності в базі <xliff:g id="provider">%s</xliff:g></string>
+  <string name="caller_info_unauthenticated">Налаштування <xliff:g id="provider">%s</xliff:g> не завершено</string>
+  <string name="call_button_contact_unknown">Невідомо</string>
   <!-- Description of the target to block a call -->
+  <string name="description_target_block">Заблокувати абонента</string>
   <!-- [CHAR LIMIT=12] -->
+  <string name="notification_action_block">Заблокувати</string>
   <!-- text for the onscreen Note Badge in the CallButtonFragment. When clicked this button will
          launch the appropriate Note taking application as configured by the user. -->
+  <string name="onscreenNoteText">Зробити примітку</string>
   <!-- Text to place in the name field of a Call DeepLink when the contact name is not known -->
+  <string name="deeplink_unknown_caller">Невідомо</string>
   <!-- Description of the hold and answer target in the Slide unlock screen of Phone. [CHAR
     LIMIT=NONE] -->
+  <string name="description_target_answer_hold_active">Утримати поточний виклик та відповісти</string>
   <!-- Description of the end and answer target in the Slide unlock screen of Phone. [CHAR
     LIMIT=NONE] -->
+  <string name="description_target_answer_end_active">Завершити поточний виклик та відповісти</string>
   <!-- In-call screen: display text for the target action -->
+  <string name="display_text_target_dismiss">ВІДХИЛИТИ</string>
+  <string name="display_text_target_block">ЗАБЛОКУВАТИ</string>
+  <string name="display_text_target_answer">ВІДПОВІСТИ</string>
+  <string name="display_text_target_sms">ШВИДКЕ ПОВІДОМЛЕННЯ</string>
+  <string name="display_text_target_answer_and_hold_active">УТРИМАТИ ПОТОЧНИЙ ВИКЛИК ТА ВІДПОВІСТИ</string>
+  <string name="display_text_target_answer_and_end_active">ЗАВЕРШИТИ ПОТОЧНИЙ ВИКЛИК ТА ВІДПОВІСТИ</string>
+  <string name="onscreenModOverflowText">Інші моди</string>
 </resources>
