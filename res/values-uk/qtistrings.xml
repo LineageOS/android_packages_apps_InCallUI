@@ -96,7 +96,7 @@
   <!-- Session modify cause code downgrade remote request -->
   <string name="session_modify_cause_downgrade_remote_request">Виклик знижений за запитом віддаленого користувача</string>
   <!-- Session modify cause code downgrade rtp timeout -->
-  <string name="session_modify_cause_downgrade_rtp_timeout">Виклик знижений через таймаута RTP</string>
+  <string name="session_modify_cause_downgrade_rtp_timeout">Виклик знижений через тайм-аут RTP</string>
   <!-- Session modify cause code downgrade qos -->
   <string name="session_modify_cause_downgrade_qos">Виклик знижений через якість обслуговування</string>
   <!-- Session modify cause code downgrade packet loss -->

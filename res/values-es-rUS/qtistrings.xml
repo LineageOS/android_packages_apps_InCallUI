@@ -78,7 +78,7 @@
   <string name="onscreenAddParticipant">Añadir participante</string>
   <!-- Description of the deflect target in the Slide unlock screen. [CHAR LIMIT=NONE] -->
   <string name="qti_description_target_deflect">Desviar</string>
-  <string name="qti_description_deflect_error">Número no establecido. Proporcionar el número a través de los ajustes IMS y volver a intentarlo.</string>
+  <string name="qti_description_deflect_error">Número no establecido. Proporciona el número a través de los ajustes IMS y vuelve a intentarlo.</string>
   <string name="qti_description_deflect_service_error">No se admite el servicio de desvío de llamada.</string>
   <!-- Message indicating call failed due to handover not feasible -->
   <string name="call_failed_ho_not_feasible">La llamada terminó porque el cambio de LTE a 3G/2G no era factible.</string>

@@ -18,23 +18,58 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- In-call screen: call failure reason (call denied because call barring is ON on MT side ) -->
+  <string name="callFailed_incoming_cb_enabled">Korrespondenti ka bllokuar të gjitha thirrjet hyrëse.</string>
   <!-- In-call screen: status label for an incoming call that is not answered and forwarded  -->
   <!-- In-call screen: "call type" indication for a forwarded call [CHAR LIMIT=30] -->
   <!-- In-call screen: status label for a call in the "dialing" state that's waiting for the busy remote side -->
+  <string name="card_title_dialing_waiting">Duke telefonuar (duke pritur\u2026)</string>
   <!-- In-call screen: status label for an outgoing call that's routed via a specific
          provider (e.g. MSIM) and is waiting for the busy remote side -->
+  <string name="calling_via_waiting_template">Duke telefonuar me <xliff:g id="provider_name">%s</xliff:g> (Duke pritur\u2026)</string>
   <!-- In-call screen: status label template for an active call that's routed via a specific
          provider (e.g. MSIM) -->
+  <string name="card_title_active_via_template"><xliff:g id="status" example="Call on hold">%1$s</xliff:g> (me <xliff:g id="provider_name">%2$s</xliff:g>)</string>
   <!-- In-call screen: status label for a call that is held remotely  -->
+  <string name="card_title_waiting_call">Thirrja në pritje</string>
+  <string name="call_recording_failed_message">Nisja e regjistrimit të telefonatës dështoi</string>
+  <string name="call_recording_file_location">Regjistrimi i telefonatës u ruajt në <xliff:g id="filename">%s</xliff:g></string>
+  <string name="onscreenCallRecordText">Regjistro telefonatën</string>
+  <string name="onscreenStopCallRecordText">Ndalo regjistrimin</string>
+  <string name="recording_time_text">Duke regjistruar</string>
+  <string name="recording_warning_title">Do që të aktivizosh regjistrimin e telefonatës?</string>
+  <string name="recording_warning_text">Lajmërim: Ju jeni përgjegjës që të përputheni me çdo ligj apo rregull që ka lidhje me regjistrimin e telefonatave si dhe me përdorimin apo shpërndarjen e këtyre telefonatave.</string>
+  <string name="onscreenTransferCall">Transfero telefonatën</string>
   <!-- In-call screen: Video Call Options for VT or plugin handoff -->
+  <string name="video_call_option_title">Zgjidh shërbimin e videos</string>
+  <string name="snackbar_incall_plugin_no_invite_found">Ky kontakt nuk është një kontakt i <xliff:g id="incall_plugin">%s</xliff:g>. Ju duhet më parë ta shtoni këtë person për të kryer thirrje me video.</string>
+  <string name="snackbar_incall_plugin_contact_invite">Ky kontakt nuk është kontakt i <xliff:g id="incall_plugin">%s</xliff:g>. Dëshiron ta ftosh këtë kontakt?</string>
+  <string name="snackbar_invite_action_text">FTO</string>
+  <string name="caller_info_loading">Duke kërkuar <xliff:g id="provider">%s</xliff:g>\u2026</string>
+  <string name="caller_info_failure"><xliff:g id="provider">%s</xliff:g> nuk mund të kontaktohej</string>
+  <string name="caller_info_no_result">Nuk u gjet asnjë rezultat për <xliff:g id="provider">%s</xliff:g></string>
+  <string name="caller_info_unauthenticated">Konfigurimi i <xliff:g id="provider">%s</xliff:g> nuk ka mbaruar</string>
+  <string name="call_button_contact_unknown">I panjohur</string>
   <!-- Description of the target to block a call -->
+  <string name="description_target_block">Blloko telefonuesin</string>
   <!-- [CHAR LIMIT=12] -->
+  <string name="notification_action_block">Blloko</string>
   <!-- text for the onscreen Note Badge in the CallButtonFragment. When clicked this button will
          launch the appropriate Note taking application as configured by the user. -->
+  <string name="onscreenNoteText">Mbaj shënim</string>
   <!-- Text to place in the name field of a Call DeepLink when the contact name is not known -->
+  <string name="deeplink_unknown_caller">I panjohur</string>
   <!-- Description of the hold and answer target in the Slide unlock screen of Phone. [CHAR
     LIMIT=NONE] -->
+  <string name="description_target_answer_hold_active">Vëre thirrjen aktuale në pritje dhe pergjigju</string>
   <!-- Description of the end and answer target in the Slide unlock screen of Phone. [CHAR
     LIMIT=NONE] -->
+  <string name="description_target_answer_end_active">Mbaro telefonatën aktuale dhe pergjigju</string>
   <!-- In-call screen: display text for the target action -->
+  <string name="display_text_target_dismiss">LARGO</string>
+  <string name="display_text_target_block">BLLOKO</string>
+  <string name="display_text_target_answer">PËRGJIGJU</string>
+  <string name="display_text_target_sms">MESAZH I SHPEJTË</string>
+  <string name="display_text_target_answer_and_hold_active">VËRE THIRRJEN AKTUALE NË PRITJE DHE PËRGJIGJU</string>
+  <string name="display_text_target_answer_and_end_active">MBYLL THIRRJEN AKTUALE DHE PËRGJIGJU</string>
+  <string name="onscreenModOverflowText">Më shumë Mods</string>
 </resources>
