@@ -71,8 +71,10 @@
   <string name="modify_call_option_vt_rx">Receición de videu</string>
   <string name="modify_call_option_voice">Namái voz</string>
   <!-- Modify call error cause -->
+  <string name="modify_call_failed_due_to_low_battery">Fallu al modificar la llamada pola mor de batería baxa.</string>
   <!-- Message indicating video calls not allowed if user enabled TTY Mode -->
   <!-- Text for the onscreen "Add Participant" button -->
+  <string name="onscreenAddParticipant">Amestar participante</string>
   <!-- Description of the deflect target in the Slide unlock screen. [CHAR LIMIT=NONE] -->
   <!-- Message indicating call failed due to handover not feasible -->
   <string name="call_failed_ho_not_feasible">Finó la llamada darréu que\'l cambéu de LTE a 3G/2G nun foi factible.</string>

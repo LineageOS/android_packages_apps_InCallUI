@@ -20,6 +20,7 @@
          and other settings UIs. -->
   <string name="phoneAppLabel" product="default">Telefono</string>
   <!-- Official label for the in-call UI. DO NOT TRANSLATE. -->
+  <string name="inCallLabel" translate="false">InCallUI</string>
   <!-- Call status -->
   <!-- In-call screen: status label for a call that's on hold -->
   <!-- Incoming call screen, name of "unknown" caller -->
