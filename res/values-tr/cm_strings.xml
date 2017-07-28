@@ -20,9 +20,9 @@
   <!-- In-call screen: call failure reason (call denied because call barring is ON on MT side ) -->
   <string name="callFailed_incoming_cb_enabled">Grup bütün gelen aramaları engelledi.</string>
   <!-- In-call screen: status label for an incoming call that is not answered and forwarded  -->
-  <string name="callUnanswered_forwarded">Çağrı cevaplanmayıp yönlendirildi</string>
+  <string name="callUnanswered_forwarded">Arama cevaplanmayıp yönlendirildi</string>
   <!-- In-call screen: "call type" indication for a forwarded call [CHAR LIMIT=30] -->
-  <string name="incall_call_type_label_forwarded">Yönlendirilmiş çağrı</string>
+  <string name="incall_call_type_label_forwarded">Yönlendirilmiş arama</string>
   <!-- In-call screen: status label for a call in the "dialing" state that's waiting for the busy remote side -->
   <string name="card_title_dialing_waiting">Aranıyor (bekliyor\u2026)</string>
   <!-- In-call screen: status label for an outgoing call that's routed via a specific

@@ -245,6 +245,10 @@
   <!-- This can be used in any application wanting to disable the text "Emergency number" -->
   <!-- Phrase describing a time duration using seconds [CHAR LIMIT=16] -->
   <!-- Phrase describing a time duration using minutes [CHAR LIMIT=16] -->
+  <plurals name="duration_minutes">
+    <item quantity="one">1 minutu</item>
+    <item quantity="other"><xliff:g id="count">%d</xliff:g> minutos</item>
+  </plurals>
   <!-- Phrase describing a time duration using hours [CHAR LIMIT=16] -->
   <!-- Description of the profile photo shown when the device's camera is disabled udring a video
         call. [CHAR LIMIT=NONE] -->

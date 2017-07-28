@@ -69,7 +69,7 @@
   <string name="modify_call_option_vt">Video bidireccional</string>
   <string name="modify_call_option_vt_tx">Transmisión de video</string>
   <string name="modify_call_option_vt_rx">Recepción de video</string>
-  <string name="modify_call_option_voice">Solo voz</string>
+  <string name="modify_call_option_voice">Sólo voz</string>
   <!-- Modify call error cause -->
   <string name="modify_call_failed_due_to_low_battery">Error al modificar la llamada por batería baja.</string>
   <!-- Message indicating video calls not allowed if user enabled TTY Mode -->
