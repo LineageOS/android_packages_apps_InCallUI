@@ -20,7 +20,7 @@
   <!-- In-call screen: call failure reason (call denied because call barring is ON on MT side ) -->
   <string name="callFailed_incoming_cb_enabled">對方已禁止所有來電。</string>
   <!-- In-call screen: status label for an incoming call that is not answered and forwarded  -->
-  <string name="callUnanswered_forwarded">來電未接聽並已轉駁</string>
+  <string name="callUnanswered_forwarded">來電未接聽並已轉接</string>
   <!-- In-call screen: "call type" indication for a forwarded call [CHAR LIMIT=30] -->
   <string name="incall_call_type_label_forwarded">已轉發通話</string>
   <!-- In-call screen: status label for a call in the "dialing" state that's waiting for the busy remote side -->

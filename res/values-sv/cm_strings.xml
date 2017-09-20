@@ -54,6 +54,7 @@
   <string name="notification_action_block">Blockera</string>
   <!-- text for the onscreen Note Badge in the CallButtonFragment. When clicked this button will
          launch the appropriate Note taking application as configured by the user. -->
+  <string name="onscreenNoteText">Notera</string>
   <!-- Text to place in the name field of a Call DeepLink when the contact name is not known -->
   <string name="deeplink_unknown_caller">Okänd</string>
   <!-- Description of the hold and answer target in the Slide unlock screen of Phone. [CHAR

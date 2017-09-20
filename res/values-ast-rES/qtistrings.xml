@@ -76,6 +76,7 @@
   <!-- Text for the onscreen "Add Participant" button -->
   <string name="onscreenAddParticipant">Amestar participante</string>
   <!-- Description of the deflect target in the Slide unlock screen. [CHAR LIMIT=NONE] -->
+  <string name="qti_description_deflect_error">Nun s\'afitó\'l númberu. Apurri\'l númberu pelos axustes d\'IMS y reténtalo.</string>
   <!-- Message indicating call failed due to handover not feasible -->
   <string name="call_failed_ho_not_feasible">Finó la llamada darréu que\'l cambéu de LTE a 3G/2G nun foi factible.</string>
   <!-- Title of the IMS to CS redial dialog -->
