@@ -17,24 +17,41 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- In-call screen: call failure reason (call denied because call barring is ON on MT side ) -->
-  <!-- In-call screen: status label for an incoming call that is not answered and forwarded  -->
-  <!-- In-call screen: "call type" indication for a forwarded call [CHAR LIMIT=30] -->
-  <!-- In-call screen: status label for a call in the "dialing" state that's waiting for the busy remote side -->
-  <!-- In-call screen: status label for an outgoing call that's routed via a specific
-         provider (e.g. MSIM) and is waiting for the busy remote side -->
-  <!-- In-call screen: status label template for an active call that's routed via a specific
-         provider (e.g. MSIM) -->
-  <!-- In-call screen: status label for a call that is held remotely  -->
-  <!-- In-call screen: Video Call Options for VT or plugin handoff -->
-  <!-- Description of the target to block a call -->
-  <!-- [CHAR LIMIT=12] -->
-  <!-- text for the onscreen Note Badge in the CallButtonFragment. When clicked this button will
-         launch the appropriate Note taking application as configured by the user. -->
-  <!-- Text to place in the name field of a Call DeepLink when the contact name is not known -->
-  <!-- Description of the hold and answer target in the Slide unlock screen of Phone. [CHAR
-    LIMIT=NONE] -->
-  <!-- Description of the end and answer target in the Slide unlock screen of Phone. [CHAR
-    LIMIT=NONE] -->
-  <!-- In-call screen: display text for the target action -->
+    <string name="callFailed_incoming_cb_enabled">Mae\'r parti wedi gwahardd derbyn unrhyw alwadau.</string>
+    <string name="callUnanswered_forwarded">Galwad heb ei ateb ac wedi ei dargyfeirio</string>
+    <string name="incall_call_type_label_forwarded">Galwad wedi\'i dargyfeirio</string>
+    <string name="card_title_dialing_waiting">Deialu (yn disgwyl\u2026)</string>
+    <string name="calling_via_waiting_template">Yn galw trwy <xliff:g id="provider_name">%s</xliff:g> (Yn aros\u2026)</string>
+    <string name="card_title_active_via_template"><xliff:g id="status" example="Call on hold">%1$s</xliff:g> (trwy <xliff:g id="provider_name">%2$s</xliff:g>)</string>
+    <string name="card_title_waiting_call">Galwad yn aros</string>
+    <string name="call_recording_failed_message">Methwyd â dechrau recordio\'r galwad</string>
+    <string name="call_recording_file_location">Wedi cadw recordiad yr alwad i <xliff:g id="filename">%s</xliff:g></string>
+    <string name="onscreenCallRecordText">Recordio\'r galwad</string>
+    <string name="onscreenStopCallRecordText">Stopio recordio</string>
+    <string name="recording_time_text">Yn recordio</string>
+    <string name="recording_warning_title">Galluogi recordio galwadau?</string>
+    <string name="recording_warning_text">Nodyn: Ti sy\'n gyfrifol am gydymffurfio gydag unrhyw gyfreithiau, rheoliadau neu reolau sy\'n berthnasol wrth ddefnyddio\'r nodwedd recordio galwadau a hefyd am unrhyw ddefnydd neu rannu o\'r recordiadau.</string>
+    <string name="onscreenTransferCall">Trosglwyddo\'r alwad</string>
+    <string name="video_call_option_title">Dewisa wasanaeth fideo</string>
+    <string name="snackbar_incall_plugin_no_invite_found">Dyw\'r cyswllt hwn ddim yn gyswllt <xliff:g id="incall_plugin">%s</xliff:g>. Rhaid ychwanegu\'r person hwn er mwyn gwneud galwadau fideo.</string>
+    <string name="snackbar_incall_plugin_contact_invite">Dyw\'r cyswllt hwn ddim yn gyswllt <xliff:g id="incall_plugin">%s</xliff:g>. Gwahodd y cyswllt?</string>
+    <string name="snackbar_invite_action_text">GWAHODD</string>
+    <string name="caller_info_loading">Yn chwilio <xliff:g id="provider">%s</xliff:g>\u2026</string>
+    <string name="caller_info_failure">Methwyd â chyrraedd <xliff:g id="provider">%s</xliff:g></string>
+    <string name="caller_info_no_result">Ni chanfuwyd cydweddiad <xliff:g id="provider">%s</xliff:g></string>
+    <string name="caller_info_unauthenticated">Gosod <xliff:g id="provider">%s</xliff:g> yn anghyflawn.</string>
+    <string name="call_button_contact_unknown">Anhysybys</string>
+    <string name="description_target_block">Rhwystro galwr</string>
+    <string name="notification_action_block">Rhwystro</string>
+    <string name="onscreenNoteText">Cymryd nodyn</string>
+    <string name="deeplink_unknown_caller">Anhysybys</string>
+    <string name="description_target_answer_hold_active">Ateb a rhoi\'r alwad bresennol i aros</string>
+    <string name="description_target_answer_end_active">Ateb a gorffen yr alwad bresennol</string>
+    <string name="display_text_target_dismiss">DIYSTYRU</string>
+    <string name="display_text_target_block">RHWYSTRO</string>
+    <string name="display_text_target_answer">ATEB</string>
+    <string name="display_text_target_sms">NEGES GYFLYM</string>
+    <string name="display_text_target_answer_and_hold_active">ATEB A RHOI\'R GALWAD PRESENNOL I AROS</string>
+    <string name="display_text_target_answer_and_end_active">ATEB A GORFFEN YR ALWAD BRESENNOL</string>
+    <string name="onscreenModOverflowText">Rhagor o Addasiadau</string>
 </resources>

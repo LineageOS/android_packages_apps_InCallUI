@@ -31,44 +31,48 @@
   -->
 <!-- The xml contains Qti specific resource strings neede for any value added features. -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- Call substate label -->
-  <!-- Call substate label for call resumed -->
-  <!-- Call substate label for call connected suspended (audio) -->
-  <!-- Call substate label for call connected suspended (video) -->
-  <!-- Call substate label for avp retry -->
-  <!-- Video quality changed message -->
-  <!-- Video quality High -->
-  <!-- Video quality Medium -->
-  <!-- Video quality Low -->
-  <!-- Video quality Unknown -->
-  <!-- Message indicating that Video Started flowing for IMS-VT calls -->
-  <!-- Message indicating that Video Stopped flowing for IMS-VT calls -->
-  <!-- Message indicating that camera failure has occurred for the selected camera and
-         as result camera is not ready -->
-  <!-- Message indicating that camera is ready/available -->
-  <!-- Message indicating unknown call session event -->
-  <!-- Message indicating data usage -->
-  <!-- In-call screen: Modify Call Options for IMS call -->
-  <!-- Modify call error cause -->
-  <!-- Message indicating video calls not allowed if user enabled TTY Mode -->
-  <!-- Text for the onscreen "Add Participant" button -->
-  <!-- Description of the deflect target in the Slide unlock screen. [CHAR LIMIT=NONE] -->
-  <!-- Message indicating call failed due to handover not feasible -->
-  <!-- Title of the IMS to CS redial dialog -->
-  <!-- Message text of the IMS to CS redial dialog -->
-  <!-- Session modify cause unspecified -->
-  <!-- Session modify cause code upgrade local request -->
-  <!-- Session modify cause code upgrade remote request -->
-  <!-- Session modify cause code downgrade local request -->
-  <!-- Session modify cause code downgrade remote request -->
-  <!-- Session modify cause code downgrade rtp timeout -->
-  <!-- Session modify cause code downgrade qos -->
-  <!-- Session modify cause code downgrade packet loss -->
-  <!-- Session modify cause code downgrade low thrput -->
-  <!-- Session modify cause code downgrade thermal mitigation -->
-  <!-- Session modify cause code downgrade lipsync -->
-  <!-- Session modify cause code downgrade generic error -->
-  <!-- Title for Select Account Dialog [CHAR LIMIT=30] -->
-  <!-- Set Subscription screen: label sub 1 -->
-  <!-- Set Subscription screen: label sub 2 -->
+    <string name="call_substate_label"><xliff:g id="id">%1$s</xliff:g>: Zəng alt vəziyyəti:\u000a <xliff:g id="state" example="Resumed">%2$s</xliff:g></string>
+    <string name="call_substate_call_resumed">Davam etdirildi</string>
+    <string name="call_substate_connected_suspended_audio">Bağlantı quruldu, ancaq səs gözlənilir</string>
+    <string name="call_substate_connected_suspended_video">Bağlantı quruldu, ancaq görüntü gözlənilir</string>
+    <string name="call_substate_avp_retry">Görüntü keyfiyyəti aşkarlanır\u2026</string>
+    <string name="video_quality_changed"><xliff:g id="id">%1$s</xliff:g>: Görüntü keyfiyyəti <xliff:g id="quality" example="high">%2$s</xliff:g> olaraq dəyişdirildi</string>
+    <string name="video_quality_high">yüksək</string>
+    <string name="video_quality_medium">orta</string>
+    <string name="video_quality_low">aşağı</string>
+    <string name="video_quality_unknown">bilinməyən</string>
+    <string name="player_started">Oynadıcı başladı</string>
+    <string name="player_stopped">Oynadıcı dayandırıldı</string>
+    <string name="camera_not_ready">Kamera hazır deyil</string>
+    <string name="camera_ready">Kamera hazırdır</string>
+    <string name="unknown_call_session_event">Bilinməyən zəng seans tədbiri</string>
+    <string name="data_usage_label">Verilənlərin istifadəsi: <xliff:g id="usage">%1$s</xliff:g></string>
+    <string name="modify_call_option_title">Zəng növünü seç</string>
+    <string name="modify_call_option_vt">Görüntülü zəng</string>
+    <string name="modify_call_option_vt_tx">Görüntü axını</string>
+    <string name="modify_call_option_vt_rx">Görüntü qəbulu</string>
+    <string name="modify_call_option_voice">Yalnız səs</string>
+    <string name="modify_call_failed_due_to_low_battery">Batereya zəif olduğuna görə zəng dəyişdirmə uğursuz oldu.</string>
+    <string name="video_call_not_allowed_if_tty_enabled">Görüntülü zəng üçün zəhmət olmasa TTY rejimini sıradan çıxarın.</string>
+    <string name="onscreenAddParticipant">İştirakçı əlavə et</string>
+    <string name="qti_description_target_deflect">Rədd et</string>
+    <string name="qti_description_deflect_error">Nömrə tənzimlənib. IMS tənzimləmələri ilə nömrə daxil edib təkrar sınayın.</string>
+    <string name="qti_description_deflect_service_error">Zəng rədd etmə xidməti dəstəklənmir.</string>
+    <string name="call_failed_ho_not_feasible">LTE-dən 3G/2G-ə keçid uyğun olmadığı üçün zəng başa çatdı.</string>
+    <string name="cs_redial_option">Yenidən yığ</string>
+    <string name="cs_redial_msg">IME görüntülü zəngi edilə bilmir, IMS olmadan səsli zəng edilsin?</string>
+    <string name="session_modify_cause_upgrade_local_request">Zəng istifadəçi sorğusuna əsasən yüksəldildi</string>
+    <string name="session_modify_cause_upgrade_remote_request">Zəng uzaqdan istifadəçi sorğusuna əsasən yüksəldildi</string>
+    <string name="session_modify_cause_downgrade_local_request">İstifadəçi sorğusu ilə zəng endirildi</string>
+    <string name="session_modify_cause_downgrade_remote_request">Uzaq istifadəçi sorğusu ilə zəng endirildi</string>
+    <string name="session_modify_cause_downgrade_rtp_timeout">RTP üçün qoyulan vaxt bitdiyi üçün zəng endirildi</string>
+    <string name="session_modify_cause_downgrade_qos">Xidmət keyfiyyəti səbəbinə görə zəng endirildi</string>
+    <string name="session_modify_cause_downgrade_packet_loss">Paket itkisi səbəbinə görə zəng endirildi</string>
+    <string name="session_modify_cause_downgrade_low_thrput">Aşağı keçirtmə səbəbinə görə zəng endirildi</string>
+    <string name="session_modify_cause_downgrade_thermal_mitigation">İstilik azaldılması səbəbinə görə zəng endirildi</string>
+    <string name="session_modify_cause_downgrade_lipsync">Eyniləşdirilmədiyinə görə zəng endirildi</string>
+    <string name="session_modify_cause_downgrade_generic_error">Ümumi xəta səbəbinə görə zəng endirildi</string>
+    <string name="select_account_dialog_title">SIM kart seçin</string>
+    <string name="sub_1">SIM 1</string>
+    <string name="sub_2">SIM 2</string>
 </resources>

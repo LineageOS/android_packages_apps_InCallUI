@@ -17,61 +17,41 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- In-call screen: call failure reason (call denied because call barring is ON on MT side ) -->
-  <string name="callFailed_incoming_cb_enabled">O receptor ten prohibidas todas as chamadas entrantes.</string>
-  <!-- In-call screen: status label for an incoming call that is not answered and forwarded  -->
-  <string name="callUnanswered_forwarded">Chamar ás perdidas e desviadas</string>
-  <!-- In-call screen: "call type" indication for a forwarded call [CHAR LIMIT=30] -->
-  <string name="incall_call_type_label_forwarded">Chamada desviada</string>
-  <!-- In-call screen: status label for a call in the "dialing" state that's waiting for the busy remote side -->
-  <string name="card_title_dialing_waiting">Marcando (agardando\u2026)</string>
-  <!-- In-call screen: status label for an outgoing call that's routed via a specific
-         provider (e.g. MSIM) and is waiting for the busy remote side -->
-  <string name="calling_via_waiting_template">Chamando mediante <xliff:g id="provider_name">%s</xliff:g> (Agardando\u2026)</string>
-  <!-- In-call screen: status label template for an active call that's routed via a specific
-         provider (e.g. MSIM) -->
-  <string name="card_title_active_via_template"><xliff:g id="status" example="Call on hold">%1$s</xliff:g> (a través de <xliff:g id="provider_name">%2$s</xliff:g>)</string>
-  <!-- In-call screen: status label for a call that is held remotely  -->
-  <string name="card_title_waiting_call">Chamada en agarda</string>
-  <string name="call_recording_failed_message">Produciuse un erro ao iniciar a gravación de chamadas</string>
-  <string name="call_recording_file_location">Gardouse a gravación da chamada en <xliff:g id="filename">%s</xliff:g></string>
-  <string name="onscreenCallRecordText">Gravar a chamada</string>
-  <string name="onscreenStopCallRecordText">Deter a gravación</string>
-  <string name="recording_time_text">Gravando</string>
-  <string name="recording_warning_title">Activar a gravación das chamadas?</string>
-  <string name="recording_warning_text">Aviso: É a súa responsabilidade respectar as leis, normas e regras que afecten á función de gravación de chamadas e á distribución desas gravacións.</string>
-  <string name="onscreenTransferCall">Transferir chamada</string>
-  <!-- In-call screen: Video Call Options for VT or plugin handoff -->
-  <string name="video_call_option_title">Seleccione o servizo de vídeo</string>
-  <string name="snackbar_incall_plugin_no_invite_found">Este contacto non é un contacto <xliff:g id="incall_plugin">%s</xliff:g>. Primeiro debe engadir esta persoa para facer videochamadas.</string>
-  <string name="snackbar_incall_plugin_contact_invite">Este contacto non é un contacto <xliff:g id="incall_plugin">%s </xliff:g>. ¿Quere convidar a este contacto?</string>
-  <string name="snackbar_invite_action_text">CONVIDAR</string>
-  <string name="caller_info_loading">Buscando <xliff:g id="provider">%s</xliff:g>\u2026</string>
-  <string name="caller_info_failure">Non se puido contactar con <xliff:g id="provider">%s</xliff:g></string>
-  <string name="caller_info_no_result">Non se atopou ningún resultado para <xliff:g id="provider">%s</xliff:g></string>
-  <string name="caller_info_unauthenticated"><xliff:g id="provider">%s</xliff:g> configuración incompleta</string>
-  <string name="call_button_contact_unknown">Descoñecido</string>
-  <!-- Description of the target to block a call -->
-  <string name="description_target_block">Bloquear chamada</string>
-  <!-- [CHAR LIMIT=12] -->
-  <string name="notification_action_block">Bloquear</string>
-  <!-- text for the onscreen Note Badge in the CallButtonFragment. When clicked this button will
-         launch the appropriate Note taking application as configured by the user. -->
-  <string name="onscreenNoteText">Tomar nota</string>
-  <!-- Text to place in the name field of a Call DeepLink when the contact name is not known -->
-  <string name="deeplink_unknown_caller">Descoñecido</string>
-  <!-- Description of the hold and answer target in the Slide unlock screen of Phone. [CHAR
-    LIMIT=NONE] -->
-  <string name="description_target_answer_hold_active">Poñer chamada actual en espera e responder</string>
-  <!-- Description of the end and answer target in the Slide unlock screen of Phone. [CHAR
-    LIMIT=NONE] -->
-  <string name="description_target_answer_end_active">Rematar chamada actual e responder</string>
-  <!-- In-call screen: display text for the target action -->
-  <string name="display_text_target_dismiss">REXEITAR</string>
-  <string name="display_text_target_block">BLOQUEAR</string>
-  <string name="display_text_target_answer">RESPONDER</string>
-  <string name="display_text_target_sms">MENSAXE RÁPIDA</string>
-  <string name="display_text_target_answer_and_hold_active">POÑER CHAMADA ACTUAL EN ESPERA E RESPONDER</string>
-  <string name="display_text_target_answer_and_end_active">REMATAR CHAMADA ACTUAL E RESPONDER</string>
-  <string name="onscreenModOverflowText">Máis Mods</string>
+    <string name="callFailed_incoming_cb_enabled">O receptor ten prohibidas todas as chamadas entrantes.</string>
+    <string name="callUnanswered_forwarded">Chamar ás perdidas e desviadas</string>
+    <string name="incall_call_type_label_forwarded">Chamada desviada</string>
+    <string name="card_title_dialing_waiting">Marcando (agardando\u2026)</string>
+    <string name="calling_via_waiting_template">Chamando mediante <xliff:g id="provider_name">%s</xliff:g> (Agardando\u2026)</string>
+    <string name="card_title_active_via_template"><xliff:g id="status" example="Call on hold">%1$s</xliff:g> (a través de <xliff:g id="provider_name">%2$s</xliff:g>)</string>
+    <string name="card_title_waiting_call">Chamada en agarda</string>
+    <string name="call_recording_failed_message">Produciuse un erro ao iniciar a gravación de chamadas</string>
+    <string name="call_recording_file_location">Gardouse a gravación da chamada en <xliff:g id="filename">%s</xliff:g></string>
+    <string name="onscreenCallRecordText">Gravar a chamada</string>
+    <string name="onscreenStopCallRecordText">Deter a gravación</string>
+    <string name="recording_time_text">Gravando</string>
+    <string name="recording_warning_title">Activar a gravación das chamadas?</string>
+    <string name="recording_warning_text">Aviso: É a súa responsabilidade respectar as leis, normas e regras que afecten á función de gravación de chamadas e á distribución desas gravacións.</string>
+    <string name="onscreenTransferCall">Transferir chamada</string>
+    <string name="video_call_option_title">Seleccione o servizo de vídeo</string>
+    <string name="snackbar_incall_plugin_no_invite_found">Este contacto non é un contacto <xliff:g id="incall_plugin">%s</xliff:g>. Primeiro debe engadir esta persoa para facer videochamadas.</string>
+    <string name="snackbar_incall_plugin_contact_invite">Este contacto non é un contacto <xliff:g id="incall_plugin">%s </xliff:g>. ¿Quere convidar a este contacto?</string>
+    <string name="snackbar_invite_action_text">CONVIDAR</string>
+    <string name="caller_info_loading">Buscando <xliff:g id="provider">%s</xliff:g>\u2026</string>
+    <string name="caller_info_failure">Non se puido contactar con <xliff:g id="provider">%s</xliff:g></string>
+    <string name="caller_info_no_result">Non se atopou ningún resultado para <xliff:g id="provider">%s</xliff:g></string>
+    <string name="caller_info_unauthenticated"><xliff:g id="provider">%s</xliff:g> configuración incompleta</string>
+    <string name="call_button_contact_unknown">Descoñecido</string>
+    <string name="description_target_block">Bloquear chamada</string>
+    <string name="notification_action_block">Bloquear</string>
+    <string name="onscreenNoteText">Tomar nota</string>
+    <string name="deeplink_unknown_caller">Descoñecido</string>
+    <string name="description_target_answer_hold_active">Poñer chamada actual en espera e responder</string>
+    <string name="description_target_answer_end_active">Rematar chamada actual e responder</string>
+    <string name="display_text_target_dismiss">REXEITAR</string>
+    <string name="display_text_target_block">BLOQUEAR</string>
+    <string name="display_text_target_answer">RESPONDER</string>
+    <string name="display_text_target_sms">MENSAXE RÁPIDA</string>
+    <string name="display_text_target_answer_and_hold_active">POÑER CHAMADA ACTUAL EN ESPERA E RESPONDER</string>
+    <string name="display_text_target_answer_and_end_active">REMATAR CHAMADA ACTUAL E RESPONDER</string>
+    <string name="onscreenModOverflowText">Máis Mods</string>
 </resources>

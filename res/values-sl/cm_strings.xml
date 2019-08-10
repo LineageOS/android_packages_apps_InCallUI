@@ -17,61 +17,41 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- In-call screen: call failure reason (call denied because call barring is ON on MT side ) -->
-  <string name="callFailed_incoming_cb_enabled">Oseba ima zaporo vseh dohodnih klicev.</string>
-  <!-- In-call screen: status label for an incoming call that is not answered and forwarded  -->
-  <string name="callUnanswered_forwarded">Klic neodgovorjen in posredovan</string>
-  <!-- In-call screen: "call type" indication for a forwarded call [CHAR LIMIT=30] -->
-  <string name="incall_call_type_label_forwarded">Posredovan klic</string>
-  <!-- In-call screen: status label for a call in the "dialing" state that's waiting for the busy remote side -->
-  <string name="card_title_dialing_waiting">Klicanje (čakanje \u2026)</string>
-  <!-- In-call screen: status label for an outgoing call that's routed via a specific
-         provider (e.g. MSIM) and is waiting for the busy remote side -->
-  <string name="calling_via_waiting_template">Klicanje preko <xliff:g id="provider_name">%s</xliff:g> (čakanje \u2026)</string>
-  <!-- In-call screen: status label template for an active call that's routed via a specific
-         provider (e.g. MSIM) -->
-  <string name="card_title_active_via_template"><xliff:g id="status" example="Call on hold">%1$s</xliff:g> (preko <xliff:g id="provider_name">%2$s</xliff:g>)</string>
-  <!-- In-call screen: status label for a call that is held remotely  -->
-  <string name="card_title_waiting_call">Klic na čakanju</string>
-  <string name="call_recording_failed_message">Začetek snemanja klica je spodletel</string>
-  <string name="call_recording_file_location">Snemanje klica shranjeno v <xliff:g id="filename">%s</xliff:g></string>
-  <string name="onscreenCallRecordText">Snemaj klic</string>
-  <string name="onscreenStopCallRecordText">Ustavi snemanje</string>
-  <string name="recording_time_text">Snemanje</string>
-  <string name="recording_warning_title">Omogoči snemanje klicev?</string>
-  <string name="recording_warning_text">Obvestilo: Odgovorni ste za skladnost z zakoni, predpisi in pravili, ki veljajo za uporabo funkcionalnosti snemanja klicev in uporabo ali distribucijo teh posnetkov.</string>
-  <string name="onscreenTransferCall">Prenesi klic</string>
-  <!-- In-call screen: Video Call Options for VT or plugin handoff -->
-  <string name="video_call_option_title">Izberite storitev videoklicev</string>
-  <string name="snackbar_incall_plugin_no_invite_found">Ta stik ni stik <xliff:g id="incall_plugin">%s</xliff:g>. Za opravljanje videoklicev morate najprej to osebo dodati.</string>
-  <string name="snackbar_incall_plugin_contact_invite">Ta stik ni stik <xliff:g id="incall_plugin">%s</xliff:g>. Povabi ta stik?</string>
-  <string name="snackbar_invite_action_text">POVABI</string>
-  <string name="caller_info_loading">Iskanje <xliff:g id="provider">%s</xliff:g> \u2026</string>
-  <string name="caller_info_failure"><xliff:g id="provider">%s</xliff:g> ni bilo mogoče doseči</string>
-  <string name="caller_info_no_result">Ni ujemanj s/z <xliff:g id="provider">%s</xliff:g></string>
-  <string name="caller_info_unauthenticated">Namestitev <xliff:g id="provider">%s</xliff:g> nekončana</string>
-  <string name="call_button_contact_unknown">Neznan</string>
-  <!-- Description of the target to block a call -->
-  <string name="description_target_block">Blokiraj klicatelja</string>
-  <!-- [CHAR LIMIT=12] -->
-  <string name="notification_action_block">Blokiraj</string>
-  <!-- text for the onscreen Note Badge in the CallButtonFragment. When clicked this button will
-         launch the appropriate Note taking application as configured by the user. -->
-  <string name="onscreenNoteText">Zabeleži opombo</string>
-  <!-- Text to place in the name field of a Call DeepLink when the contact name is not known -->
-  <string name="deeplink_unknown_caller">Neznano</string>
-  <!-- Description of the hold and answer target in the Slide unlock screen of Phone. [CHAR
-    LIMIT=NONE] -->
-  <string name="description_target_answer_hold_active">Zadrži trenutni klic in odgovori</string>
-  <!-- Description of the end and answer target in the Slide unlock screen of Phone. [CHAR
-    LIMIT=NONE] -->
-  <string name="description_target_answer_end_active">Končaj trenutni klic in odgovori</string>
-  <!-- In-call screen: display text for the target action -->
-  <string name="display_text_target_dismiss">OPUSTI</string>
-  <string name="display_text_target_block">BLOKIRAJ</string>
-  <string name="display_text_target_answer">ODGOVORI</string>
-  <string name="display_text_target_sms">HITRO SPOROČILO</string>
-  <string name="display_text_target_answer_and_hold_active">ZADRŽI TRENUTNI KLIC IN ODGOVORI</string>
-  <string name="display_text_target_answer_and_end_active">KONČAJ TRENUTNI KLIC IN ODGOVORI</string>
-  <string name="onscreenModOverflowText">Več modifikacij</string>
+    <string name="callFailed_incoming_cb_enabled">Oseba ima zaporo vseh dohodnih klicev.</string>
+    <string name="callUnanswered_forwarded">Klic neodgovorjen in posredovan</string>
+    <string name="incall_call_type_label_forwarded">Posredovan klic</string>
+    <string name="card_title_dialing_waiting">Klicanje (čakanje \u2026)</string>
+    <string name="calling_via_waiting_template">Klicanje preko <xliff:g id="provider_name">%s</xliff:g> (čakanje \u2026)</string>
+    <string name="card_title_active_via_template"><xliff:g id="status" example="Call on hold">%1$s</xliff:g> (preko <xliff:g id="provider_name">%2$s</xliff:g>)</string>
+    <string name="card_title_waiting_call">Klic na čakanju</string>
+    <string name="call_recording_failed_message">Začetek snemanja klica je spodletel</string>
+    <string name="call_recording_file_location">Snemanje klica shranjeno v <xliff:g id="filename">%s</xliff:g></string>
+    <string name="onscreenCallRecordText">Snemaj klic</string>
+    <string name="onscreenStopCallRecordText">Ustavi snemanje</string>
+    <string name="recording_time_text">Snemanje</string>
+    <string name="recording_warning_title">Omogoči snemanje klicev?</string>
+    <string name="recording_warning_text">Obvestilo: Odgovorni ste za skladnost z zakoni, predpisi in pravili, ki veljajo za uporabo funkcionalnosti snemanja klicev in uporabo ali distribucijo teh posnetkov.</string>
+    <string name="onscreenTransferCall">Prenesi klic</string>
+    <string name="video_call_option_title">Izberite storitev video klicev</string>
+    <string name="snackbar_incall_plugin_no_invite_found">Ta stik ni stik <xliff:g id="incall_plugin">%s</xliff:g>. Za opravljanje video klicev morate najprej to osebo dodati.</string>
+    <string name="snackbar_incall_plugin_contact_invite">Ta stik ni stik <xliff:g id="incall_plugin">%s</xliff:g>. Povabi ta stik?</string>
+    <string name="snackbar_invite_action_text">POVABI</string>
+    <string name="caller_info_loading">Iskanje <xliff:g id="provider">%s</xliff:g> \u2026</string>
+    <string name="caller_info_failure"><xliff:g id="provider">%s</xliff:g> ni bilo mogoče doseči</string>
+    <string name="caller_info_no_result">Ni ujemanj s/z <xliff:g id="provider">%s</xliff:g></string>
+    <string name="caller_info_unauthenticated">Namestitev <xliff:g id="provider">%s</xliff:g> nekončana</string>
+    <string name="call_button_contact_unknown">Neznan</string>
+    <string name="description_target_block">Blokiraj klicatelja</string>
+    <string name="notification_action_block">Blokiraj</string>
+    <string name="onscreenNoteText">Zabeleži opombo</string>
+    <string name="deeplink_unknown_caller">Neznano</string>
+    <string name="description_target_answer_hold_active">Zadrži trenutni klic in odgovori</string>
+    <string name="description_target_answer_end_active">Končaj trenutni klic in odgovori</string>
+    <string name="display_text_target_dismiss">OPUSTI</string>
+    <string name="display_text_target_block">BLOKIRAJ</string>
+    <string name="display_text_target_answer">ODGOVORI</string>
+    <string name="display_text_target_sms">HITRO SPOROČILO</string>
+    <string name="display_text_target_answer_and_hold_active">ZADRŽI TRENUTNI KLIC IN ODGOVORI</string>
+    <string name="display_text_target_answer_and_end_active">KONČAJ TRENUTNI KLIC IN ODGOVORI</string>
+    <string name="onscreenModOverflowText">Več modifikacij</string>
 </resources>

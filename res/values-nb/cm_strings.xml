@@ -17,61 +17,41 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- In-call screen: call failure reason (call denied because call barring is ON on MT side ) -->
-  <string name="callFailed_incoming_cb_enabled">Gruppen har sperret alle innkommende oppringinger.</string>
-  <!-- In-call screen: status label for an incoming call that is not answered and forwarded  -->
-  <string name="callUnanswered_forwarded">Ubesvarte og videresendte anrop</string>
-  <!-- In-call screen: "call type" indication for a forwarded call [CHAR LIMIT=30] -->
-  <string name="incall_call_type_label_forwarded">Videresendt samtale</string>
-  <!-- In-call screen: status label for a call in the "dialing" state that's waiting for the busy remote side -->
-  <string name="card_title_dialing_waiting">Ringer (venter\u2026)</string>
-  <!-- In-call screen: status label for an outgoing call that's routed via a specific
-         provider (e.g. MSIM) and is waiting for the busy remote side -->
-  <string name="calling_via_waiting_template">Ringer via <xliff:g id="provider_name">%s</xliff:g> (Waiting\u2026)</string>
-  <!-- In-call screen: status label template for an active call that's routed via a specific
-         provider (e.g. MSIM) -->
-  <string name="card_title_active_via_template"><xliff:g id="status" example="Call on hold">%1$s </xliff:g> (via <xliff:g id="provider_name">%2$s </xliff:g>)</string>
-  <!-- In-call screen: status label for a call that is held remotely  -->
-  <string name="card_title_waiting_call">Samtale på vent</string>
-  <string name="call_recording_failed_message">Kunne ikke starte opptak av samtalen</string>
-  <string name="call_recording_file_location">Lagrer samtaleopptak til <xliff:g id="filename">%s</xliff:g></string>
-  <string name="onscreenCallRecordText">Ta opp samtale</string>
-  <string name="onscreenStopCallRecordText">Stopp Opptak</string>
-  <string name="recording_time_text">Tar opp</string>
-  <string name="recording_warning_title">Aktivere samtale opptak?</string>
-  <string name="recording_warning_text">Merknad: Du er ansvarlig for å overholde alle lover, regler og regler som gjelder for bruk av samtalen innspillingen funksjonaliteten og bruk eller distribusjon av disse innspillingene.</string>
-  <string name="onscreenTransferCall">Overfør samtale</string>
-  <!-- In-call screen: Video Call Options for VT or plugin handoff -->
-  <string name="video_call_option_title">Velg video-tjeneste</string>
-  <string name="snackbar_incall_plugin_no_invite_found">Denne kontakten er ikke en <xliff:g id="incall_plugin">%s</xliff:g> kontakt. Du må legge denne personen til før du kan begynne video samtaler.</string>
-  <string name="snackbar_incall_plugin_contact_invite">Denne kontakten er ikke en <xliff:g id="incall_plugin">%s </xliff:g> kontakt. Inviterer kontakten?</string>
-  <string name="snackbar_invite_action_text">INVITER</string>
-  <string name="caller_info_loading">Søker <xliff:g id="provider">%s</xliff:g>\u2026</string>
-  <string name="caller_info_failure"><xliff:g id="provider">%s</xliff:g> kunne ikke nås</string>
-  <string name="caller_info_no_result">Ingen <xliff:g id="provider">%s</xliff:g> match funnet</string>
-  <string name="caller_info_unauthenticated"><xliff:g id="provider">%s </xliff:g> installasjonen er ufullstendig</string>
-  <string name="call_button_contact_unknown">Ukjent</string>
-  <!-- Description of the target to block a call -->
-  <string name="description_target_block">Blokker ringer</string>
-  <!-- [CHAR LIMIT=12] -->
-  <string name="notification_action_block">Blokker</string>
-  <!-- text for the onscreen Note Badge in the CallButtonFragment. When clicked this button will
-         launch the appropriate Note taking application as configured by the user. -->
-  <string name="onscreenNoteText">Ta et notat</string>
-  <!-- Text to place in the name field of a Call DeepLink when the contact name is not known -->
-  <string name="deeplink_unknown_caller">Ukjent</string>
-  <!-- Description of the hold and answer target in the Slide unlock screen of Phone. [CHAR
-    LIMIT=NONE] -->
-  <string name="description_target_answer_hold_active">Hold samtalen og svar</string>
-  <!-- Description of the end and answer target in the Slide unlock screen of Phone. [CHAR
-    LIMIT=NONE] -->
-  <string name="description_target_answer_end_active">Avslutt samtalen og svar</string>
-  <!-- In-call screen: display text for the target action -->
-  <string name="display_text_target_dismiss">AVVIS</string>
-  <string name="display_text_target_block">BLOKKER</string>
-  <string name="display_text_target_answer">SVAR</string>
-  <string name="display_text_target_sms">HURTIGMELDING</string>
-  <string name="display_text_target_answer_and_hold_active">PAUSE SAMTALEN OG SVAR</string>
-  <string name="display_text_target_answer_and_end_active">AVSLUTTE SAMTALEN OG SVAR</string>
-  <string name="onscreenModOverflowText">Flere Mods</string>
+    <string name="callFailed_incoming_cb_enabled">Gruppen har sperret alle innkommende oppringinger.</string>
+    <string name="callUnanswered_forwarded">Ubesvarte og videresendte anrop</string>
+    <string name="incall_call_type_label_forwarded">Videresendt samtale</string>
+    <string name="card_title_dialing_waiting">Ringer (venter\u2026)</string>
+    <string name="calling_via_waiting_template">Ringer via <xliff:g id="provider_name">%s</xliff:g> (Waiting\u2026)</string>
+    <string name="card_title_active_via_template"><xliff:g id="status" example="Call on hold">%1$s </xliff:g> (via <xliff:g id="provider_name">%2$s </xliff:g>)</string>
+    <string name="card_title_waiting_call">Samtale på vent</string>
+    <string name="call_recording_failed_message">Kunne ikke starte opptak av samtalen</string>
+    <string name="call_recording_file_location">Lagrer samtaleopptak til <xliff:g id="filename">%s</xliff:g></string>
+    <string name="onscreenCallRecordText">Ta opp samtale</string>
+    <string name="onscreenStopCallRecordText">Stopp Opptak</string>
+    <string name="recording_time_text">Tar opp</string>
+    <string name="recording_warning_title">Aktivere samtale opptak?</string>
+    <string name="recording_warning_text">Merknad: Du er ansvarlig for å overholde alle lover, regler og regler som gjelder for bruk av samtalen innspillingen funksjonaliteten og bruk eller distribusjon av disse innspillingene.</string>
+    <string name="onscreenTransferCall">Overfør samtale</string>
+    <string name="video_call_option_title">Velg video-tjeneste</string>
+    <string name="snackbar_incall_plugin_no_invite_found">Denne kontakten er ikke en <xliff:g id="incall_plugin">%s</xliff:g> kontakt. Du må legge denne personen til før du kan begynne video samtaler.</string>
+    <string name="snackbar_incall_plugin_contact_invite">Denne kontakten er ikke en <xliff:g id="incall_plugin">%s </xliff:g> kontakt. Inviterer kontakten?</string>
+    <string name="snackbar_invite_action_text">INVITER</string>
+    <string name="caller_info_loading">Søker <xliff:g id="provider">%s</xliff:g>\u2026</string>
+    <string name="caller_info_failure"><xliff:g id="provider">%s</xliff:g> kunne ikke nås</string>
+    <string name="caller_info_no_result">Ingen <xliff:g id="provider">%s</xliff:g> match funnet</string>
+    <string name="caller_info_unauthenticated"><xliff:g id="provider">%s </xliff:g> installasjonen er ufullstendig</string>
+    <string name="call_button_contact_unknown">Ukjent</string>
+    <string name="description_target_block">Blokker ringer</string>
+    <string name="notification_action_block">Blokker</string>
+    <string name="onscreenNoteText">Ta et notat</string>
+    <string name="deeplink_unknown_caller">Ukjent</string>
+    <string name="description_target_answer_hold_active">Hold samtalen og svar</string>
+    <string name="description_target_answer_end_active">Avslutt samtalen og svar</string>
+    <string name="display_text_target_dismiss">AVVIS</string>
+    <string name="display_text_target_block">BLOKKER</string>
+    <string name="display_text_target_answer">SVAR</string>
+    <string name="display_text_target_sms">HURTIGMELDING</string>
+    <string name="display_text_target_answer_and_hold_active">PAUSE SAMTALEN OG SVAR</string>
+    <string name="display_text_target_answer_and_end_active">AVSLUTTE SAMTALEN OG SVAR</string>
+    <string name="onscreenModOverflowText">Flere Mods</string>
 </resources>

@@ -31,44 +31,48 @@
   -->
 <!-- The xml contains Qti specific resource strings neede for any value added features. -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- Call substate label -->
-  <!-- Call substate label for call resumed -->
-  <!-- Call substate label for call connected suspended (audio) -->
-  <!-- Call substate label for call connected suspended (video) -->
-  <!-- Call substate label for avp retry -->
-  <!-- Video quality changed message -->
-  <!-- Video quality High -->
-  <!-- Video quality Medium -->
-  <!-- Video quality Low -->
-  <!-- Video quality Unknown -->
-  <!-- Message indicating that Video Started flowing for IMS-VT calls -->
-  <!-- Message indicating that Video Stopped flowing for IMS-VT calls -->
-  <!-- Message indicating that camera failure has occurred for the selected camera and
-         as result camera is not ready -->
-  <!-- Message indicating that camera is ready/available -->
-  <!-- Message indicating unknown call session event -->
-  <!-- Message indicating data usage -->
-  <!-- In-call screen: Modify Call Options for IMS call -->
-  <!-- Modify call error cause -->
-  <!-- Message indicating video calls not allowed if user enabled TTY Mode -->
-  <!-- Text for the onscreen "Add Participant" button -->
-  <!-- Description of the deflect target in the Slide unlock screen. [CHAR LIMIT=NONE] -->
-  <!-- Message indicating call failed due to handover not feasible -->
-  <!-- Title of the IMS to CS redial dialog -->
-  <!-- Message text of the IMS to CS redial dialog -->
-  <!-- Session modify cause unspecified -->
-  <!-- Session modify cause code upgrade local request -->
-  <!-- Session modify cause code upgrade remote request -->
-  <!-- Session modify cause code downgrade local request -->
-  <!-- Session modify cause code downgrade remote request -->
-  <!-- Session modify cause code downgrade rtp timeout -->
-  <!-- Session modify cause code downgrade qos -->
-  <!-- Session modify cause code downgrade packet loss -->
-  <!-- Session modify cause code downgrade low thrput -->
-  <!-- Session modify cause code downgrade thermal mitigation -->
-  <!-- Session modify cause code downgrade lipsync -->
-  <!-- Session modify cause code downgrade generic error -->
-  <!-- Title for Select Account Dialog [CHAR LIMIT=30] -->
-  <!-- Set Subscription screen: label sub 1 -->
-  <!-- Set Subscription screen: label sub 2 -->
+    <string name="call_substate_label"><xliff:g id="id">%1$s</xliff:g>: Oprop substeat:\u000a <xliff:g id="state" example="Resumed">%2$s</xliff:g></string>
+    <string name="call_substate_call_resumed">Petear ferfet</string>
+    <string name="call_substate_connected_suspended_audio">Petear is ferbûn, mar audio is ûnderbrutsen</string>
+    <string name="call_substate_connected_suspended_video">Petear is ferbûn, mar fideo is ûnderbrutsen</string>
+    <string name="call_substate_avp_retry">Fideokwaliteit detektearje\u2026</string>
+    <string name="video_quality_changed"><xliff:g id="id">%1$s</xliff:g>: Fideokwaliteit wizige nei <xliff:g id="quality" example="high">%2$s</xliff:g></string>
+    <string name="video_quality_high">heech</string>
+    <string name="video_quality_medium">gemiddeld</string>
+    <string name="video_quality_low">leech</string>
+    <string name="video_quality_unknown">ûnbekend</string>
+    <string name="player_started">Spiler start</string>
+    <string name="player_stopped">Spiler stoppe</string>
+    <string name="camera_not_ready">Kamera is net ree</string>
+    <string name="camera_ready">Kamera is ree</string>
+    <string name="unknown_call_session_event">Unbekende opropbarren</string>
+    <string name="data_usage_label">Gegevensgebrûk: <xliff:g id="usage">%1$s</xliff:g></string>
+    <string name="modify_call_option_title">Soarte petear</string>
+    <string name="modify_call_option_vt">Fideo ferstjoere/ûntfange</string>
+    <string name="modify_call_option_vt_tx">Fideo ferstjoere</string>
+    <string name="modify_call_option_vt_rx">Fideo ûntfange</string>
+    <string name="modify_call_option_voice">Allinnich spraak</string>
+    <string name="modify_call_failed_due_to_low_battery">Oanpassen fan petear mislearre as gefolch fan lege batterijspanning.</string>
+    <string name="video_call_not_allowed_if_tty_enabled">Skeakelje TTY-modus út om fideo-oproppen ta te stean.</string>
+    <string name="onscreenAddParticipant">Dielnimmer tafoegje</string>
+    <string name="qti_description_target_deflect">Omliede</string>
+    <string name="qti_description_deflect_error">Nûmer net ynsteld. Folje it nûmer yn fia IMS-ynstellingen om it opnij te probearjen.</string>
+    <string name="qti_description_deflect_service_error">Petear omliede wurdt net stipe.</string>
+    <string name="call_failed_ho_not_feasible">Petear beëinige, omdat LTE-nei-3G/2G-oerdracht mislearre is.</string>
+    <string name="cs_redial_option">Opnij kieze</string>
+    <string name="cs_redial_msg">IMS-fideo-oprop mislearre, opnij probearje as net-IMS-audio-oprop?</string>
+    <string name="session_modify_cause_upgrade_local_request">Oprop opwurdearre op fersyk fan brûker</string>
+    <string name="session_modify_cause_upgrade_remote_request">Oprop opwurdearre op fersyk fan petearpartner</string>
+    <string name="session_modify_cause_downgrade_local_request">Oprop degradearre op fersyk fan brûker</string>
+    <string name="session_modify_cause_downgrade_remote_request">Oprop degradearre op fersyk fan petearpartner</string>
+    <string name="session_modify_cause_downgrade_rtp_timeout">Oprop degradearre as gefolch fan in RTP-time-out</string>
+    <string name="session_modify_cause_downgrade_qos">Oprop degradearre as gefolch fan slimme ferbining</string>
+    <string name="session_modify_cause_downgrade_packet_loss">Oprop degradearre as gefolch fan pakketferlies</string>
+    <string name="session_modify_cause_downgrade_low_thrput">Oprop degradearre as gefolch fan lege trochfiersnelheid</string>
+    <string name="session_modify_cause_downgrade_thermal_mitigation">Oprop degradearre as gefolch fan hjittebeskerming</string>
+    <string name="session_modify_cause_downgrade_lipsync">Oprop degradearre as gefolch fan in lipsyngronisaasje</string>
+    <string name="session_modify_cause_downgrade_generic_error">Oprop degradearre as gefolch fan algemiene flater</string>
+    <string name="select_account_dialog_title">Simkaart selektearje</string>
+    <string name="sub_1">SIM 1</string>
+    <string name="sub_2">SIM 2</string>
 </resources>

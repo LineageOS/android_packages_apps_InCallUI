@@ -17,61 +17,41 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- In-call screen: call failure reason (call denied because call barring is ON on MT side ) -->
-  <string name="callFailed_incoming_cb_enabled">A fél elutasított minden bejövő hívást.</string>
-  <!-- In-call screen: status label for an incoming call that is not answered and forwarded  -->
-  <string name="callUnanswered_forwarded">A hívás megválaszolatlan és továbbított</string>
-  <!-- In-call screen: "call type" indication for a forwarded call [CHAR LIMIT=30] -->
-  <string name="incall_call_type_label_forwarded">Átirányított hívás</string>
-  <!-- In-call screen: status label for a call in the "dialing" state that's waiting for the busy remote side -->
-  <string name="card_title_dialing_waiting">Tárcsázás (várakozás\u2026)</string>
-  <!-- In-call screen: status label for an outgoing call that's routed via a specific
-         provider (e.g. MSIM) and is waiting for the busy remote side -->
-  <string name="calling_via_waiting_template">Hívás ezen: <xliff:g id="provider_name">%s</xliff:g> (Várakozás\u2026)</string>
-  <!-- In-call screen: status label template for an active call that's routed via a specific
-         provider (e.g. MSIM) -->
-  <string name="card_title_active_via_template"><xliff:g id="status" example="Call on hold">%1$s</xliff:g> (ezen: <xliff:g id="provider_name">%2$s</xliff:g>)</string>
-  <!-- In-call screen: status label for a call that is held remotely  -->
-  <string name="card_title_waiting_call">Hívás tartva</string>
-  <string name="call_recording_failed_message">Nem sikerült a felvételt elindítani</string>
-  <string name="call_recording_file_location">Hívások mentése ide: <xliff:g id="filename">%s</xliff:g></string>
-  <string name="onscreenCallRecordText">Hívás rögzítése</string>
-  <string name="onscreenStopCallRecordText">Felvétel leállítása</string>
-  <string name="recording_time_text">Felvétel</string>
-  <string name="recording_warning_title">Hívás rögzítésének engedélyezése?</string>
-  <string name="recording_warning_text">Figyelmeztetés: A hívás rögzítésére és a hangfelvétel felhasználására vonatkozó törvények, rendeletek és szabályozások betartásáért Ön tartozik felelősséggel.</string>
-  <string name="onscreenTransferCall">Hívás átadása</string>
-  <!-- In-call screen: Video Call Options for VT or plugin handoff -->
-  <string name="video_call_option_title">Válassza ki a videó szolgáltatást</string>
-  <string name="snackbar_incall_plugin_no_invite_found">Ez a kapcsolat nem egy <xliff:g id="incall_plugin">%s</xliff:g> kapcsolat. Először hozzá kell adnia a személyt, hogy videohívást kezdeményezzen.</string>
-  <string name="snackbar_incall_plugin_contact_invite">Ez a kapcsolat nem egy <xliff:g id="incall_plugin">%s</xliff:g> kapcsolat. Meghívja ezt a kapcsolatot?</string>
-  <string name="snackbar_invite_action_text">MEGHÍV</string>
-  <string name="caller_info_loading"><xliff:g id="provider">%s</xliff:g> keresése\u2026</string>
-  <string name="caller_info_failure"><xliff:g id="provider">%s</xliff:g> nem elérhető</string>
-  <string name="caller_info_no_result">Nincs <xliff:g id="provider">%s </xliff:g> találat</string>
-  <string name="caller_info_unauthenticated"><xliff:g id="provider">%s</xliff:g> beállítása hiányos</string>
-  <string name="call_button_contact_unknown">Ismeretlen</string>
-  <!-- Description of the target to block a call -->
-  <string name="description_target_block">Hívó blokkolása</string>
-  <!-- [CHAR LIMIT=12] -->
-  <string name="notification_action_block">Blokkolás</string>
-  <!-- text for the onscreen Note Badge in the CallButtonFragment. When clicked this button will
-         launch the appropriate Note taking application as configured by the user. -->
-  <string name="onscreenNoteText">Jegyzet készítése</string>
-  <!-- Text to place in the name field of a Call DeepLink when the contact name is not known -->
-  <string name="deeplink_unknown_caller">Ismeretlen</string>
-  <!-- Description of the hold and answer target in the Slide unlock screen of Phone. [CHAR
-    LIMIT=NONE] -->
-  <string name="description_target_answer_hold_active">Aktuális hívás tartása és válasz</string>
-  <!-- Description of the end and answer target in the Slide unlock screen of Phone. [CHAR
-    LIMIT=NONE] -->
-  <string name="description_target_answer_end_active">Aktuális hívás befejezése és válasz</string>
-  <!-- In-call screen: display text for the target action -->
-  <string name="display_text_target_dismiss">ELUTASÍTÁS</string>
-  <string name="display_text_target_block">BLOKKOLÁS</string>
-  <string name="display_text_target_answer">VÁLASZ</string>
-  <string name="display_text_target_sms">GYORS ÜZENET</string>
-  <string name="display_text_target_answer_and_hold_active">AKTUÁLIS HÍVÁS TARTÁSA ÉS VÁLASZ</string>
-  <string name="display_text_target_answer_and_end_active">AKTUÁLIS HÍVÁS BEFEJEZÉSE ÉS VÁLASZ</string>
-  <string name="onscreenModOverflowText">Több modok</string>
+    <string name="callFailed_incoming_cb_enabled">A másik fél elutasított minden bejövő hívást.</string>
+    <string name="callUnanswered_forwarded">Megválaszolatlan és továbbított hívás</string>
+    <string name="incall_call_type_label_forwarded">Átirányított hívás</string>
+    <string name="card_title_dialing_waiting">Tárcsázás (várakozás\u2026)</string>
+    <string name="calling_via_waiting_template">Hívás ezen: <xliff:g id="provider_name">%s</xliff:g> (Várakozás\u2026)</string>
+    <string name="card_title_active_via_template"><xliff:g id="status" example="Call on hold">%1$s</xliff:g> (ezen: <xliff:g id="provider_name">%2$s</xliff:g>)</string>
+    <string name="card_title_waiting_call">Hívás tartva</string>
+    <string name="call_recording_failed_message">Nem sikerült a felvételt elindítani</string>
+    <string name="call_recording_file_location">Hívások mentése ide: <xliff:g id="filename">%s</xliff:g></string>
+    <string name="onscreenCallRecordText">Hívás rögzítése</string>
+    <string name="onscreenStopCallRecordText">Felvétel leállítása</string>
+    <string name="recording_time_text">Felvétel</string>
+    <string name="recording_warning_title">Hívás rögzítésének engedélyezése?</string>
+    <string name="recording_warning_text">Figyelmeztetés: A hívás rögzítésére és a hangfelvétel felhasználására vonatkozó törvények, rendeletek és szabályozások betartásáért Ön tartozik felelősséggel.</string>
+    <string name="onscreenTransferCall">Hívás átadása</string>
+    <string name="video_call_option_title">Válassza ki a videó szolgáltatást</string>
+    <string name="snackbar_incall_plugin_no_invite_found">Ez a kapcsolat nem egy <xliff:g id="incall_plugin">%s</xliff:g> kapcsolat. Először hozzá kell adnia a személyt, hogy videohívást kezdeményezzen.</string>
+    <string name="snackbar_incall_plugin_contact_invite">Ez a kapcsolat nem egy <xliff:g id="incall_plugin">%s</xliff:g> kapcsolat. Meghívja ezt a kapcsolatot?</string>
+    <string name="snackbar_invite_action_text">MEGHÍV</string>
+    <string name="caller_info_loading"><xliff:g id="provider">%s</xliff:g> keresése\u2026</string>
+    <string name="caller_info_failure"><xliff:g id="provider">%s</xliff:g> nem elérhető</string>
+    <string name="caller_info_no_result">Nincs <xliff:g id="provider">%s </xliff:g> találat</string>
+    <string name="caller_info_unauthenticated"><xliff:g id="provider">%s</xliff:g> beállítása hiányos</string>
+    <string name="call_button_contact_unknown">Ismeretlen</string>
+    <string name="description_target_block">Hívó blokkolása</string>
+    <string name="notification_action_block">Blokkolás</string>
+    <string name="onscreenNoteText">Jegyzet készítése</string>
+    <string name="deeplink_unknown_caller">Ismeretlen</string>
+    <string name="description_target_answer_hold_active">Aktuális hívás tartása és válasz</string>
+    <string name="description_target_answer_end_active">Aktuális hívás befejezése és válasz</string>
+    <string name="display_text_target_dismiss">ELUTASÍTÁS</string>
+    <string name="display_text_target_block">BLOKKOLÁS</string>
+    <string name="display_text_target_answer">VÁLASZ</string>
+    <string name="display_text_target_sms">GYORS ÜZENET</string>
+    <string name="display_text_target_answer_and_hold_active">AKTUÁLIS HÍVÁS TARTÁSA ÉS VÁLASZ</string>
+    <string name="display_text_target_answer_and_end_active">AKTUÁLIS HÍVÁS BEFEJEZÉSE ÉS VÁLASZ</string>
+    <string name="onscreenModOverflowText">Több modok</string>
 </resources>

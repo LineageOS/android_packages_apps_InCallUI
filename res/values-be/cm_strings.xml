@@ -17,61 +17,41 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- In-call screen: call failure reason (call denied because call barring is ON on MT side ) -->
-  <string name="callFailed_incoming_cb_enabled">Удзельнік забараніў усе ўваходныя выклікі.</string>
-  <!-- In-call screen: status label for an incoming call that is not answered and forwarded  -->
-  <string name="callUnanswered_forwarded">Выклік не адказаны і пераадрасаваны</string>
-  <!-- In-call screen: "call type" indication for a forwarded call [CHAR LIMIT=30] -->
-  <string name="incall_call_type_label_forwarded">Пераадрасаваны выклік</string>
-  <!-- In-call screen: status label for a call in the "dialing" state that's waiting for the busy remote side -->
-  <string name="card_title_dialing_waiting">Выклік (чаканне\u2026)</string>
-  <!-- In-call screen: status label for an outgoing call that's routed via a specific
-         provider (e.g. MSIM) and is waiting for the busy remote side -->
-  <string name="calling_via_waiting_template">Выклік праз <xliff:g id="provider_name">%s</xliff:g> (Чаканне\u2026)</string>
-  <!-- In-call screen: status label template for an active call that's routed via a specific
-         provider (e.g. MSIM) -->
-  <string name="card_title_active_via_template"><xliff:g id="status" example="Call on hold">%1$s</xliff:g>(праз<xliff:g id="provider_name">%2$s</xliff:g>)</string>
-  <!-- In-call screen: status label for a call that is held remotely  -->
-  <string name="card_title_waiting_call">Выклік на ўтрыманні</string>
-  <string name="call_recording_failed_message">Не атрымалася пачаць запіс гутаркі</string>
-  <string name="call_recording_file_location">Запіс гутаркі захаваны ў <xliff:g id="filename">%s</xliff:g></string>
-  <string name="onscreenCallRecordText">Запісаць выклік</string>
-  <string name="onscreenStopCallRecordText">Спыніць запіс</string>
-  <string name="recording_time_text">Ідзе запіс</string>
-  <string name="recording_warning_title">Уключыць запіс тэлефонных гутарак?</string>
-  <string name="recording_warning_text">Увага: выкарыстанне гэтай функцыі ў некаторых краінах з\'яўляецца незаконным. Вы несяце асабістую адказнасць за выкананне законаў і правіл, гэта тычыцца функцыі запісу гутарак і наступнага шырання гэтых запісаў.</string>
-  <string name="onscreenTransferCall">Перанакіраваць выклік</string>
-  <!-- In-call screen: Video Call Options for VT or plugin handoff -->
-  <string name="video_call_option_title">Абраць відэа абслугоўваньне</string>
-  <string name="snackbar_incall_plugin_no_invite_found">Гэты чалавек адсутнічае ў <xliff:g id="incall_plugin">%s</xliff:g>. Для выкананьня відэаразмовы, неабходна дадаць гэнага чалавека да сьпісу знаёмых.</string>
-  <string name="snackbar_incall_plugin_contact_invite">Гэты чалавек адсутнічае ў <xliff:g id="incall_plugin">%s</xliff:g>. Дадаць да сьпісу?</string>
-  <string name="snackbar_invite_action_text">ЗАПРАСІЦЬ</string>
-  <string name="caller_info_loading">Пошук <xliff:g id="provider">%s</xliff:g>\u2026</string>
-  <string name="caller_info_failure">Не атрымалася падлучыцца да <xliff:g id="provider">%s</xliff:g></string>
-  <string name="caller_info_no_result">Супадзеньні <xliff:g id="provider">%s</xliff:g> адсутнічаюць</string>
-  <string name="caller_info_unauthenticated"><xliff:g id="provider">%s</xliff:g> не скончана</string>
-  <string name="call_button_contact_unknown">Невядомы</string>
-  <!-- Description of the target to block a call -->
-  <string name="description_target_block">Заблакаваць размоўцу</string>
-  <!-- [CHAR LIMIT=12] -->
-  <string name="notification_action_block">Блакаваць</string>
-  <!-- text for the onscreen Note Badge in the CallButtonFragment. When clicked this button will
-         launch the appropriate Note taking application as configured by the user. -->
-  <string name="onscreenNoteText">Зрабіць нататку</string>
-  <!-- Text to place in the name field of a Call DeepLink when the contact name is not known -->
-  <string name="deeplink_unknown_caller">Невядома</string>
-  <!-- Description of the hold and answer target in the Slide unlock screen of Phone. [CHAR
-    LIMIT=NONE] -->
-  <string name="description_target_answer_hold_active">Утрымліваць бягучы выклік й адказаць</string>
-  <!-- Description of the end and answer target in the Slide unlock screen of Phone. [CHAR
-    LIMIT=NONE] -->
-  <string name="description_target_answer_end_active">Скончыць бягучы выклік й адказаць</string>
-  <!-- In-call screen: display text for the target action -->
-  <string name="display_text_target_dismiss">АДХІЛІЦЬ</string>
-  <string name="display_text_target_block">БЛАКАВАЦЬ</string>
-  <string name="display_text_target_answer">АДКАЗАЦЬ</string>
-  <string name="display_text_target_sms">ХУТКІ АДКАЗ</string>
-  <string name="display_text_target_answer_and_hold_active">УТРЫМЛІВАЦЬ БЯГУЧЫ ВЫКЛІК І АДКАЗАЦЬ</string>
-  <string name="display_text_target_answer_and_end_active">СКОНЧЫЦЬ БЯГУЧЫ ВЫКЛІК І АДКАЗАЦЬ</string>
-  <string name="onscreenModOverflowText">Іньшы варыянты</string>
+    <string name="callFailed_incoming_cb_enabled">Удзельнік забараніў усе ўваходныя выклікі.</string>
+    <string name="callUnanswered_forwarded">Выклік не адказаны і пераадрасаваны</string>
+    <string name="incall_call_type_label_forwarded">Пераадрасаваны выклік</string>
+    <string name="card_title_dialing_waiting">Выклік (чаканне\u2026)</string>
+    <string name="calling_via_waiting_template">Выклік праз <xliff:g id="provider_name">%s</xliff:g> (Чаканне\u2026)</string>
+    <string name="card_title_active_via_template"><xliff:g id="status" example="Call on hold">%1$s</xliff:g>(праз<xliff:g id="provider_name">%2$s</xliff:g>)</string>
+    <string name="card_title_waiting_call">Выклік на ўтрыманні</string>
+    <string name="call_recording_failed_message">Не атрымалася пачаць запіс гутаркі</string>
+    <string name="call_recording_file_location">Запіс гутаркі захаваны ў <xliff:g id="filename">%s</xliff:g></string>
+    <string name="onscreenCallRecordText">Запісаць выклік</string>
+    <string name="onscreenStopCallRecordText">Спыніць запіс</string>
+    <string name="recording_time_text">Ідзе запіс</string>
+    <string name="recording_warning_title">Уключыць запіс тэлефонных гутарак?</string>
+    <string name="recording_warning_text">Увага: выкарыстанне гэтай функцыі ў некаторых краінах з\'яўляецца незаконным. Вы несяце асабістую адказнасць за выкананне законаў і правіл, гэта тычыцца функцыі запісу гутарак і наступнага шырання гэтых запісаў.</string>
+    <string name="onscreenTransferCall">Перанакіраваць выклік</string>
+    <string name="video_call_option_title">Абраць відэа абслугоўваньне</string>
+    <string name="snackbar_incall_plugin_no_invite_found">Гэты чалавек адсутнічае ў <xliff:g id="incall_plugin">%s</xliff:g>. Для выкананьня відэаразмовы, неабходна дадаць гэнага чалавека да сьпісу знаёмых.</string>
+    <string name="snackbar_incall_plugin_contact_invite">Гэты чалавек адсутнічае ў <xliff:g id="incall_plugin">%s</xliff:g>. Дадаць да сьпісу?</string>
+    <string name="snackbar_invite_action_text">ЗАПРАСІЦЬ</string>
+    <string name="caller_info_loading">Пошук <xliff:g id="provider">%s</xliff:g>\u2026</string>
+    <string name="caller_info_failure">Не атрымалася падлучыцца да <xliff:g id="provider">%s</xliff:g></string>
+    <string name="caller_info_no_result">Супадзеньні <xliff:g id="provider">%s</xliff:g> адсутнічаюць</string>
+    <string name="caller_info_unauthenticated"><xliff:g id="provider">%s</xliff:g> не скончана</string>
+    <string name="call_button_contact_unknown">Невядомы</string>
+    <string name="description_target_block">Заблакаваць размоўцу</string>
+    <string name="notification_action_block">Блакаваць</string>
+    <string name="onscreenNoteText">Зрабіць нататку</string>
+    <string name="deeplink_unknown_caller">Невядома</string>
+    <string name="description_target_answer_hold_active">Утрымліваць бягучы выклік і адказаць</string>
+    <string name="description_target_answer_end_active">Скончыць бягучы выклік і адказаць</string>
+    <string name="display_text_target_dismiss">АДХІЛІЦЬ</string>
+    <string name="display_text_target_block">БЛАКАВАЦЬ</string>
+    <string name="display_text_target_answer">АДКАЗАЦЬ</string>
+    <string name="display_text_target_sms">ХУТКІ АДКАЗ</string>
+    <string name="display_text_target_answer_and_hold_active">УТРЫМЛІВАЦЬ БЯГУЧЫ ВЫКЛІК І АДКАЗАЦЬ</string>
+    <string name="display_text_target_answer_and_end_active">СКОНЧЫЦЬ БЯГУЧЫ ВЫКЛІК І АДКАЗАЦЬ</string>
+    <string name="onscreenModOverflowText">Іншыя варыянты</string>
 </resources>
