@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2015, The Linux Foundation. All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, with or without
+  ~ modification, are permitted provided that the following conditions are
+  ~ met:
+  ~      Redistributions of source code must retain the above copyright
+  ~       notice, this list of conditions and the following disclaimer.
+  ~      Redistributions in binary form must reproduce the above
+  ~       copyright notice, this list of conditions and the following
+  ~       disclaimer in the documentation and/or other materials provided
+  ~       with the distribution.
+  ~      Neither the name of The Linux Foundation nor the names of its
+  ~       contributors may be used to endorse or promote products derived
+  ~       from this software without specific prior written permission.
+  ~
+  ~ THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED
+  ~ WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+  ~ MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT
+  ~ ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS
+  ~ BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+  ~ CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+  ~ SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+  ~ BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+  ~ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
+  ~ OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
+  ~ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+  ~
+  -->
+<!-- The xml contains Qti specific resource strings neede for any value added features. -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="call_substate_label"><xliff:g id="id">%1$s</xliff:g>: Fo-stait na gairm:\u000a <xliff:g id="state" example="Resumed">%2$s</xliff:g></string>
+    <string name="call_substate_call_resumed">Air leantainn</string>
+    <string name="call_substate_connected_suspended_audio">Ceangailte ach tha an fhuaim ’na dhàil</string>
+    <string name="call_substate_connected_suspended_video">Ceangailte ach tha a’ video ’na dhàil</string>
+    <string name="call_substate_avp_retry">A’ mothachadh ri càileachd a’ video\u2026</string>
+    <string name="video_quality_changed"><xliff:g id="id">%1$s</xliff:g>: Chaidh <xliff:g id="quality" example="high">%2$s</xliff:g> a thaghadh mar chàileachd a’ video</string>
+    <string name="video_quality_high">àrd</string>
+    <string name="video_quality_medium">meadhanach</string>
+    <string name="video_quality_low">ìseal</string>
+    <string name="video_quality_unknown">neo-aithnichte</string>
+    <string name="player_started">Thòisich an cluicheadair</string>
+    <string name="player_stopped">Stad an cluicheadair</string>
+    <string name="camera_not_ready">Chan eil an camara deiseil</string>
+    <string name="camera_ready">Tha an camara deiseil</string>
+    <string name="unknown_call_session_event">Tachartas seisean gairm nach aithne dhuinn</string>
+    <string name="data_usage_label">Caitheamh dàta: <xliff:g id="usage">%1$s</xliff:g></string>
+    <string name="modify_call_option_title">Tagh seòrsa na gairm</string>
+    <string name="modify_call_option_vt">Video dà-thaobhach</string>
+    <string name="modify_call_option_vt_tx">Tar-chur video</string>
+    <string name="modify_call_option_vt_rx">Faighinn video</string>
+    <string name="modify_call_option_voice">Guth a-mhàin</string>
+    <string name="modify_call_failed_due_to_low_battery">Cha b’ urrainn dhuinn a’ ghairm atharrachadh is am bataraidh fann.</string>
+    <string name="video_call_not_allowed_if_tty_enabled">Cuir am modh fònadh teacsa à comas airson gairmean video a dhèanamh de ghairmean.</string>
+    <string name="onscreenAddParticipant">Cuir com-pàirtiche ris</string>
+    <string name="qti_description_target_deflect">Dì-threòraich</string>
+    <string name="qti_description_deflect_error">Cha deach an àireamh a shuidheachadh. Solair an àireamh sna roghainnean IMS agus feuch ris a-rithist.</string>
+    <string name="qti_description_deflect_service_error">Chan eil taic ri seirbheis dì-threòrachadh ghairmean.</string>
+    <string name="call_failed_ho_not_feasible">Chaidh crìoch a chur air a’ ghairm a chionn ’s nach b’ urrainn dhuinn LTE a thar-chur gu 3G/2G.</string>
+    <string name="cs_redial_option">Ath-dhaitheal</string>
+    <string name="cs_redial_msg">Chan urrainn dhuinn gairm video IMS a dhèanamh, a bheil thu airson ath-dhaithealadh is gairm gutha neo-IMS a dhèanamh?</string>
+    <string name="session_modify_cause_upgrade_local_request">Chaidh a’ ghairm àrdachadh ri linn iarrtas a’ chleachdaiche</string>
+    <string name="session_modify_cause_upgrade_remote_request">Chaidh a’ ghairm àrdachadh ri linn iarrtas a’ chleachdaiche chèin</string>
+    <string name="session_modify_cause_downgrade_local_request">Chaidh a’ ghairm ìsleachadh ri linn iarrtas a’ chleachdaiche</string>
+    <string name="session_modify_cause_downgrade_remote_request">Chaidh a’ ghairm ìsleachadh ri linn iarrtas a’ chleachdaiche chèin</string>
+    <string name="session_modify_cause_downgrade_rtp_timeout">Chaidh a’ ghairm ìsleachadh air sgàth crìoch-ùine RTP</string>
+    <string name="session_modify_cause_downgrade_qos">Chaidh a’ ghairm ìsleachadh air sgàth càileachd na seirbheise</string>
+    <string name="session_modify_cause_downgrade_packet_loss">Chaidh a’ ghairm ìsleachadh air sgàth call pacaide</string>
+    <string name="session_modify_cause_downgrade_low_thrput">Chaidh a’ ghairm ìsleachadh air sgàth tar-chur ìseal</string>
+    <string name="session_modify_cause_downgrade_thermal_mitigation">Chaidh a’ ghairm ìsleachadh airson lasachadh an teasa</string>
+    <string name="session_modify_cause_downgrade_lipsync">Chaidh a’ ghairm ìsleachadh air sgàth lipsync</string>
+    <string name="session_modify_cause_downgrade_generic_error">Chaidh a’ ghairm ìsleachadh air sgàth mearachd choitcheann</string>
+    <string name="select_account_dialog_title">Tagh cairt SIM</string>
+    <string name="sub_1">SIM 1</string>
+    <string name="sub_2">SIM 2</string>
+</resources>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2013 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License
+  -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="phoneAppLabel" product="default">Telèfonu</string>
+    <string name="onHold">In ispera</string>
+    <string name="unknown">Disconnotu</string>
+    <string name="private_num">Nùmeru privadu</string>
+    <string name="payphone">Telèfonu pùblicu</string>
+    <string name="confCall">Mutida in cunferèntzia</string>
+    <string name="call_lost">Lìnia ruta</string>
+    <string name="audio_mode_speaker">Altoparlante</string>
+    <string name="audio_mode_earpiece">Auricolare portàtile</string>
+    <string name="audio_mode_wired_headset">Cùfias cun filu</string>
+    <string name="audio_mode_bluetooth">Bluetooth</string>
+    <string name="wait_prompt_str">Imbiare custas sonerias?\n</string>
+    <string name="pause_prompt_str">Imbiende sonerias\n</string>
+    <string name="send_button">Imbia</string>
+    <string name="pause_prompt_yes">Eja</string>
+    <string name="pause_prompt_no">Nono</string>
+    <string name="wild_prompt_str">Càmbia su caràtere jolly cun</string>
+    <string name="caller_manage_header">Mutida in cunferèntzia <xliff:g id="conf_call_time">%s</xliff:g></string>
+    <string name="voicemail_settings_number_label">Nùmeru de segreteria telefònica</string>
+    <string name="card_title_dialing">Cumponende</string>
+    <string name="card_title_redialing">Torrende a cumpònnere</string>
+    <string name="card_title_conf_call">Mutida in cunferèntzia</string>
+    <string name="card_title_incoming_call">Mutida in intrada</string>
+    <string name="card_title_call_ended">Mutida acabbada</string>
+    <string name="card_title_on_hold">In ispera</string>
+    <string name="card_title_hanging_up">Serrende</string>
+    <string name="card_title_in_call">Mutida in cursu</string>
+    <string name="card_title_my_phone_number">Su nùmeru miu est <xliff:g id="my_phone_number">%s</xliff:g></string>
+    <string name="card_title_video_call_connecting">Connetende su vìdeu</string>
+    <string name="card_title_video_call">Mutida de vìdeu</string>
+    <string name="card_title_video_call_requesting">Pedende su vìdeu</string>
+    <string name="card_title_video_call_error">No faghet a connètere sa mutida vìdeu</string>
+    <string name="card_title_video_call_rejected">Rechesta de vìdeu refudada</string>
+    <string name="card_title_callback_number">Nùmeru tuo de torrare a mutire <xliff:g id="dark_number">%1$s</xliff:g>
+    </string>
+    <string name="card_title_callback_number_emergency">Nùmeru tuo de emergèntzia de torrare a mutire <xliff:g id="dark_number">%1$s</xliff:g>
+    </string>
+    <string name="notification_dialing">Cumponende</string>
+    <string name="notification_missedCallTitle">Mutida pèrdida</string>
+    <string name="notification_missedCallsTitle">Mutidas pèrdidas</string>
+    <string name="notification_missedCallsMsg"><xliff:g id="num_missed_calls">%s</xliff:g> mutidas pèrdidas</string>
+    <string name="notification_missedCallTicker">Mutida pèrdida dae <xliff:g id="missed_call_from">%s</xliff:g></string>
+    <string name="notification_ongoing_call">Mutida in cursu</string>
+    <string name="notification_ongoing_call_wifi">Mutida Wi-fi in cursu</string>
+    <string name="notification_on_hold">In ispera</string>
+    <string name="notification_incoming_call">Mutida in intrada</string>
+    <string name="notification_incoming_call_wifi">Mutida Wi-fi arribende</string>
+    <string name="notification_incoming_video_call">Vìdeu-mutida in intrada</string>
+    <string name="notification_requesting_video_call">Rechesta vìdeu arribende</string>
+    <string name="notification_voicemail_title">Messàgiu de segreteria nou.</string>
+    <string name="notification_voicemail_title_count">Messàgiu de segreteria nou (<xliff:g id="count">%d</xliff:g>)</string>
+    <string name="notification_voicemail_text_format">Cumpone <xliff:g id="voicemail_number">%s</xliff:g></string>
+    <string name="notification_voicemail_no_vm_number">Nùmeru de segreteria disconnotu</string>
+    <string name="notification_network_selection_title">Perunu servìtziu</string>
+    <string name="notification_network_selection_text">Rete seletzionada (<xliff:g id="operator_name">%s</xliff:g>) no a disponimentu</string>
+    <string name="notification_action_answer">Risponde</string>
+    <string name="notification_action_end_call">Serra</string>
+    <string name="notification_action_answer_video">Vìdeu</string>
+    <string name="notification_action_answer_voice">Boghe</string>
+    <string name="notification_action_accept">Atzeta</string>
+    <string name="notification_action_dismiss">Iscarta</string>
+    <string name="notification_missedCall_call_back">Torra a mutire</string>
+    <string name="notification_missedCall_message">Messàgiu</string>
+    <string name="incall_error_power_off">Pro fàghere una mutida, antis istuda sa modalidade Aeroplanu.</string>
+    <string name="incall_error_emergency_only">Non registradu in sa rete.</string>
+    <string name="incall_error_call_failed">No faghet a mutire.</string>
+    <string name="incall_status_dialed_mmi">Cumintzende sa secuèntzia MMI\u2026</string>
+    <string name="incall_error_supp_service_unknown">Servìtziu non suportadu.</string>
+    <string name="incall_error_supp_service_switch">No faghet a cambiare mutidas.</string>
+    <string name="incall_error_supp_service_separate">Non faghet a partzire sa mutida.</string>
+    <string name="incall_error_supp_service_transfer">Non faghet a tramudare.</string>
+    <string name="incall_error_supp_service_conference">Non faghet a fàghere sa cunferèntzia.</string>
+    <string name="incall_error_supp_service_reject">Non faghet a refudare sa mutida. </string>
+    <string name="incall_error_supp_service_hangup">No faghet a lassare sa mutida (s).</string>
+    <string name="incall_call_type_label_sip">Mutida SIP</string>
+    <string name="emergency_enable_radio_dialog_title">Mutida de emergèntzia</string>
+    <string name="emergency_enable_radio_dialog_message">Alluende sa ràdiu\u2026</string>
+    <string name="emergency_enable_radio_dialog_retry">Perunu servìtziu. Torrende a proare\u2026</string>
+    <string name="dial_emergency_error">No faghet a mutire. <xliff:g id="non_emergency_number">%s</xliff:g> no est unu nùmeru de emergèntzia.</string>
+    <string name="dial_emergency_empty_error">No faghet a mutire. Cumpone unu nùmeru de emergèntzia.</string>
+    <string name="dialerKeyboardHintText">Imprea su tecladu pro cumpònnere.</string>
+    <string name="onscreenHoldText_unselected">Piga sa mutida</string>
+    <string name="onscreenHoldText_selected">Torra a sa mutida</string>
+    <string name="onscreenEndCallText">Serra mutida</string>
+    <string name="onscreenShowDialpadText">Tecladu</string>
+    <string name="onscreenAddCallText">Agiunghe mutida</string>
+    <string name="onscreenSwapCallsText">Càmbia</string>
+    <string name="onscreenManageCallsText">Gesti mutidas</string>
+    <string name="onscreenManageConferenceText">Gesti mutida in cunferèntzia</string>
+    <string name="onscreenVideoCallText">Mutida de vìdeu</string>
+    <string name="onscreenChangeToVoiceText">Càmbia a mutida vocale</string>
+    <string name="onscreenSwitchCameraText">Càmbia fotocàmera</string>
+    <string name="onscreenPauseVideoText">Pone in pàusa su vìdeu</string>
+    <string name="onscreenOverflowText">Àteras optziones</string>
+    <string name="player_started">Su letore at cumintzadu</string>
+    <string name="player_stopped">Su letore at agabbadu</string>
+    <string name="camera_not_ready">Sa fotocàmera no est pronta</string>
+    <string name="camera_ready">Sa fotocàmera est pronta</string>
+    <string name="unknown_call_session_event">"Eventu disconnotu in sa sessione de mutida"</string>
+    <string name="voicemail_provider">Servìtziu</string>
+    <string name="voicemail_settings">Cunfigura</string>
+    <string name="voicemail_number_not_set">&lt;Not set&gt;</string>
+    <string name="other_settings">Àteras impostatziones de mutida</string>
+    <string name="incoming_via_template">In intrada tràmite <xliff:g id="provider_name">%s</xliff:g></string>
+    <string name="contactPhoto">fotografia de cuntatu</string>
+    <string name="goPrivate">càmbia in privadu</string>
+    <string name="selectContact">seletziona cuntatu</string>
+    <string name="respond_via_sms_custom_message">Iscrie sa risposta tua...</string>
+    <string name="custom_message_cancel">Annulla</string>
+    <string name="custom_message_send">Imbia</string>
+    <string name="description_target_answer">Risponde</string>
+    <string name="description_target_send_sms">Imbia SMS</string>
+    <string name="description_target_decline">Refuda</string>
+    <string name="description_target_answer_video_call">Responde comente mutida vìdeu</string>
+    <string name="description_target_accept_upgrade_to_video_request">Atzeta sa rechesta vìdeu</string>
+    <string name="description_target_decline_upgrade_to_video_request">Refuda rechesta vìdeu</string>
+    <string name="description_target_accept_upgrade_to_video_transmit_request">Atzeta sa rechesta de trasmissione vìdeu</string>
+    <string name="description_target_decline_upgrade_to_video_transmit_request">Refuda sa rechesta de trasmissione vìdeu</string>
+    <string name="description_target_accept_upgrade_to_video_receive_request">Atzeta sa rechesta de retzida vìdeu</string>
+    <string name="description_target_decline_upgrade_to_video_receive_request">Refuda sa rechesta de retzida vìdeu</string>
+    <string name="description_direction_up">Iscurre in susu pro <xliff:g id="target_description" example="Unlock">%s</xliff:g>.</string>
+    <string name="description_direction_left">\"Iscurre a manca pro <xliff:g id="target_description" example="Unlock">%s</xliff:g>.</string>
+    <string name="description_direction_right">\"Iscurre a dereta pro <xliff:g id="target_description" example="Unlock">%s</xliff:g>.</string>
+    <string name="description_direction_down">Iscurre in bàsciu pro <xliff:g id="target_description" example="Unlock">%s</xliff:g>.</string>
+    <string name="voicemail_notification_vibrate_when_title" msgid="8731372580674292759">Vibra</string>
+    <string name="voicemail_notification_vibarte_when_dialog_title" msgid="8995274609647451109">Vibra</string>
+    <string name="voicemail_notification_ringtone_title">Sonu</string>
+    <string name="default_notification_description">Sonu predefinidu (<xliff:g id="default_sound_title">%1$s</xliff:g>)</string>
+    <string name="ringtone_title" msgid="5379026328015343686">Tonu de mutida</string>
+    <string name="vibrate_on_ring_title">Vibra cando est sonende</string>
+    <string name="preference_category_ringtone">Tonu de mutida e vibratzione</string>
+    <string name="manageConferenceLabel">Gesti mutida in cunferèntzia</string>
+    <string name="emergency_call_dialog_number_for_display">Nùmeru de emergèntzia</string>
+    <plurals name="duration_seconds">
+        <item quantity="one">1 segundu</item>
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> segundos</item>
+    </plurals>
+    <plurals name="duration_minutes">
+        <item quantity="one">1 minutu</item>
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> minutos</item>
+    </plurals>
+    <plurals name="duration_hours">
+        <item quantity="one">1 ora</item>
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> oras</item>
+    </plurals>
+    <string name="profile_photo_description">Fotografia de su profilu</string>
+    <string name="camera_off_description">Càmera istudada</string>
+    <string name="child_number">tràmite <xliff:g id="child_number" example="650-555-1212">%s</xliff:g></string>
+    <string name="note_sent">Nota imbiada</string>
+</resources>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2013-2014 The CyanogenMod Project
+     Copyright (c) 2013, The Linux Foundation. All rights reserved.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="callFailed_incoming_cb_enabled">Bhac an neach gach gairm o thighinn a-steach.</string>
+    <string name="callUnanswered_forwarded">Cha deach a’ ghairm a fhreagairt is chaidh a shìneadh air adhart</string>
+    <string name="incall_call_type_label_forwarded">Gairm air a shìneadh air adhart</string>
+    <string name="card_title_dialing_waiting">A’ daithealadh (a’ feitheamh\u2026)</string>
+    <string name="calling_via_waiting_template">A’ gairm slighe <xliff:g id="provider_name">%s</xliff:g> (A’ feitheamh\u2026)</string>
+    <string name="card_title_active_via_template"><xliff:g id="status" example="Call on hold">%1$s</xliff:g> (slighe <xliff:g id="provider_name">%2$s</xliff:g>)</string>
+    <string name="card_title_waiting_call">Gairm ’ga cumail</string>
+    <string name="call_recording_failed_message">Cha deach leinn tòiseachadh air a’ ghairm a chlàradh</string>
+    <string name="call_recording_file_location">Chaidh clàradh na gairme a shàbhaladh gu <xliff:g id="filename">%s</xliff:g></string>
+    <string name="onscreenCallRecordText">Clàraich a’ ghairm</string>
+    <string name="onscreenStopCallRecordText">Sguir dhen chlàradh</string>
+    <string name="recording_time_text">Clàradh</string>
+    <string name="recording_warning_title">A bheil thu airson clàradh ghairmean a chur an comas?</string>
+    <string name="recording_warning_text">An aire: ’S ann an urra dhut fhèin a th’ ann gun gèill thu ri lagh, riaghladh is riaghailt sam bith a bhios an sàs a thaobh cleachdadh gleus a’ chlàraidh agus cleachdadh no sgaoileadh nan clàraidhean a rinn thu leis.</string>
+    <string name="onscreenTransferCall">Sìn air adhart a’ ghairm</string>
+    <string name="video_call_option_title">Tagh seirbheis video</string>
+    <string name="snackbar_incall_plugin_no_invite_found">Chan e neach-aithne <xliff:g id="incall_plugin">%s</xliff:g> a tha san neach-aithne seo. Feumaidh tu an neach a chur ris mus urrainn dhut gairmean video a dhèanamh.</string>
+    <string name="snackbar_incall_plugin_contact_invite">Chan e neach-aithne <xliff:g id="incall_plugin">%s</xliff:g> a tha san neach-aithne seo. A bheil thu airson cuireadh a thoirt dhan neach-aithne seo?</string>
+    <string name="snackbar_invite_action_text">THOIR CUIREADH</string>
+    <string name="caller_info_loading">A’ lorg <xliff:g id="provider">%s</xliff:g>\u2026</string>
+    <string name="caller_info_failure">Cha b’ urrainn dhuinn <xliff:g id="provider">%s</xliff:g> a ruigsinn</string>
+    <string name="caller_info_no_result">Cha deach maids <xliff:g id="provider">%s</xliff:g> a lorg</string>
+    <string name="caller_info_unauthenticated">Cha deach <xliff:g id="provider">%s</xliff:g> a shuidheachadh buileach</string>
+    <string name="call_button_contact_unknown">Neo-aithnichte</string>
+    <string name="description_target_block">Bac an neach-gairm</string>
+    <string name="notification_action_block">Bac</string>
+    <string name="onscreenNoteText">Sgrìobh nòta</string>
+    <string name="deeplink_unknown_caller">Neo-aithnichte</string>
+    <string name="description_target_answer_hold_active">Cùm a’ ghairm làithreach is freagair</string>
+    <string name="description_target_answer_end_active">Cuir crìoch air a’ ghairm làithreach is freagair</string>
+    <string name="display_text_target_dismiss">LEIG SEACHAD</string>
+    <string name="display_text_target_block">BAC</string>
+    <string name="display_text_target_answer">FREAGAIR</string>
+    <string name="display_text_target_sms">GRAD-THEACHDAIREACHD</string>
+    <string name="display_text_target_answer_and_hold_active">CÙM A’ GHAIRM LÀITHREACH IS FREAGAIR</string>
+    <string name="display_text_target_answer_and_end_active">CUIR CRÌOCH AIR A’ GHAIRM LÀITHREACH IS FREAGAIR</string>
+    <string name="onscreenModOverflowText">Barrachd mods</string>
+</resources>
